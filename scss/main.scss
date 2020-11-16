@@ -1,1 +1,22 @@
-@import "_history.scss";
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.history {
+  background-color: #2372d6;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 70vh;
+  // overflow: hidden;
+}
+.header-history {
+  font-size: 7rem;
+  font-family: "Henny Penny", cursive;
+  color: #f6f285;
+  margin: 1rem;
+}
