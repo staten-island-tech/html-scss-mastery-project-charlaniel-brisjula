@@ -1,1 +1,180 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.castlepic {
+  width: 100vw;
+  height: 100vh;
+}
+
+.homeimg {
+  overflow: hidden;
+  width: 100vw;
+  height: 70vh;
+}
+
+.body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  height: 3.5rem;
+}
+
+.box {
+  background-color: #E7E7E7;
+  width: 35%;
+  padding-top: .3rem;
+  padding-bottom: .3rem;
+  text-align: center;
+  float: left;
+}
+
+.logo {
+  color: #2372D6;
+  font-size: 2rem;
+  font-family: "Henny Penny", cursive;
+  padding: 1rem;
+  display: inline;
+}
+
+#nav-bar {
+  float: right;
+  height: 3.5rem;
+  text-align: right;
+  width: 65%;
+  display: inline;
+  background-color: #E7E7E7;
+}
+
+#nav-bar ul {
+  list-style: none;
+}
+
+#nav-bar li {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  font-family: "Underdog", cursive;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+#nav-bar a {
+  color: #2372D6;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
+}
+
+#nav-bar li:hover {
+  border-bottom: #2372D6 inset 0.25rem;
+}
+
+#container {
+  position: relative;
+  width: 55rem;
+  left: 5rem;
+  bottom: 60rem;
+}
+
+#header {
+  position: absolute;
+  color: #F6F285;
+  font-family: "Henny Penny", cursive;
+  font-size: 4.2rem;
+  top: 0;
+  text-transform: uppercase;
+}
+
+#blurb {
+  position: absolute;
+  color: #fff;
+  font-family: "Underdog", cursive;
+  font-size: 1.2rem;
+  padding-top: 10rem;
+  letter-spacing: .1rem;
+}
+
+#btnbox {
+  position: relative;
+  display: inline;
+  top: 20rem;
+  left: -27rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 78rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  padding: 1.5rem 3rem;
+  margin: 1rem;
+  font-size: 1.2rem;
+  font-family: "Underdog", cursive;
+  font-weight: 500;
+  border-bottom-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: absolute;
+  display: inline;
+}
+
+#attractionsbtn {
+  background-color: #F6F285;
+  color: #000;
+}
+
+#attractionsbtn:hover {
+  -webkit-box-shadow: 0 1rem 2rem rgba(246, 242, 133, 0.5);
+          box-shadow: 0 1rem 2rem rgba(246, 242, 133, 0.5);
+}
+
+#eventsbtn {
+  color: #F6F285;
+  border: #F6F285 solid 0.25rem;
+  background-color: none;
+  padding: 1.5rem 2.75rem;
+}
+
+#btn:hover {
+  border: #F6F285 outset 0.4rem;
+  -webkit-transform: translateX(-0.1rem) translateY(-1.75rem);
+          transform: translateX(-0.1rem) translateY(-1.75rem);
+}
+
+a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */

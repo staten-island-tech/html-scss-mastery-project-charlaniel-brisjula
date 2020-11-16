@@ -16,5 +16,5 @@ $colors: (
     @return map-get($colors, $color-name);
 }
 
-$hfont: 'Henny Penny', cursive;
-$tfont: 'Underdog', cursive;
+$mainfont: 'Henny Penny', cursive;
+$subfont: 'Underdog', cursive;
