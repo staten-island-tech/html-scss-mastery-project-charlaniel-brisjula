@@ -11,23 +11,18 @@ body {
   display: flex;
   flex-direction: column;
   height: 70vh;
-  text-align: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 .header-history {
   font-size: 7rem;
   font-family: "Henny Penny", cursive;
   color: #f6f285;
-  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
 }
 .img {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: stretch;
-  margin-bottom: 1rem;
-  flex: 0 22%;
-  height: 100px;
-  object-fit: scale-down;
+  height: 15vh;
+  width: 70vw;
 }

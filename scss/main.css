@@ -17,19 +17,19 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 70vh;
-  text-align: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .header-history {
   font-size: 7rem;
   font-family: "Henny Penny", cursive;
   color: #f6f285;
-  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem;
 }
 
 .img {
@@ -40,17 +40,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
-  margin-bottom: 1rem;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 22%;
-          flex: 0 22%;
-  height: 100px;
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
+  height: 15vh;
+  width: 70vw;
 }
 /*# sourceMappingURL=main.css.map */
