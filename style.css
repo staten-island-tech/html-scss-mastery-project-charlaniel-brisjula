@@ -131,7 +131,7 @@ body {
   border-bottom-left-radius: 2.5rem;
   border-top-right-radius: 2.5rem;
   background-color: #F6F285;
-  color: #000;
+  color: #2372D6;
 }
 
 #attractionsbtn:hover {
@@ -143,7 +143,7 @@ body {
 
 #eventsbtn {
   border-radius: 0;
-  color: #F6F285;
+  color: #fff;
   border-bottom: #F6F285 solid 0.25rem;
   border-top: #F6F285 solid 0.25rem;
   background-color: none;

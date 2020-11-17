@@ -102,7 +102,7 @@ body {
     border-bottom-left-radius: 2.5rem;
     border-top-right-radius: 2.5rem;
     background-color: color(yelloww);
-    color: #000;
+    color: color(bluee);
 }
 #attractionsbtn:hover {
     box-shadow: 0 1rem 2rem rgba(color(yelloww), 0.4);
@@ -110,7 +110,7 @@ body {
 }
 #eventsbtn {
     border-radius: 0;
-    color: color(yelloww);
+    color: #fff;
     border-bottom: color(yelloww) solid .25rem;
     border-top: color(yelloww) solid .25rem;
     background-color: none;
