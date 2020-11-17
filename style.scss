@@ -84,6 +84,7 @@ body {
     font-family: $subfont;
     font-size: 1.5rem;
     top: 12rem;
+    line-height: 2.5rem;
 }
 .btn,
 .btn:link, 
@@ -114,13 +115,15 @@ body {
     border-bottom: color(yelloww) solid .25rem;
     border-top: color(yelloww) solid .25rem;
     background-color: none;
-    padding: 1.25rem 2.25rem;
+    padding: 1.25rem 0;
     margin-left: 23rem;
 }
 #eventsbtn:hover {
     border-bottom-left-radius: 2.5rem;
     border-top-right-radius: 2.5rem;
     border: color(yelloww) solid .25rem;
+    padding: 1.25rem 2.25rem;
+
 }
 a {
     text-decoration: none;
