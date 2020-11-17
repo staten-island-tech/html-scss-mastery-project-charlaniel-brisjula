@@ -1,4 +1,5 @@
 @import "_variables.scss";
+@import "_mixins.scss";
 
 html {
     scroll-behavior: smooth;
@@ -52,7 +53,7 @@ body {
     transition: all 0.2s;
 }
 #nav-bar a {
-    color: color(bluee);
+    color: #333;
     text-decoration: none;
     font-size: 1.5rem;
     margin-left: 1.5rem;
@@ -60,6 +61,7 @@ body {
     line-height: 3rem;
 }
 #nav-bar a:hover {
+    color: color(bluee);
     border-bottom: color(bluee) inset .25rem;
 }
 #container {
@@ -106,7 +108,7 @@ body {
     color: color(bluee);
 }
 #attractionsbtn:hover {
-    box-shadow: 0 1rem 2rem rgba(color(yelloww), 0.4);
+    box-shadow: 0 1.5rem 3rem rgba(color(yelloww), 0.4);
     transform: translateY(-.25rem);
 }
 #eventsbtn {

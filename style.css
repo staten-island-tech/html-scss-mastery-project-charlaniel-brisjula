@@ -74,7 +74,7 @@ body {
 }
 
 #nav-bar a {
-  color: #2372D6;
+  color: #333;
   text-decoration: none;
   font-size: 1.5rem;
   margin-left: 1.5rem;
@@ -83,6 +83,7 @@ body {
 }
 
 #nav-bar a:hover {
+  color: #2372D6;
   border-bottom: #2372D6 inset 0.25rem;
 }
 
@@ -136,8 +137,8 @@ body {
 }
 
 #attractionsbtn:hover {
-  -webkit-box-shadow: 0 1rem 2rem rgba(246, 242, 133, 0.4);
-          box-shadow: 0 1rem 2rem rgba(246, 242, 133, 0.4);
+  -webkit-box-shadow: 0 1.5rem 3rem rgba(246, 242, 133, 0.4);
+          box-shadow: 0 1.5rem 3rem rgba(246, 242, 133, 0.4);
   -webkit-transform: translateY(-0.25rem);
           transform: translateY(-0.25rem);
 }
