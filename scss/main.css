@@ -1,0 +1,29 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.history {
+  background-color: #2372d6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  height: 70vh;
+}
+
+.header-history {
+  font-size: 7rem;
+  font-family: "Henny Penny", cursive;
+  color: #f6f285;
+  margin: 1rem;
+}
+/*# sourceMappingURL=main.css.map */
