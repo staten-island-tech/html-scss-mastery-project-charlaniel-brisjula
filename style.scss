@@ -12,130 +12,115 @@ body {
 }
 .castlepic {
     width: 100vw;
-    height: 100vh;
 }
-.homeimg {
-    overflow: hidden;
-    width: 100vw;
-    height: 70vh;
-}
-.body{
+.body {
     display:flex;
     align-content:flex-start;
-    height: 3.5rem;
 }
-
-.box{
+.navwhole {
+    width: 100vw;
+    position: fixed;
+}
+.logobox {
     background-color: color(whitee);
-    width:35%;
-    padding-top:.3rem;
-    padding-bottom:.3rem;
-    text-align: center;
+    width:30%;
+    text-align: left;
     float: left;
+    height: 4rem;
 }
-
-.logo{
+.logo {
     color: color(bluee);
-    font-size:2rem;
+    font-size:2.5rem;
     font-family: $mainfont;
-    padding:1rem;
+    padding-left: 5rem;
     display:inline;
-    }
-        
-#nav-bar{
+}     
+#nav-bar {
+    width:70%;
     float: right;
-    height:3.5rem;
     text-align:right;
-    width:65%;
     display:inline;
     background-color: color(whitee);
+    height: 4rem;
 }
-
-#nav-bar ul{
+#nav-bar ul {
     list-style: none;
 }
-
-#nav-bar li{
-    box-sizing: border-box;
+#nav-bar li {
     display:inline-block;
     font-family: $subfont;
-    transition: all 0.1s;
+    transition: all 0.2s;
 }
-
-#nav-bar a{
+#nav-bar a {
     color: color(bluee);
     text-decoration: none;
-    font-size: 1.2rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-top: 2rem;
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    line-height: 3rem;
 }
-#nav-bar li:hover{
+#nav-bar a:hover {
     border-bottom: color(bluee) inset .25rem;
 }
 #container {
     position: relative;
-    width: 55rem;
+    width: 70rem;
     left: 5rem;
-    bottom: 60rem;
+    bottom: 50rem;
 }
 #header {
     position: absolute;
     color: color(yelloww);
     font-family: $mainfont;
-    font-size: 4.2rem;
+    font-size: 5rem;
     top: 0;
     text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-shadow: 0 .5rem .5rem rgba(color(yelloww), 0.4);
 }
 #blurb {
     position: absolute;
     color: #fff;
     font-family: $subfont;
-    font-size: 1.2rem;
-    padding-top: 10rem;
-    letter-spacing: .1rem;
-}
-#btnbox {
-    position: relative;
-    display: inline;
-    top: 20rem;
-    left: -27rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 78rem;
+    font-size: 1.5rem;
+    top: 12rem;
 }
 .btn,
 .btn:link, 
 .btn:visited {
     text-decoration: none;
-    padding: 1.5rem 3rem;
-    margin: 1rem;
-    font-size: 1.2rem;
+    padding: 1.5rem 2.5rem;
+    font-size: 1.5rem;
     font-family: $subfont;
     font-weight: 500;
-    border-bottom-left-radius: 2.5rem;
-    border-top-right-radius: 2.5rem;
-    transition: all 0.3s;
+    transition: all 0.2s;
     position: absolute;
     display: inline;
+    top: 25rem;
 }
 #attractionsbtn {
+    border-bottom-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
     background-color: color(yelloww);
     color: #000;
 }
 #attractionsbtn:hover {
-    box-shadow: 0 1rem 2rem rgba(color(yelloww), 0.5);
+    box-shadow: 0 1rem 2rem rgba(color(yelloww), 0.4);
+    transform: translateY(-.25rem);
 }
 #eventsbtn {
+    border-radius: 0;
     color: color(yelloww);
-    border: color(yelloww) solid .25rem;
+    border-bottom: color(yelloww) solid .25rem;
+    border-top: color(yelloww) solid .25rem;
     background-color: none;
-    padding: 1.5rem 2.75rem;
+    padding: 1.25rem 2.25rem;
+    margin-left: 23rem;
 }
-#btn:hover {
-    border: color(yelloww) outset .4rem;
-    transform: translateX(-.1rem) translateY(-1.75rem);
+#eventsbtn:hover {
+    border-bottom-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
+    border: color(yelloww) solid .25rem;
 }
 a {
     text-decoration: none;
