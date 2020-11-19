@@ -64,6 +64,7 @@ body {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     line-height: 3rem;
+    letter-spacing: .1rem;
 }
 #nav-bar a:hover,
 #nav-bar a:focus {
@@ -90,14 +91,11 @@ body {
     font-family: $subfont;
     font-size: 1.5rem;
     line-height: 2.5rem;
-    margin: 0;
-    padding: 0;
 }
 #btnbox {
+    position: relative;
     margin-top: 5rem;
     background-color: green;
-    line-height: 0rem;
-    padding: 0;
 }
 .btn,
 .btn:link, 
@@ -108,14 +106,13 @@ body {
     font-family: $subfont;
     font-weight: 600;
     transition: all 0.2s;
-    display: inline;
+    display: inline-block;
+    position: absolute;
 }
 #attractionsbtn {
-    border-bottom-left-radius: 2.5rem;
-    border-top-right-radius: 2.5rem;
+    @include sleek-border;
     background-color: color(yelloww);
     color: color(bluee);
-    margin-top: 5rem;
 }
 #attractionsbtn:hover,
 #attractionsbtn:focus {
@@ -133,8 +130,7 @@ body {
 }
 #eventsbtn:hover,
 #eventsbtn:focus {
-    border-bottom-left-radius: 2.5rem;
-    border-top-right-radius: 2.5rem;
+    @include sleek-border;
     border: color(yelloww) solid .25rem;
     padding: 1.25rem 2.25rem;
 
