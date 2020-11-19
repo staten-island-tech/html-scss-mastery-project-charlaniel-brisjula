@@ -16,14 +16,83 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 85vh;
   text-align: center;
-  height: 70vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
 }
 
 .header-history {
   font-size: 7rem;
   font-family: "Henny Penny", cursive;
   color: #f6f285;
-  margin: 1rem;
+}
+
+.imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+.img1 {
+  width: 140rem;
+  height: 16rem;
+  border-radius: 2rem;
+}
+
+.img2 {
+  width: 140rem;
+  height: 16rem;
+  border-radius: 2rem;
+}
+
+.img3 {
+  width: 140rem;
+  height: 16rem;
+  border-radius: 2rem;
+}
+
+.title-text {
+  font-size: 4rem;
+  font-family: "Underdog", cursive;
+  color: #f6f285;
+  width: 45rem;
+  margin: auto;
+}
+
+.kingsword {
+  background-color: #6e6904;
+  opacity: 75%;
+  border-radius: 1rem;
+  top: 12rem;
+  position: absolute;
+}
+
+.warred {
+  background-color: #b23617;
+  opacity: 75%;
+  border-radius: 1rem;
+  top: 29rem;
+  position: absolute;
+}
+
+.flowerblue {
+  background-color: #081861;
+  opacity: 75%;
+  border-radius: 1rem;
+  top: 46rem;
+  position: absolute;
 }
 /*# sourceMappingURL=main.css.map */
