@@ -225,8 +225,8 @@ a {
   #nav-bar {
     background-color: purple;
   }
-  #homeimg {
-    height: 100vh;
+  #header {
+    font-size: 3rem;
   }
   .btn,
   .btn:link,
