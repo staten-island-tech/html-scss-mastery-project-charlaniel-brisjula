@@ -210,6 +210,9 @@ a {
   #header {
     font-size: 3rem;
   }
+  #blurb {
+    font-size: 1.2rem;
+  }
   #btnbox {
     margin-top: 3rem;
   }
@@ -217,6 +220,7 @@ a {
   .btn:link,
   .btn:visited {
     padding: 1.5rem 1.5rem;
+    font-size: 1.2rem;
   }
   #eventsbtn {
     margin-left: 0;
