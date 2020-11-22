@@ -186,45 +186,21 @@ a {
 }
 
 /* Large devices (laptops/desktops, up to 75rem) */
-@media only screen and (orientation: portrait) and (max-width: 75rem) {
+@media only screen and (max-width: 75rem) {
   #nav-bar {
     background-color: green;
   }
 }
 
-/* Large devices (laptops/desktops, up to 62rem) */
+/* Medium devices (laptops/desktops, up to 62rem) */
 @media only screen and (max-width: 62rem) {
   #nav-bar {
     background-color: yellow;
   }
 }
 
-/* Medium devices (landscape tablets, 48rem and up) */
+/* Extra small devices (portrait tablets and large phones, 37.5rem and up) */
 @media only screen and (max-width: 48rem) {
-  #nav-bar {
-    background-color: red;
-  }
-  #homeimg {
-    height: 100vh;
-  }
-  #header {
-    font-size: 4rem;
-  }
-  #blurb {
-    font-size: 1.3rem;
-  }
-  .btn,
-  .btn:link,
-  .btn:visited {
-    font-size: 1.3rem;
-  }
-  #eventsbtn {
-    margin-left: 18rem;
-  }
-}
-
-/* Small devices (portrait tablets and large phones, 37.5rem and up) */
-@media only screen and (max-width: 37.5rem) {
   #nav-bar {
     background-color: purple;
   }
