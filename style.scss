@@ -219,8 +219,14 @@ a {
     #header {
         font-size: 2.5rem;
     }
-    #eventsbtn {
-        margin-left: 23rem;
+    .btn,
+    .btn:link, 
+    .btn:visited {
+        padding: 1.5rem 2rem;
+    }
+    #eventsbtn:hover,
+    #eventsbtn:focus {
+        padding: 1.5rem 1.75rem;
     }
 }
 
