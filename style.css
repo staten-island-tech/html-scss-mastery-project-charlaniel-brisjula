@@ -226,31 +226,7 @@ a {
     background-color: purple;
   }
   #homeimg {
-    height: 40vh;
-  }
-  #container {
-    top: 40vh;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    left: 0;
-    width: 100vw;
-    background-color: #2372D6;
-    padding-bottom: 3.5vw;
-  }
-  .text {
-    margin-left: 3.5vw;
-    margin-right: 3.5vw;
-  }
-  .button {
-    margin-left: 3.5vw;
-    margin-right: 3.5vw;
-  }
-  #btnbox {
-    margin-top: 2rem;
-  }
-  #header {
-    font-size: 2.5rem;
+    height: 100vh;
   }
   .btn,
   .btn:link,
@@ -258,7 +234,8 @@ a {
     padding: 1.5rem 2rem;
   }
   #eventsbtn {
-    margin-left: 20rem;
+    margin-left: 0;
+    margin-top: 7rem;
   }
   #eventsbtn:hover,
   #eventsbtn:focus {
