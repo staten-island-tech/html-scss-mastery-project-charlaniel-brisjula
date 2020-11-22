@@ -146,7 +146,7 @@ a {
 } 
 
 /* Extra large devices (large laptops and desktops, 75rem and up) */
-@media only screen and (min-width: 75rem) {
+@media (min-width: 75rem) {
     #nav-bar {
         background-color: blue;
     }
@@ -154,14 +154,14 @@ a {
 
 
 /* Large devices (laptops/desktops, up to 75rem) */
-@media only screen and (max-width: 75rem) { 
+@media (max-width: 75rem) { 
     #nav-bar {
         background-color: green;
     }
 } 
 
 /* Large devices (laptops/desktops, up to 62rem) */
-@media only screen and (max-width: 62rem) { 
+@media (max-width: 62rem) { 
     #nav-bar {
         background-color: yellow;
     }
@@ -169,7 +169,7 @@ a {
 
 
 /* Medium devices (landscape tablets, 48rem and up) */
-@media only screen and (max-width: 48rem) {
+@media (max-width: 48rem) {
     #nav-bar {
         background-color: red;
     }
@@ -190,7 +190,7 @@ a {
 }
 
 /* Small devices (portrait tablets and large phones, 37.5rem and up) */
-@media only screen and (max-width: 37.5rem) {
+@media (max-width: 37.5rem) {
     #nav-bar {
         background-color: purple;
     }
