@@ -201,6 +201,9 @@ a {
 
 /* Extra small devices (portrait tablets and large phones, 37.5rem and up) */
 @media only screen and (max-width: 48rem) {
+  #homeimg {
+    height: 75vh;
+  }
   #nav-bar {
     background-color: purple;
   }
@@ -221,7 +224,7 @@ a {
   }
   #eventsbtn {
     margin-left: 0;
-    margin-top: 7rem;
+    margin-top: 6rem;
     padding: 1.25rem 0;
   }
   #eventsbtn:hover,
