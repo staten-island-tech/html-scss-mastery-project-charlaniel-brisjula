@@ -17,6 +17,7 @@ body {
     background-image: url(castle2.jpg);
     background-size: cover;
     background-position: top;
+    position: relative;
 }
 .body {
     display:flex;
@@ -72,10 +73,11 @@ body {
     border-bottom: color(bluee) inset .25rem;
 }
 #container {
+    position: absolute;
     width: 50vw;
     height: 50vh;
-    padding-left: 3.5vw;
-    padding-top: 9vw;
+    left: 3.5vw;
+    top: 9vw;
    
 }
 #header {
@@ -183,7 +185,7 @@ a {
         font-size: 1.3rem;
     } 
     #eventsbtn {
-        margin-left: 20rem;
+        margin-left: 18rem;
     }
 }
 
@@ -192,12 +194,32 @@ a {
     #nav-bar {
         background-color: purple;
     }
+    #homeimg {
+        height: 40vh;
+    }
     #container {
-        width: 60vw;
+        top: 40vh;
+        height: 36vh;
+        left: 0;
+        width: 100VW;
+        background-color: color(bluee);
+    }
+    .text {
+        margin-left: 3.5vw;
+        margin-right: 3.5vw;
+    }
+    .button {
+        margin-left: 3.5vw;
+        margin-right: 3.5vw;
+    }
+    #btnbox {
+        margin-top: 2rem;
+    }
+    #header {
+        font-size: 3rem;
     }
     #eventsbtn {
-        margin-left: 0;
-        margin-top: 7rem;
+        margin-left: 23rem;
     }
 }
 
