@@ -171,6 +171,9 @@ a {
 
 /* Extra small devices (portrait tablets and large phones, 37.5rem and up) */
 @media only screen and (max-width: 48rem) {
+    #homeimg {
+        height: 100vh;
+    }
     #nav-bar {
         background-color: purple;
     }
