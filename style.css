@@ -230,10 +230,13 @@ a {
   }
   #container {
     top: 40vh;
-    height: 36vh;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     left: 0;
-    width: 100VW;
+    width: 100vw;
     background-color: #2372D6;
+    padding-bottom: 3.5vw;
   }
   .text {
     margin-left: 3.5vw;
@@ -247,7 +250,7 @@ a {
     margin-top: 2rem;
   }
   #header {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   #eventsbtn {
     margin-left: 23rem;
