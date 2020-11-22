@@ -226,20 +226,24 @@ a {
     background-color: purple;
   }
   #header {
-    font-size: 3rem;
+    font-size: 2rem;
+  }
+  #btnbox {
+    margin-top: 3rem;
   }
   .btn,
   .btn:link,
   .btn:visited {
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 1.5rem;
   }
   #eventsbtn {
     margin-left: 0;
     margin-top: 7rem;
+    padding: 1.25rem 0;
   }
   #eventsbtn:hover,
   #eventsbtn:focus {
-    padding: 1.5rem 1.75rem;
+    padding: 1.25rem 1.25rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
