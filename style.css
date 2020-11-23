@@ -22,7 +22,7 @@ body {
 
 #homeimg {
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   background-image: url(castle2.jpg);
   background-size: cover;
   background-position: top;
@@ -120,12 +120,12 @@ body {
   font-family: "Underdog", cursive;
   font-size: 1.5rem;
   line-height: 2.5rem;
-  margin-bottom: 5rem;
 }
 
 #btnbox {
   position: relative;
   height: 5rem;
+  margin-top: 5rem;
 }
 
 .btn,
@@ -216,7 +216,6 @@ label #sign-two {
   #blurb {
     font-size: 1.3rem;
     line-height: 2rem;
-    margin-bottom: 2rem;
   }
   .btn,
   .btn:link,
