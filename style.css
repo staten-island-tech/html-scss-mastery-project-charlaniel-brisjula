@@ -246,7 +246,7 @@ Medium devices (laptops/desktops, up to 62rem)
     padding: 1.25rem .75rem;
   }
   #container {
-    width: 65vw;
+    width: 50vw;
   }
   label #sign-one {
     display: block;
@@ -284,6 +284,13 @@ Medium devices (laptops/desktops, up to 62rem)
   }
   #res-menu:checked ~ label #sign-two {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 37.5rem) {
+  #eventsbtn {
+    margin-left: 0;
+    margin-top: 6rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
