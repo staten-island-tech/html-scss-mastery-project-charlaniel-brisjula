@@ -259,16 +259,30 @@ label #sign-two {
 //this is charley's
 
 #imagebox {
+  width: 100vw;
+  height: 80vh;
+  background-color: color(bluee);
+  padding-top: 3.5vw;
+  position: relative;
+}
+.header-history {
+  font-size: 5rem;
+  color: color(yelloww);
+  font-family: $mainfont;
+  margin: 0;
+  text-align: center;
+}
+.imgs {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: space-between;
-  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  margin-top: 30vw;
 }
 .image-whole {
   position: relative;
   bottom: 8rem;
-  display: block;
 }
 .img-img {
   width: 93vw;
@@ -280,8 +294,37 @@ label #sign-two {
   position: relative;
   width: 93vw;
   height: 20vh;
-  padding: 5rem;
+  top: 0;
+  padding: 3.5vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
   border-radius: 2rem;
+}
+.img-title {
+  font-size: 4rem;
+  font-family: $subfont;
+  color: color(yelloww);
+  padding: 0.6vw;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-title-1,
+.img-title-2,
+.img-title-3 {
+  // opacity: 75%;
+  position: absolute;
+  border-radius: 1rem;
+}
+.img-title-1 {
+  background-color: rgba(110, 105, 4, 0.75);
+}
+.img-title-2 {
+  background-color: rgba(178, 54, 23, 0.75);
+}
+.img-title-3 {
+  background-color: rgba(8, 24, 97, 0.75);
 }
 .img-info {
   position: absolute;
@@ -293,8 +336,8 @@ label #sign-two {
   visibility: hidden;
   opacity: 0;
   transition: all 0.3s;
-  width: 93vw;
-  height: 20vh;
+  // width: 92vw;
+  height: 14.5vh;
   background-color: #13212b;
   padding: 2rem;
   margin: 5rem;
@@ -303,7 +346,7 @@ label #sign-two {
 }
 .img-wrap:hover .img-info {
   visibility: visible;
-  opacity: 1;
+  opacity: 0.5;
 }
 .img-wrap:hover .img-img {
   filter: grayscale(100%);

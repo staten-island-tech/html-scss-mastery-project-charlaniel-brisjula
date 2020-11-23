@@ -298,6 +298,22 @@ label #sign-two {
 }
 
 #imagebox {
+  width: 100vw;
+  height: 80vh;
+  background-color: #2372D6;
+  padding-top: 3.5vw;
+  position: relative;
+}
+
+.header-history {
+  font-size: 5rem;
+  color: #F6F285;
+  font-family: "Henny Penny", cursive;
+  margin: 0;
+  text-align: center;
+}
+
+.imgs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -308,16 +324,14 @@ label #sign-two {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: space-between;
-      -ms-flex-align: space-between;
-          align-items: space-between;
-  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  margin-top: 30vw;
 }
 
 .image-whole {
   position: relative;
   bottom: 8rem;
-  display: block;
 }
 
 .img-img {
@@ -332,8 +346,47 @@ label #sign-two {
   position: relative;
   width: 93vw;
   height: 20vh;
-  padding: 5rem;
+  top: 0;
+  padding: 3.5vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
   border-radius: 2rem;
+}
+
+.img-title {
+  font-size: 4rem;
+  font-family: "Underdog", cursive;
+  color: #F6F285;
+  padding: 0.6vw;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.img-title-1,
+.img-title-2,
+.img-title-3 {
+  position: absolute;
+  border-radius: 1rem;
+}
+
+.img-title-1 {
+  background-color: rgba(110, 105, 4, 0.75);
+}
+
+.img-title-2 {
+  background-color: rgba(178, 54, 23, 0.75);
+}
+
+.img-title-3 {
+  background-color: rgba(8, 24, 97, 0.75);
 }
 
 .img-info {
@@ -347,8 +400,7 @@ label #sign-two {
   opacity: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  width: 93vw;
-  height: 20vh;
+  height: 14.5vh;
   background-color: #13212b;
   padding: 2rem;
   margin: 5rem;
@@ -358,7 +410,7 @@ label #sign-two {
 
 .img-wrap:hover .img-info {
   visibility: visible;
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .img-wrap:hover .img-img {
