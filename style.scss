@@ -193,7 +193,7 @@ label #sign-two {
         font-size: 2.5rem;
     }
     #blurb {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     #btnbox {
         margin-top: 3rem;
@@ -202,7 +202,7 @@ label #sign-two {
     .btn:link, 
     .btn:visited {
         padding: 1.5rem 1rem;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     #eventsbtn {
         margin-left: 0;
@@ -235,12 +235,11 @@ label #sign-two {
     nav ul li {
         display: block;
         line-height: 2.5rem;
-        padding: 2rem;
-        padding-top: 1rem;
+        padding: 1rem;
         padding-right: 50rem;
     }
-    nav ul li a {
-        font-size: 1rem;
+    #nav-bar a {
+        font-size: 1.2rem;
     }
     #res-menu:checked ~ ul {
         left: 0;
