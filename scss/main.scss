@@ -13,8 +13,22 @@ body {
   justify-content: center;
   align-items: center;
   height: 85vh;
+  width: 100vw;
   background-color: #2372d6;
+  // position: relative;
+  height: 85vh;
+  width: 100vw;
+  // left: 0;
+  // right: 0;
+  // bottom: 0;
 }
+// .img-wrap {
+//   position: relative;
+//   height: 85vh;
+//   width: 100vw;
+//   top: 0;
+//   left: 0;
+// }
 .header-history {
   font-size: 7rem;
   font-family: $title-font;
@@ -27,6 +41,7 @@ body {
   height: 16rem;
   border-radius: 2rem;
   margin-bottom: 1rem;
+  position: relative;
 }
 .title-text {
   font-size: 4rem;
@@ -58,26 +73,33 @@ body {
 .history-paragraph {
   font-size: 2rem;
   font-family: $content-font;
-  max-width: 120rem;
+  max-width: 140rem;
   // opacity: 0;
   transition: all 0.8s;
   position: absolute;
+  //   padding: 2rem;
+  // left: 0;
+  // right: 0;
+  bottom: 0;
 }
 // //hoversssssss
-.kingsword:hover {
-  top: 6rem;
-  transition: top all 0.3s;
-  transform: scale(0.6);
-}
-.warred:hover {
-  top: 24rem;
-  transition: top all 0.3s;
-  transform: scale(0.6);
-}
-.flowerblue:hover {
-  top: 41rem;
-  transition: top all 0.3s;
-  transform: scale(0.6);
+// .kingsword:hover {
+//   top: 6rem;
+//   transition: top all 0.3s;
+//   transform: scale(0.6);
+// }
+// .warred:hover {
+//   top: 24rem;
+//   transition: top all 0.3s;
+//   transform: scale(0.6);
+// }
+// .flowerblue:hover {
+//   top: 41rem;
+//   transition: top all 0.3s;
+//   transform: scale(0.6);
+// }
+.imgs:hover {
+  background-color: lightblue;
 }
 .history-paragraph:hover p {
   opacity: 1;

@@ -23,7 +23,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 85vh;
+  width: 100vw;
   background-color: #2372d6;
+  height: 85vh;
+  width: 100vw;
 }
 
 .header-history {
@@ -39,6 +42,7 @@ body {
   height: 16rem;
   border-radius: 2rem;
   margin-bottom: 1rem;
+  position: relative;
 }
 
 .title-text {
@@ -76,34 +80,15 @@ body {
 .history-paragraph {
   font-size: 2rem;
   font-family: "Underdog", cursive;
-  max-width: 120rem;
+  max-width: 140rem;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
   position: absolute;
+  bottom: 0;
 }
 
-.kingsword:hover {
-  top: 6rem;
-  -webkit-transition: top all 0.3s;
-  transition: top all 0.3s;
-  -webkit-transform: scale(0.6);
-          transform: scale(0.6);
-}
-
-.warred:hover {
-  top: 24rem;
-  -webkit-transition: top all 0.3s;
-  transition: top all 0.3s;
-  -webkit-transform: scale(0.6);
-          transform: scale(0.6);
-}
-
-.flowerblue:hover {
-  top: 41rem;
-  -webkit-transition: top all 0.3s;
-  transition: top all 0.3s;
-  -webkit-transform: scale(0.6);
-          transform: scale(0.6);
+.imgs:hover {
+  background-color: lightblue;
 }
 
 .history-paragraph:hover p {
