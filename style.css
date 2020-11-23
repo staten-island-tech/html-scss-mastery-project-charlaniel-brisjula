@@ -208,18 +208,23 @@ label #sign-two {
   .logo {
     font-size: 2rem;
   }
+  #nav-bar a {
+    font-size: 1.3rem;
+  }
   #header {
     font-size: 3rem;
   }
   #blurb {
+    font-size: 1.3rem;
     line-height: 2rem;
   }
   #btnbox {
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
   .btn,
   .btn:link,
   .btn:visited {
+    font-size: 1.3rem;
     padding: 1.25rem 1.5rem;
   }
   #eventsbtn {
