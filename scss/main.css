@@ -26,20 +26,8 @@ body {
   color: #f6f285;
 }
 
-.img1 {
-  width: 140rem;
-  height: 16rem;
-  border-radius: 2rem;
-  margin-bottom: 1rem;
-}
-
-.img2 {
-  width: 140rem;
-  height: 16rem;
-  border-radius: 2rem;
-  margin-bottom: 1rem;
-}
-
+.img1,
+.img2,
 .img3 {
   width: 140rem;
   height: 16rem;
@@ -57,28 +45,27 @@ body {
   opacity: 1;
 }
 
+.kingsword,
+.warred,
+.flowerblue {
+  opacity: 75%;
+  position: absolute;
+  border-radius: 1rem;
+}
+
 .kingsword {
   background-color: #6e6904;
-  opacity: 75%;
-  border-radius: 1rem;
   top: 12rem;
-  position: absolute;
 }
 
 .warred {
   background-color: #b23617;
-  opacity: 75%;
-  border-radius: 1rem;
   top: 29rem;
-  position: absolute;
 }
 
 .flowerblue {
   background-color: #081861;
-  opacity: 75%;
-  border-radius: 1rem;
   top: 46rem;
-  position: absolute;
 }
 
 .history-paragraph {
