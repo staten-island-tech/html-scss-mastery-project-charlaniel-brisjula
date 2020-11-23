@@ -26,7 +26,7 @@ body {
 .navwhole {
     width: 100vw;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
 }
 .logobox {
     background-color: color(whitee);
@@ -161,31 +161,31 @@ label #sign-two {
 
 /* Extra large devices (large laptops and desktops, 75rem and up) */
 @media only screen and (min-width: 75rem) {
-    #nav-bar {
+    /*#nav-bar {
         background-color: blue;
-    }
+    }*/
 }
 
 
 /* Large devices (laptops/desktops, up to 75rem) */
 @media only screen and (max-width: 75rem) { 
-    #nav-bar {
+    /*#nav-bar {
         background-color: green;
-    }
+    }*/
 } 
 
 /* Medium devices (laptops/desktops, up to 62rem) */
 @media only screen and (max-width: 62rem) { 
-    #nav-bar {
+    /*#nav-bar {
         background-color: yellow;
-    }
+    }*/
 } 
 
 /* Extra small devices (portrait tablets and large phones, 37.5rem and up) */
 @media only screen and (max-width: 48rem) {
-    #nav-bar {
+    /*#nav-bar {
         background-color: purple;
-    }
+    }*/
     #header {
         font-size: 3rem;
     }
@@ -221,12 +221,13 @@ label #sign-two {
         width: 50vw;
         height: fit-content;
         background: #C2E2FF;
-        top: 3.4rem;
+        top: 0;
         left: -100%;
         text-align: left;
-        transition: .3s;
-        z-index: 10;
+        transition: .5s;
+        z-index: -1;
         padding-left: 0;
+        padding-top: 3.5rem;
     }
     nav ul li {
         display: block;
@@ -237,6 +238,12 @@ label #sign-two {
     }
     #res-menu:checked ~ ul {
         left: 0;
+    }
+    #res-menu:checked ~ label #sign-one {
+        display: none;
+    }
+    #res-menu:checked ~ label #sign-two {
+        display: block;
     }
 }
 
