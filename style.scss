@@ -88,19 +88,17 @@ body {
     text-transform: uppercase;
     letter-spacing: .2rem;
     text-shadow: 0 .5rem .5rem rgba(color(yelloww), 0.4);
-  
-    margin-bottom: 0;
+    margin-bottom: -1rem;
 }
 #blurb {
     color: #fff;
     font-family: $subfont;
     font-size: 1.5rem;
     line-height: 2.5rem;
-
 }
 #btnbox {
     position: relative;
-    margin-top: 3rem;
+    margin-top: 5rem;
     height: 5rem;
 }
 .btn,
@@ -173,24 +171,11 @@ label #sign-two {
         background-color: green;
     }*/
     #header {
-        font-size: 2rem;
+        font-size: 4rem;
     }
     #blurb {
         font-size: 1.2rem;
         line-height: 2rem;
-    }
-    .btn,
-    .btn:link, 
-    .btn:visited {
-        font-size: 1.2rem;
-        padding: 1.5rem 1rem;
-    }
-    #eventsbtn {
-        padding: 1.25rem 0;
-    }
-    #eventsbtn:hover,
-    #eventsbtn:focus {
-        padding: 1.25rem .75rem;
     }
 } 
 
