@@ -86,7 +86,7 @@ body {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   line-height: 3rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   font-weight: 600;
 }
 
@@ -110,7 +110,7 @@ body {
   font-size: 5rem;
   top: 0;
   text-transform: uppercase;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   text-shadow: 0 0.5rem 0.5rem rgba(246, 242, 133, 0.4);
   margin-bottom: -1rem;
 }
@@ -271,11 +271,11 @@ label #sign-two {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    background: #C2E2FF;
+    background: #c2e2ff;
     top: 0;
     left: -100%;
-    -webkit-transition: .4s;
-    transition: .4s;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
     z-index: -1;
     padding-left: 0;
     padding-top: 3.5rem;
@@ -295,5 +295,74 @@ label #sign-two {
   #res-menu:checked ~ label #sign-two {
     display: block;
   }
+}
+
+#imagebox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  width: 100vw;
+}
+
+.image-whole {
+  position: relative;
+  bottom: 8rem;
+  display: block;
+}
+
+.img-img {
+  width: 93vw;
+  height: 20vh;
+  border-radius: 2rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.img-wrap {
+  position: relative;
+  width: 93vw;
+  height: 20vh;
+  padding: 5rem;
+  border-radius: 2rem;
+}
+
+.img-info {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #F6F285;
+  font-size: 1.5rem;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 93vw;
+  height: 20vh;
+  background-color: #13212b;
+  padding: 2rem;
+  margin: 5rem;
+  border-radius: 2rem;
+  line-height: 130%;
+}
+
+.img-wrap:hover .img-info {
+  visibility: visible;
+  opacity: 1;
+}
+
+.img-wrap:hover .img-img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 /*# sourceMappingURL=style.css.map */
