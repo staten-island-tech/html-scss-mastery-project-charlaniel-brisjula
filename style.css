@@ -153,6 +153,8 @@ body {
 #attractionsbtn:focus {
   -webkit-box-shadow: 0 1.5rem 3rem rgba(246, 242, 133, 0.4);
           box-shadow: 0 1.5rem 3rem rgba(246, 242, 133, 0.4);
+  -webkit-transform: translateY(-0.25rem);
+          transform: translateY(-0.25rem);
 }
 
 #eventsbtn {
@@ -231,6 +233,9 @@ label #sign-two {
   #eventsbtn:focus {
     padding: 1rem 1.25rem;
   }
+  #btnbox {
+    margin-top: 2rem;
+  }
 }
 
 /* Medium devices (laptops/desktops, up to 62rem) */
@@ -245,6 +250,9 @@ label #sign-two {
   /*#nav-bar {
         background-color: purple;
     }*/
+  #btnbox {
+    margin-top: 5rem;
+  }
   #eventsbtn {
     margin-left: 0;
     margin-top: 6rem;
