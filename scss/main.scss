@@ -11,18 +11,18 @@ body {
   text-align: center;
   height: 85vh;
   background-color: #2372d6;
-  position: relative;
+  // position: relative;
 }
 .header-history {
   font-size: 7rem;
   font-family: "Henny Penny", cursive;
   color: #f6f285;
 }
-.img-wrap .imgs {
-  position: relative;
-  text-align: center;
-  transition: all 0.8s;
-}
+// .img-wrap .imgs {
+//   position: relative;
+//   text-align: center;
+//   transition: all 0.8s;
+// }
 .img1 {
   width: 140rem;
   height: 16rem;
@@ -74,12 +74,23 @@ body {
 .history-paragraph {
   font-size: 2rem;
   font-family: "Underdog", cursive;
-  opacity: 0;
+  text-align: center;
+  width: 120rem;
+  // opacity: 0;
   transition: all 0.8s;
   position: absolute;
+
+  // margin: -25px 0 0 -25px;
+  // top: 0;
+  // left: 0;
+
+  // width: 100%;
+  // height: 100%;
 }
-.para1 {
-  top: 13rem;
+.para1,
+.para2,
+.para3 {
+  text-align: center;
 }
 // //hoversssssss
 .kingsword:hover {
@@ -102,4 +113,5 @@ body {
 }
 .history-paragraph:hover {
   background: lightblue;
+  transform: translateY(-5rem);
 }

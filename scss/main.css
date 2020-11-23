@@ -18,20 +18,12 @@ body {
   text-align: center;
   height: 85vh;
   background-color: #2372d6;
-  position: relative;
 }
 
 .header-history {
   font-size: 7rem;
   font-family: "Henny Penny", cursive;
   color: #f6f285;
-}
-
-.img-wrap .imgs {
-  position: relative;
-  text-align: center;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
 }
 
 .img1 {
@@ -92,14 +84,17 @@ body {
 .history-paragraph {
   font-size: 2rem;
   font-family: "Underdog", cursive;
-  opacity: 0;
+  text-align: center;
+  width: 120rem;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
   position: absolute;
 }
 
-.para1 {
-  top: 13rem;
+.para1,
+.para2,
+.para3 {
+  text-align: center;
 }
 
 .kingsword:hover {
@@ -132,5 +127,7 @@ body {
 
 .history-paragraph:hover {
   background: lightblue;
+  -webkit-transform: translateY(-5rem);
+          transform: translateY(-5rem);
 }
 /*# sourceMappingURL=main.css.map */
