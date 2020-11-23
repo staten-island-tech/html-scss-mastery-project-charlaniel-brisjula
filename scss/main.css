@@ -16,6 +16,12 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 85vh;
   background-color: #2372d6;
 }
@@ -70,15 +76,10 @@ body {
 .history-paragraph {
   font-size: 2rem;
   font-family: "Underdog", cursive;
+  max-width: 120rem;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
   position: absolute;
-}
-
-.para1,
-.para2,
-.para3 {
-  text-align: center;
 }
 
 .kingsword:hover {
