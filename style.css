@@ -246,7 +246,7 @@ label #sign-two {
 }
 
 /* Small devices (tablets/phones, up to 48rem) */
-@media only screen and (max-width: 48rem) {
+@media only screen and (max-width: 40rem) {
   /*#nav-bar {
         background-color: purple;
     }*/
@@ -260,6 +260,7 @@ label #sign-two {
   #container {
     width: 65vw;
   }
+  /* the following code is for the responsive nav bar */
   label #sign-one {
     display: block;
   }
