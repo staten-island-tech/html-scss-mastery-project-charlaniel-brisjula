@@ -153,8 +153,6 @@ body {
 #attractionsbtn:focus {
   -webkit-box-shadow: 0 1.5rem 3rem rgba(246, 242, 133, 0.4);
           box-shadow: 0 1.5rem 3rem rgba(246, 242, 133, 0.4);
-  -webkit-transform: translateY(-0.25rem);
-          transform: translateY(-0.25rem);
 }
 
 #eventsbtn {
