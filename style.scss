@@ -221,12 +221,11 @@ label #sign-two {
     }
     nav ul {
         position: fixed;
-        width: 50vw;
+        width: 100vw;
         height: fit-content;
         background: #C2E2FF;
         top: 0;
         left: -100%;
-        text-align: left;
         transition: .5s;
         z-index: -1;
         padding-left: 0;
@@ -237,7 +236,7 @@ label #sign-two {
         line-height: 2.5rem;
         padding: 2rem;
         padding-top: 1rem;
-        padding-right: 20rem;
+        padding-right: 50rem;
     }
     #res-menu:checked ~ ul {
         left: 0;
