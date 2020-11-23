@@ -39,7 +39,6 @@ body {
   width: 45rem;
   margin-left: auto;
   margin-right: auto;
-  opacity: 1;
 }
 .kingsword,
 .warred,
@@ -63,8 +62,7 @@ body {
 .history-paragraph {
   font-size: 2rem;
   font-family: $content-font;
-  text-align: center;
-  width: 120rem;
+  // width: 120rem;
   // opacity: 0;
   transition: all 0.8s;
   position: absolute;

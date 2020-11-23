@@ -42,7 +42,6 @@ body {
   width: 45rem;
   margin-left: auto;
   margin-right: auto;
-  opacity: 1;
 }
 
 .kingsword,
@@ -71,8 +70,6 @@ body {
 .history-paragraph {
   font-size: 2rem;
   font-family: "Underdog", cursive;
-  text-align: center;
-  width: 120rem;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
   position: absolute;
