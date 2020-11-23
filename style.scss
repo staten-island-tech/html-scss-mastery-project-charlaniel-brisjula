@@ -167,22 +167,22 @@ label #sign-two {
 }
 
 
-/* Large devices (laptops/desktops, up to 75rem) */
+/* Large devices (laptops/desktops, up to 75rem) 
 @media only screen and (max-width: 75rem) { 
-    /*#nav-bar {
+    #nav-bar {
         background-color: green;
-    }*/
+    }
 } 
 
-/* Medium devices (laptops/desktops, up to 62rem) */
+Medium devices (laptops/desktops, up to 62rem) 
 @media only screen and (max-width: 62rem) { 
-    /*#nav-bar {
+    #nav-bar {
         background-color: yellow;
-    }*/
-} 
+    }
+}*/
 
 /* Extra small devices (portrait tablets and large phones, 37.5rem and up) */
-@media only screen and (max-width: 48rem) {
+@media only screen and (max-width: 62rem) {
     /*#nav-bar {
         background-color: purple;
     }*/
