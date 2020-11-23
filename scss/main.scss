@@ -11,11 +11,17 @@ body {
   text-align: center;
   height: 85vh;
   background-color: #2372d6;
+  position: relative;
 }
 .header-history {
   font-size: 7rem;
   font-family: "Henny Penny", cursive;
   color: #f6f285;
+}
+.img-wrap .imgs {
+  position: relative;
+  text-align: center;
+  transition: all 0.8s;
 }
 .img1 {
   width: 140rem;
@@ -35,26 +41,14 @@ body {
   border-radius: 2rem;
   margin-bottom: 1rem;
 }
-.history-title-text {
+.title-text {
   font-size: 4rem;
   font-family: "Underdog", cursive;
   color: #f6f285;
   width: 45rem;
-}
-.kingsword:hover {
-  top: 6rem;
-  transition: top all 0.3s;
-  transform: scale(0.6);
-}
-.warred:hover {
-  top: 24rem;
-  transition: top all 0.3s;
-  transform: scale(0.6);
-}
-.flowerblue:hover {
-  top: 41rem;
-  transition: top all 0.3s;
-  transform: scale(0.6);
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 1;
 }
 .kingsword {
   background-color: #6e6904;
@@ -79,7 +73,33 @@ body {
 }
 .history-paragraph {
   font-size: 2rem;
-  width: 100rem;
-  margin-left: auto;
-  margin-right: auto;
+  font-family: "Underdog", cursive;
+  opacity: 0;
+  transition: all 0.8s;
+  position: absolute;
+}
+.para1 {
+  top: 13rem;
+}
+// //hoversssssss
+.kingsword:hover {
+  top: 6rem;
+  transition: top all 0.3s;
+  transform: scale(0.6);
+}
+.warred:hover {
+  top: 24rem;
+  transition: top all 0.3s;
+  transform: scale(0.6);
+}
+.flowerblue:hover {
+  top: 41rem;
+  transition: top all 0.3s;
+  transform: scale(0.6);
+}
+.history-paragraph:hover p {
+  opacity: 1;
+}
+.history-paragraph:hover {
+  background: lightblue;
 }
