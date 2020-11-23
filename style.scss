@@ -167,54 +167,53 @@ label #sign-two {
 }
 
 
-/* Large devices (laptops/desktops, up to 75rem) 
+/* Large devices (laptops/desktops, up to 75rem) */
 @media only screen and (max-width: 75rem) { 
-    #nav-bar {
-        background-color: green;
-    }
-} 
-
-Medium devices (laptops/desktops, up to 62rem) 
-@media only screen and (max-width: 62rem) { 
-    #nav-bar {
-        background-color: yellow;
-    }
-}*/
-
-/* Extra small devices (portrait tablets and large phones, 37.5rem and up) */
-@media only screen and (max-width: 75rem) {
     /*#nav-bar {
-        background-color: purple;
+        background-color: green;
     }*/
-    .logo {
-        font-size: 2rem;
-    }
     #header {
         font-size: 2.5rem;
     }
     #blurb {
         font-size: 1.2rem;
     }
-    #btnbox {
-        margin-top: 3rem;
-    }
     .btn,
     .btn:link, 
     .btn:visited {
-        padding: 1.5rem 1rem;
         font-size: 1.2rem;
+        padding: 1.5rem 1rem;
     }
     #eventsbtn {
-        margin-left: 0;
-        margin-top: 6rem;
         padding: 1.25rem 0;
     }
     #eventsbtn:hover,
     #eventsbtn:focus {
         padding: 1.25rem .75rem;
     }
+} 
+
+/* Medium devices (laptops/desktops, up to 62rem) */
+@media only screen and (max-width: 62rem) { 
+    /*#nav-bar {
+        background-color: yellow;
+    }*/
+} 
+
+/* Small devices (tablets/phones, up to 48rem) */
+@media only screen and (max-width: 48rem) {
+    /*#nav-bar {
+        background-color: purple;
+    }*/
+    #eventsbtn {
+        margin-left: 0;
+        margin-top: 6rem;
+    }
+    .logo {
+        font-size: 2rem;
+    }
     #container {
-        width: 50vw;
+        width: 65vw;
     }
     label #sign-one {
         display: block;
@@ -251,12 +250,7 @@ Medium devices (laptops/desktops, up to 62rem)
         display: block;
     }
 }
-@media only screen and (max-width: 37.5rem) {
-    #eventsbtn {
-        margin-left: 0;
-        margin-top: 6rem;
-    }
-}
+
 
 
 
