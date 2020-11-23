@@ -170,6 +170,9 @@ label #sign-two {
     /*#nav-bar {
         background-color: green;
     }*/
+    .logo {
+        font-size: 2rem;
+    }
     #nav-bar a {
         font-size: 1.2rem;
     }
@@ -187,7 +190,7 @@ label #sign-two {
     .btn:link, 
     .btn:visited {
         font-size: 1.2rem;
-        padding: 1.5rem 1.5rem;
+        padding: 1.25rem 1.5rem;
     }
     #eventsbtn {
         padding: 1.25rem 0;
@@ -195,7 +198,7 @@ label #sign-two {
     }
     #eventsbtn:hover,
     #eventsbtn:focus {
-        padding: 1.25rem 1.25rem;
+        padding: 1rem 1.25rem;
     }
 } 
 
@@ -204,9 +207,6 @@ label #sign-two {
     /*#nav-bar {
         background-color: yellow;
     }*/
-    #homeimg {
-        height: 100vh;
-    }
 } 
 
 /* Small devices (tablets/phones, up to 48rem) */
@@ -217,9 +217,6 @@ label #sign-two {
     #eventsbtn {
         margin-left: 0;
         margin-top: 6rem;
-    }
-    .logo {
-        font-size: 2rem;
     }
     #container {
         width: 65vw;
