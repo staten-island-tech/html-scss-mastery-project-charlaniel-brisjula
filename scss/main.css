@@ -8,7 +8,6 @@ body {
 }
 
 .history {
-  background-color: #2372d6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,12 +15,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 85vh;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
+  height: 85vh;
+  background-color: #2372d6;
 }
 
 .header-history {
@@ -30,46 +26,56 @@ body {
   color: #f6f285;
 }
 
-.imgs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 1rem;
-}
-
 .img1 {
   width: 140rem;
   height: 16rem;
   border-radius: 2rem;
+  margin-bottom: 1rem;
 }
 
 .img2 {
   width: 140rem;
   height: 16rem;
   border-radius: 2rem;
+  margin-bottom: 1rem;
 }
 
 .img3 {
   width: 140rem;
   height: 16rem;
   border-radius: 2rem;
+  margin-bottom: 1rem;
 }
 
-.title-text {
+.history-title-text {
   font-size: 4rem;
   font-family: "Underdog", cursive;
   color: #f6f285;
   width: 45rem;
-  margin: auto;
+}
+
+.kingsword:hover {
+  top: 6rem;
+  -webkit-transition: top all 0.3s;
+  transition: top all 0.3s;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+}
+
+.warred:hover {
+  top: 24rem;
+  -webkit-transition: top all 0.3s;
+  transition: top all 0.3s;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+}
+
+.flowerblue:hover {
+  top: 41rem;
+  -webkit-transition: top all 0.3s;
+  transition: top all 0.3s;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
 }
 
 .kingsword {
@@ -94,5 +100,12 @@ body {
   border-radius: 1rem;
   top: 46rem;
   position: absolute;
+}
+
+.history-paragraph {
+  font-size: 2rem;
+  width: 100rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*# sourceMappingURL=main.css.map */
