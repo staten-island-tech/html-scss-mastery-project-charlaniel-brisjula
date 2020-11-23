@@ -144,6 +144,20 @@ body {
 a {
     text-decoration: none;
 } 
+label #sign-one,
+label #sign-two {
+    font-size: 2.5rem;
+    color: color(bluee);
+    float: right;
+    line-height: 3.5rem;
+    margin-right: 3.5vw;
+    cursor: pointer;
+    display: none;
+}
+
+#res-menu {
+    display: none;
+}
 
 /* Extra large devices (large laptops and desktops, 75rem and up) */
 @media only screen and (min-width: 75rem) {
@@ -166,8 +180,6 @@ a {
         background-color: yellow;
     }
 } 
-
-
 
 /* Extra small devices (portrait tablets and large phones, 37.5rem and up) */
 @media only screen and (max-width: 48rem) {
@@ -201,7 +213,30 @@ a {
     #container {
         width: 65vw;
     }
-
+    label #sign-one {
+        display: block;
+    }
+    nav ul {
+        position: fixed;
+        width: 30vw;
+        height: fit-content;
+        background: #C2E2FF;
+        top: 3.5rem;
+        left: -100%;
+        text-align: left;
+        transition: .3s;
+        z-index: 10;
+        padding-left: 0;
+    }
+    nav ul li {
+        display: block;
+        line-height: 2.5rem;
+        padding: 2rem;
+        padding: 2rem;
+    }
+    #res-menu:checked ~ ul {
+        left: 0;
+    }
 }
 
 
