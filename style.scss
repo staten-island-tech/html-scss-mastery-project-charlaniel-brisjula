@@ -183,8 +183,19 @@ label #sign-two {
         font-size: 1.3rem;
         line-height: 2rem;
     }
-    #btnbox {
-        margin-top: 2rem;
+    .btn,
+    .btn:link, 
+    .btn:visited {
+        font-size: 1.3rem;
+        padding: 1.25rem 1.5rem;
+    }
+    #eventsbtn {
+        padding: 1rem 0;
+        margin-left: 17rem;
+    }
+    #eventsbtn:hover,
+    #eventsbtn:focus {
+        padding: 1rem 1.25rem;
     }
 } 
 
