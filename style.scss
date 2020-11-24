@@ -205,7 +205,7 @@ label #sign-two {
   height: 15vh;
 }
 .img-title {
-  font-size: 2vw;
+  font-size: 3rem;
   width: fit-content;
   font-family: $subfont;
   color: color(yelloww);
@@ -367,13 +367,6 @@ label #sign-two {
   /* navbar code end */
 
   #historybox {
-    height: 95vh;
-  }
-  .img-whole {
-    width: 93vw;
-  }
-  .img-info {
-    width: 93vw;
-    height: 40vh;
+    height: 60vh;
   }
 }

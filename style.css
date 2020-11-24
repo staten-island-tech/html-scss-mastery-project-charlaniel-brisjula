@@ -246,7 +246,7 @@ label #sign-two {
 }
 
 .img-title {
-  font-size: 2vw;
+  font-size: 3rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -431,14 +431,7 @@ label #sign-two {
   }
   /* navbar code end */
   #historybox {
-    height: 95vh;
-  }
-  .img-whole {
-    width: 93vw;
-  }
-  .img-info {
-    width: 93vw;
-    height: 40vh;
+    height: 60vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
