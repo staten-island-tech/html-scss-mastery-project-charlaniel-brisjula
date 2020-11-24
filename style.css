@@ -75,8 +75,6 @@ body {
 #nav-bar li {
   display: inline-block;
   font-family: "Underdog", cursive;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
 }
 
 #nav-bar a {
@@ -88,12 +86,14 @@ body {
   line-height: 3rem;
   letter-spacing: 0.1rem;
   font-weight: 600;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 #nav-bar a:hover,
 #nav-bar a:focus {
   color: #2372D6;
-  border-bottom: #2372D6 inset 0.25rem;
+  border-bottom: #F6F285 inset 0.25rem;
 }
 
 #container {

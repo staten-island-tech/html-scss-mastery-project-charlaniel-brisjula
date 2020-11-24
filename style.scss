@@ -56,7 +56,6 @@ body {
 #nav-bar li {
   display: inline-block;
   font-family: $subfont;
-  transition: all 0.2s;
 }
 #nav-bar a {
   color: #333;
@@ -67,11 +66,12 @@ body {
   line-height: 3rem;
   letter-spacing: 0.1rem;
   font-weight: 600;
+  transition: all 0.1s;
 }
 #nav-bar a:hover,
 #nav-bar a:focus {
   color: color(bluee);
-  border-bottom: color(bluee) inset 0.25rem;
+  border-bottom: color(yelloww) inset 0.25rem;
 }
 #container {
   position: absolute;
