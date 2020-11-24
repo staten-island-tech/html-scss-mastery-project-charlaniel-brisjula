@@ -219,7 +219,7 @@ label #sign-two {
 }
 
 .img-img {
-  border-radius: 2rem;
+  border-radius: 1vw;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   width: 100%;
@@ -246,14 +246,14 @@ label #sign-two {
 }
 
 .img-title {
-  font-size: 3vw;
+  font-size: 2vw;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-family: "Underdog", cursive;
   color: #F6F285;
   padding: 0 1vw;
-  border-radius: 2rem;
+  border-radius: 1vw;
   position: absolute;
   line-height: 5vw;
   text-transform: uppercase;
@@ -282,15 +282,16 @@ label #sign-two {
   bottom: 1vh;
   color: #000;
   font-size: 1.5rem;
+  font-family: "Underdog", cursive;
   opacity: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   width: 80vw;
-  height: 15vh;
+  height: 15.5vh;
   background-color: #c2e2ff;
-  border-radius: 2rem;
+  border-radius: 1vw;
   margin: 0;
-  top: 1vh;
+  top: .5vh;
   -webkit-transform: translateY(5vh);
           transform: translateY(5vh);
   display: -webkit-box;
@@ -427,6 +428,14 @@ label #sign-two {
   }
   #res-menu:checked ~ label #sign-two {
     display: block;
+  }
+  /* navbar code end */
+  .image-whole {
+    height: 11vh;
+    border-radius: 10vw;
+  }
+  #historybox {
+    height: 45vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
