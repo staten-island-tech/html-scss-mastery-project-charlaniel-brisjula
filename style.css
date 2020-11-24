@@ -291,7 +291,7 @@ label #sign-two {
   background-color: #c2e2ff;
   border-radius: 1vw;
   margin: 0;
-  top: .5vh;
+  top: 0.5vh;
   -webkit-transform: translateY(5vh);
           transform: translateY(5vh);
   display: -webkit-box;
@@ -430,12 +430,15 @@ label #sign-two {
     display: block;
   }
   /* navbar code end */
-  .image-whole {
-    height: 11vh;
-    border-radius: 10vw;
-  }
   #historybox {
-    height: 45vh;
+    height: 95vh;
+  }
+  .img-whole {
+    width: 93vw;
+  }
+  .img-info {
+    width: 93vw;
+    height: 40vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
