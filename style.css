@@ -299,10 +299,11 @@ label #sign-two {
 
 #imagebox {
   width: 100vw;
-  height: 80vh;
-  background-color: #2372D6;
-  padding-top: 3.5vw;
+  height: 70vh;
+  background-color: #57a1ff;
   position: relative;
+  text-align: center;
+  padding-top: 1.5vw;
 }
 
 .header-history {
@@ -311,9 +312,28 @@ label #sign-two {
   font-family: "Henny Penny", cursive;
   margin: 0;
   text-align: center;
+  letter-spacing: 0.1rem;
 }
 
 .imgs {
+  position: absolute;
+  margin-top: 30vw;
+  bottom: 2vw;
+}
+
+.img-img {
+  border-radius: 2rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 100%;
+  height: 100%;
+}
+
+.image-whole {
+  position: relative;
+  padding: 10vw;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -324,57 +344,28 @@ label #sign-two {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: absolute;
-  bottom: 0;
-  margin-top: 30vw;
-}
-
-.image-whole {
-  position: relative;
-  bottom: 8rem;
-}
-
-.img-img {
-  width: 93vw;
-  height: 20vh;
-  border-radius: 2rem;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.img-wrap {
-  position: relative;
-  width: 93vw;
-  height: 20vh;
-  top: 0;
-  padding: 3.5vw;
-  padding-top: 1vw;
-  padding-bottom: 1vw;
-  border-radius: 2rem;
+  width: 80vw;
+  height: 15vh;
 }
 
 .img-title {
   font-size: 4rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   font-family: "Underdog", cursive;
   color: #F6F285;
-  padding: 0.6vw;
-  bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.img-title-1,
-.img-title-2,
-.img-title-3 {
+  padding: 0 1vw;
+  border-radius: 2rem;
   position: absolute;
-  border-radius: 1rem;
+  line-height: 5vw;
+  text-transform: uppercase;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .img-title-1 {
@@ -391,26 +382,40 @@ label #sign-two {
 
 .img-info {
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  color: #F6F285;
+  bottom: 1vh;
+  color: #000;
   font-size: 1.5rem;
-  visibility: hidden;
   opacity: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  height: 14.5vh;
-  background-color: #13212b;
-  padding: 2rem;
-  margin: 5rem;
+  width: 80vw;
+  height: 15vh;
+  background-color: #c2e2ff;
   border-radius: 2rem;
-  line-height: 130%;
+  margin: 0;
+  top: 1vh;
+  -webkit-transform: translateY(5vh);
+          transform: translateY(5vh);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
 }
 
 .img-wrap:hover .img-info {
   visibility: visible;
-  opacity: 0.5;
+  opacity: 100%;
+  -webkit-transform: translateY(0vh);
+          transform: translateY(0vh);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .img-wrap:hover .img-img {

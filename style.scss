@@ -260,10 +260,12 @@ label #sign-two {
 
 #imagebox {
   width: 100vw;
-  height: 80vh;
-  background-color: color(bluee);
-  padding-top: 3.5vw;
+  height: 70vh;
+  background-color: #57a1ff;
+  // padding-top: 0.6vw;
   position: relative;
+  text-align: center;
+  padding-top: 1.5vw;
 }
 .header-history {
   font-size: 5rem;
@@ -271,51 +273,52 @@ label #sign-two {
   font-family: $mainfont;
   margin: 0;
   text-align: center;
+  letter-spacing: 0.1rem;
 }
 .imgs {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
   position: absolute;
-  bottom: 0;
   margin-top: 30vw;
+  bottom: 2vw;
+}
+.img-img {
+  // width: 93vw;
+  // height: 19vh;
+  border-radius: 2rem;
+  transition: all 0.3s;
+  // max-width: 100%;
+  // width: auto;
+  width: 100%;
+  height: 100%;
 }
 .image-whole {
   position: relative;
-  bottom: 8rem;
-}
-.img-img {
-  width: 93vw;
-  height: 20vh;
-  border-radius: 2rem;
-  transition: all 0.3s;
-}
-.img-wrap {
-  position: relative;
-  width: 93vw;
-  height: 20vh;
-  top: 0;
-  padding: 3.5vw;
-  padding-top: 1vw;
-  padding-bottom: 1vw;
-  border-radius: 2rem;
+  padding: 10vw;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80vw;
+  height: 15vh;
 }
 .img-title {
   font-size: 4rem;
+  width: fit-content;
   font-family: $subfont;
   color: color(yelloww);
-  padding: 0.6vw;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.img-title-1,
-.img-title-2,
-.img-title-3 {
-  // opacity: 75%;
+  padding: 0 1vw;
+  border-radius: 2rem;
   position: absolute;
-  border-radius: 1rem;
+  line-height: 5vw;
+  text-transform: uppercase;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 .img-title-1 {
   background-color: rgba(110, 105, 4, 0.75);
@@ -328,25 +331,27 @@ label #sign-two {
 }
 .img-info {
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  color: color(yelloww);
+  bottom: 1vh;
+  color: #000;
   font-size: 1.5rem;
-  visibility: hidden;
   opacity: 0;
   transition: all 0.3s;
-  // width: 92vw;
-  height: 14.5vh;
-  background-color: #13212b;
-  padding: 2rem;
-  margin: 5rem;
+  width: 80vw;
+  height: 15vh;
+  background-color: #c2e2ff;
   border-radius: 2rem;
-  line-height: 130%;
+  margin: 0;
+  top: 1vh;
+  transform: translateY(5vh);
+  display: flex;
+  flex-direction: column-reverse;
 }
 .img-wrap:hover .img-info {
   visibility: visible;
-  opacity: 0.5;
+  opacity: 100%;
+  transform: translateY(0vh);
+  display: flex;
+  justify-content: center;
 }
 .img-wrap:hover .img-img {
   filter: grayscale(100%);
