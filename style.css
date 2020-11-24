@@ -433,8 +433,12 @@ label #sign-two {
   #historybox {
     height: 95vh;
   }
-  #img-whole {
+  .img-whole {
     width: 93vw;
+  }
+  .img-info {
+    width: 93vw;
+    height: 40vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
