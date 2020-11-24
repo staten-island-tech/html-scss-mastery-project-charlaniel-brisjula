@@ -23,7 +23,7 @@ body {
 #homeimg {
   width: 100vw;
   height: 80vh;
-  background-image: url(castle2.jpg);
+  background-image: url(/Images/castle2.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -194,116 +194,13 @@ label #sign-two {
   display: none;
 }
 
-/* Extra large devices (large laptops and desktops, 75rem and up) */
-@media only screen and (min-width: 75rem) {
-  /*#nav-bar {
-        background-color: blue;
-    }*/
-}
-
-/* Large devices (laptops/desktops, up to 75rem) */
-@media only screen and (max-width: 75rem) {
-  /*#nav-bar {
-        background-color: green;
-    }*/
-  .logo {
-    font-size: 2rem;
-  }
-  #nav-bar a {
-    font-size: 1.2rem;
-  }
-  #header {
-    font-size: 3rem;
-  }
-  #blurb {
-    font-size: 1.3rem;
-    line-height: 2rem;
-  }
-  .btn,
-  .btn:link,
-  .btn:visited {
-    font-size: 1.3rem;
-    padding: 1.25rem 1.5rem;
-  }
-  #eventsbtn {
-    padding: 1rem 0;
-    margin-left: 17rem;
-  }
-  #eventsbtn:hover,
-  #eventsbtn:focus {
-    padding: 1rem 1.25rem;
-  }
-  #btnbox {
-    margin-top: 2rem;
-  }
-}
-
-/* Medium devices (laptops/desktops, up to 62rem) */
-@media only screen and (max-width: 62rem) {
-  /*#nav-bar {
-        background-color: yellow;
-    }*/
-}
-
-/* Small devices (tablets/phones, up to 48rem) */
-@media only screen and (max-width: 48rem) {
-  /*#nav-bar {
-        background-color: purple;
-    }*/
-  #btnbox {
-    margin-top: 5rem;
-  }
-  #eventsbtn {
-    margin-left: 0;
-    margin-top: 6rem;
-  }
-  #container {
-    width: 65vw;
-  }
-  /* the following code is for the responsive nav bar */
-  label #sign-one {
-    display: block;
-  }
-  nav ul {
-    text-align: left;
-    position: fixed;
-    width: 100vw;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    background: #c2e2ff;
-    top: 0;
-    left: -100%;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-    z-index: -1;
-    padding-left: 0;
-    padding-top: 3.5rem;
-  }
-  nav ul li {
-    display: block;
-    line-height: 2.5rem;
-    padding: 1rem;
-    padding-right: 50rem;
-  }
-  #res-menu:checked ~ ul {
-    left: 0;
-  }
-  #res-menu:checked ~ label #sign-one {
-    display: none;
-  }
-  #res-menu:checked ~ label #sign-two {
-    display: block;
-  }
-}
-
-#imagebox {
+#historybox {
   width: 100vw;
   height: 70vh;
   background-color: #57a1ff;
   position: relative;
   text-align: center;
-  padding-top: 1.5vw;
+  padding-top: 5.5vw;
 }
 
 .header-history {
@@ -313,11 +210,11 @@ label #sign-two {
   margin: 0;
   text-align: center;
   letter-spacing: 0.1rem;
+  text-transform: uppercase;
 }
 
 .imgs {
   position: absolute;
-  margin-top: 30vw;
   bottom: 2vw;
 }
 
@@ -349,7 +246,7 @@ label #sign-two {
 }
 
 .img-title {
-  font-size: 4rem;
+  font-size: 3vw;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -421,5 +318,115 @@ label #sign-two {
 .img-wrap:hover .img-img {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+}
+
+/* MEDIA QUERIES */
+/* Extra large devices (large laptops and desktops, 75rem and up) */
+@media only screen and (min-width: 75rem) {
+  /*#nav-bar {
+        background-color: blue;
+    }*/
+}
+
+/* Large devices (laptops/desktops, up to 75rem) */
+@media only screen and (max-width: 75rem) {
+  /*#nav-bar {
+        background-color: green;
+    }*/
+  .logo {
+    font-size: 2rem;
+  }
+  #nav-bar a {
+    font-size: 1.2rem;
+  }
+  #header {
+    font-size: 3rem;
+  }
+  .header-history {
+    font-size: 3rem;
+  }
+  #blurb {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    font-size: 1.3rem;
+    padding: 1.25rem 1.5rem;
+  }
+  #eventsbtn {
+    padding: 1rem 0;
+    margin-left: 17rem;
+  }
+  #eventsbtn:hover,
+  #eventsbtn:focus {
+    padding: 1rem 1.25rem;
+  }
+  #btnbox {
+    margin-top: 2rem;
+  }
+  #historybox {
+    height: 60vh;
+  }
+}
+
+/* Medium devices (laptops/desktops, up to 62rem) */
+@media only screen and (max-width: 62rem) {
+  /*#nav-bar {
+        background-color: yellow;
+    }*/
+}
+
+/* Small devices (tablets/phones, up to 48rem) */
+@media only screen and (max-width: 48rem) {
+  /*#nav-bar {
+        background-color: purple;
+    }*/
+  #btnbox {
+    margin-top: 5rem;
+  }
+  #eventsbtn {
+    margin-left: 0;
+    margin-top: 6rem;
+  }
+  #container {
+    width: 65vw;
+  }
+  /* the following code is for the responsive nav bar */
+  label #sign-one {
+    display: block;
+  }
+  nav ul {
+    text-align: left;
+    position: fixed;
+    width: 100vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background: #c2e2ff;
+    top: 0;
+    left: -100%;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    z-index: -1;
+    padding-left: 0;
+    padding-top: 3.5rem;
+  }
+  nav ul li {
+    display: block;
+    line-height: 2.5rem;
+    padding: 1rem;
+    padding-right: 50rem;
+  }
+  #res-menu:checked ~ ul {
+    left: 0;
+  }
+  #res-menu:checked ~ label #sign-one {
+    display: none;
+  }
+  #res-menu:checked ~ label #sign-two {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */
