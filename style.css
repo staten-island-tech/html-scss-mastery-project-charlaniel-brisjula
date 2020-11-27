@@ -341,7 +341,6 @@ label #sign-two {
   height: 50rem;
   -webkit-perspective: 90rem;
           perspective: 90rem;
-  float: left;
 }
 
 .l-container {
