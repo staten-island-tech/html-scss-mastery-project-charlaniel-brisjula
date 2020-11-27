@@ -180,10 +180,12 @@ label #sign-two {
 }
 #h-blurb {
   @include text-stuff;
-  padding-left: 3.5vw;
-  padding-right: 3.5vw;
+  padding-left: 20vw;
+  padding-right: 20vw;
   padding-bottom: 3vw;
   text-align: left;
+  padding-bottom: 1vw;
+  line-height: 150%;
 }
 .img-img {
   // width: 93vw;
@@ -261,8 +263,8 @@ label #sign-two {
 
 /* ATTRACTIONS */
 #attractionsbox {
-  height: 40vw;
   width: 100vw;
+  height: 80vh;
   padding-top: 5.5vw;
   background-color: #e4f0ff;
 }
@@ -393,7 +395,6 @@ label #sign-two {
     font-size: 3rem;
   }
   #blurb {
-    font-size: 1.3rem;
     line-height: 2rem;
   }
   .btn,
@@ -413,14 +414,17 @@ label #sign-two {
   #btnbox {
     margin-top: 2rem;
   }
-  .a-text {
-    font-size: 1.3rem;
-  }
-  .a-name {
+  .a-text,
+  .a-name,
+  #blurb,
+  #h-blurb {
     font-size: 1.3rem;
   }
   .views-content-small {
     display: none;
+  }
+  #attractionsbox {
+    height: 45vh;
   }
 }
 
@@ -509,7 +513,7 @@ label #sign-two {
     display: flex;
     flex-direction: column;
     padding-top: 10vw;
-    height: auto;
+    height: 160vh;
   }
   .article-content {
     font-size: 1.3rem;
@@ -521,5 +525,9 @@ label #sign-two {
   .views-content:hover {
     box-shadow: none;
     transform: none;
+  }
+  #h-blurb {
+    padding-left: 3.5vw;
+    padding-right: 3.5vw;
   }
 }
