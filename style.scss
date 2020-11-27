@@ -294,7 +294,7 @@ label #sign-two {
 .views-content-small {
   flex: 1;
   height: 17vw;
-  border-radius: 2vw;
+  border-radius: 1vw;
   position: relative;
   transition: all .3s;
 }
@@ -303,7 +303,7 @@ label #sign-two {
 }
 .article-image {
   max-width: 100%;    
-  border-radius: 2vw;
+  border-radius: 1vw;
   height: 100%;
 }
 .article-content {
@@ -312,8 +312,8 @@ label #sign-two {
   bottom: 0;
   background-color: rgba(35, 114, 214, .9);
   width: 100%;
-  border-bottom-left-radius: 2vw;
-  border-bottom-right-radius: 2vw;
+  border-bottom-left-radius: 1vw;
+  border-bottom-right-radius: 1vw;
 }
 .views-row-fill {
   flex: 1 100%;
@@ -482,31 +482,42 @@ label #sign-two {
     display: block;
   }
   /* navbar code end */
-  #attractionsbox {
-    display: flex;
-    flex-direction: column;
-  }
+
   .a-text {
     width: 93vw;
   }
   #a-header {
     text-align: center;
   }
-  .views-content,
-  .views-content-small {
-  height: 25vw;
+  .views-content {
+  height: 40vh;
+  width: 100vw;
   }
-  .views-content-small {
-  height: 20vw;
+  .views-row-flex,
+  .views-row-flex-25,
+  .views-row-flex-50 {
+    flex: none;
+    max-width: 100%;
   }
   .highlights {
     width: 100vw;
+    display: flex;
+    flex-direction: column;
   }
   #attractionsbox {
+    display: flex;
+    flex-direction: column;
     padding-top: 10vw;
-    height: 60vh;
+    height: 155vh;
   }
   .article-content {
     font-size: 1.3rem;
+  }
+  .article-image {
+    width: 100%;
+  }
+  .views-content:hover {
+    box-shadow: none;
+    transform: none;
   }
 }

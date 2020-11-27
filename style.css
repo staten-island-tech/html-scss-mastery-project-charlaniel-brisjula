@@ -381,7 +381,7 @@ label #sign-two {
       -ms-flex: 1;
           flex: 1;
   height: 17vw;
-  border-radius: 2vw;
+  border-radius: 1vw;
   position: relative;
   -webkit-transition: all .3s;
   transition: all .3s;
@@ -393,7 +393,7 @@ label #sign-two {
 
 .article-image {
   max-width: 100%;
-  border-radius: 2vw;
+  border-radius: 1vw;
   height: 100%;
 }
 
@@ -403,8 +403,8 @@ label #sign-two {
   bottom: 0;
   background-color: rgba(35, 114, 214, 0.9);
   width: 100%;
-  border-bottom-left-radius: 2vw;
-  border-bottom-right-radius: 2vw;
+  border-bottom-left-radius: 1vw;
+  border-bottom-right-radius: 1vw;
 }
 
 .views-row-fill {
@@ -597,7 +597,26 @@ label #sign-two {
     display: block;
   }
   /* navbar code end */
-  #attractionsbox {
+  .a-text {
+    width: 93vw;
+  }
+  #a-header {
+    text-align: center;
+  }
+  .views-content {
+    height: 40vh;
+    width: 100vw;
+  }
+  .views-row-flex,
+  .views-row-flex-25,
+  .views-row-flex-50 {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    max-width: 100%;
+  }
+  .highlights {
+    width: 100vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -606,28 +625,28 @@ label #sign-two {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .a-text {
-    width: 93vw;
-  }
-  #a-header {
-    text-align: center;
-  }
-  .views-content,
-  .views-content-small {
-    height: 25vw;
-  }
-  .views-content-small {
-    height: 20vw;
-  }
-  .highlights {
-    width: 100vw;
-  }
   #attractionsbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding-top: 10vw;
-    height: 60vh;
+    height: 155vh;
   }
   .article-content {
     font-size: 1.3rem;
+  }
+  .article-image {
+    width: 100%;
+  }
+  .views-content:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transform: none;
+            transform: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
