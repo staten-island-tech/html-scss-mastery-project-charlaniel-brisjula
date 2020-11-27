@@ -73,6 +73,7 @@ body {
 #nav-bar a:focus {
   color: color(bluee);
   border-bottom: color(yelloww) inset 0.25rem;
+  font-weight: 600;
 }
 #container {
   position: absolute;
@@ -461,9 +462,10 @@ label #sign-two {
     z-index: -1;
     padding-left: 0;
     padding-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
   }
   nav ul li {
-    display: block;
     line-height: 2.5rem;
     padding: 1rem;
     padding-right: 50rem;
