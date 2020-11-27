@@ -337,10 +337,11 @@ label #sign-two {
 .wrapper {
   position: relative;
   top: 0;
-  width: 300px;
-  height: 500px;
-  -webkit-perspective: 50rem;
-          perspective: 50rem;
+  width: 30rem;
+  height: 50rem;
+  -webkit-perspective: 90rem;
+          perspective: 90rem;
+  float: left;
 }
 
 .l-container {
@@ -360,11 +361,16 @@ label #sign-two {
           animation: entry 1s linear 1;
 }
 
-.legends-header {
+#legends-header {
   font-family: "Henny Penny", cursive;
-  color: #F6F285;
+  color: #2372D6;
   font-size: 5rem;
-  text-align: center;
+}
+
+.l-text {
+  float: right;
+  width: 30vw;
+  margin: 3.5vw;
 }
 
 #c1 {
@@ -444,20 +450,12 @@ label #sign-two {
   letter-spacing: 2px;
 }
 
-#l-blurb {
-  font-size: 1.5rem;
-  color: #000;
-  font-family: "Underdog", cursive;
-  letter-spacing: .05rem;
-  line-height: 150%;
-}
-
 /* ATTRACTIONS */
 #attractionsbox {
   width: 100vw;
   height: 80vh;
   padding-top: 5.5vw;
-  background-color: #e4f0ff;
+  background-color: #cce2ff;
 }
 
 *, *:before, *:after {

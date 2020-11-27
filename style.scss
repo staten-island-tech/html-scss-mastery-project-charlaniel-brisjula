@@ -268,9 +268,10 @@ label #sign-two {
 .wrapper {
   position: relative;
   top: 0;
-  width: 300px;
-  height: 500px;
-  perspective: 50rem;
+  width: 30rem;
+  height: 50rem;
+  perspective: 90rem;
+  float: left;
 }
 
 .l-container {
@@ -284,11 +285,15 @@ label #sign-two {
   box-shadow: 0 0 3rem 2rem rgba(color(bluee), 0.4);
   animation: entry 1s linear 1;
 }
-.legends-header {
+#legends-header {
   font-family: $mainfont;
-  color: color(yelloww);
+  color: color(bluee);
   font-size: 5rem;
-  text-align: center;
+}
+.l-text {
+  float: right;
+  width: 30vw;
+  margin: 3.5vw;
 }
 #c1 {
   background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
@@ -358,20 +363,13 @@ label #sign-two {
   letter-spacing: 2px;
 }
 
-#l-blurb {
-  @include text-stuff
-}
-
-
-
-
 
 /* ATTRACTIONS */
 #attractionsbox {
   width: 100vw;
   height: 80vh;
   padding-top: 5.5vw;
-  background-color: #e4f0ff;
+  background-color: #cce2ff;
 }
 
 *, *:before, *:after {
