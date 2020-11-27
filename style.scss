@@ -61,8 +61,7 @@ body {
   color: #000;
   text-decoration: none;
   font-size: 1.5rem;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-right: 3rem;
   line-height: 3rem;
   letter-spacing: 0.1rem;
   font-weight: 500;
@@ -267,54 +266,61 @@ label #sign-two {
 }
 .wrapper {
   position: relative;
-  top: 0;
+  top: 5.5vw;
+  left: 20vw;
+  display: flex;
+  justify-content: center;
   width: 30rem;
   height: 50rem;
   perspective: 90rem;
 }
-
 .l-container {
   position: absolute;
-  top: 0;
   width: 100%;
   height: 100%;
   transition: 0.5s all ease;
   transform: rotateX(60deg) scale(0.7);
-  perspective: 50rem;
-  box-shadow: 0 0 3rem 2rem rgba(color(bluee), 0.4);
+  perspective: 90rem;
+  box-shadow: 0 0 3rem 1rem rgba(color(bluee), 0.4);
   animation: entry 1s linear 1;
 }
 #legends-header {
   font-family: $mainfont;
   color: color(bluee);
   font-size: 5rem;
+  text-align: left;
+  margin-bottom: 1.5vw;
+  padding-left: 0;
 }
 .l-text {
-  float: right;
+  float: left;
   width: 30vw;
-  margin: 3.5vw;
+  margin-left: 3.5vw;
+  margin-top: 3.5vw;
+  top: 5.5vw;
+}
+#l-blurb {
+  margin: 0;
+  padding: 0;
 }
 #c1 {
   background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
   box-shadow: 0 0 3rem 2rem rgba(color(bluee), 0.4);
-  left: 100%;
+  left: 85%;
   z-index: 0;
 }
-
 #c2 {
-  left: -100%;
+  left: -85%;
   z-index: 0;
   background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
   box-shadow: 0 0 3rem 2rem rgba(color(bluee), 0.4);
 }
-
 .l-container:hover {
   cursor: pointer;
   transform: rotate(0deg) scale(1) translateY(10px);
   transition: 0.5s all ease;
   z-index: 400;
 }
-
 .image {
   position: absolute;
   top: 0%;
@@ -324,11 +330,9 @@ label #sign-two {
   background: #2094ff;
   overflow: hidden;
 }
-
 #i1 {
   background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
 }
-
 #i2 {
   background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
 }
@@ -341,25 +345,21 @@ label #sign-two {
   background: #2094ff;
   z-index: 30;
 }
-
 #s1 {
   background: #2094ff;
 }
-
 #s2 {
   background: #2094ff;
 }
-
 .info {
   position: absolute;
   top: 10%;
 }
-
 .l-title {
   text-align: center;
-  text-shadow: 0px 0px 10px #eee;
-  color: #eee;
-  letter-spacing: 2px;
+  //text-shadow: 0px 0px 10px #eee;
+  color: #fff;
+  letter-spacing: .1rem;
 }
 
 
@@ -629,7 +629,7 @@ label #sign-two {
     width: 100%;
   }
   .views-content:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
   }
   #h-blurb {
     padding-left: 3.5vw;
