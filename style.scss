@@ -508,10 +508,11 @@ label #sign-two {
     display: flex;
     flex-direction: column;
     padding-top: 10vw;
-    height: 155vh;
+    height: auto;
   }
   .article-content {
     font-size: 1.3rem;
+    padding-bottom: .5vw;
   }
   .article-image {
     width: 100%;
