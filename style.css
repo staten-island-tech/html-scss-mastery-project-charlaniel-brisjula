@@ -220,6 +220,7 @@ label #sign-two {
   color: #000;
   font-family: "Underdog", cursive;
   letter-spacing: .05rem;
+  line-height: 150%;
   padding-left: 20vw;
   padding-right: 20vw;
   padding-bottom: 3vw;
@@ -234,8 +235,6 @@ label #sign-two {
   transition: all 0.3s;
   width: 100%;
   height: 100%;
-  -webkit-filter: blur(8);
-          filter: blur(8);
 }
 
 .image-whole {
@@ -328,6 +327,131 @@ label #sign-two {
           justify-content: center;
 }
 
+#legendsbox {
+  background-color: #e4f0ff;
+  height: 95vh;
+  font-family: "Underdog", cursive;
+  position: relative;
+}
+
+.wrapper {
+  position: relative;
+  top: 0;
+  width: 300px;
+  height: 500px;
+  -webkit-perspective: 50rem;
+          perspective: 50rem;
+}
+
+.l-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  -webkit-transform: rotateX(60deg) scale(0.7);
+          transform: rotateX(60deg) scale(0.7);
+  -webkit-perspective: 50rem;
+          perspective: 50rem;
+  -webkit-box-shadow: 0 0 3rem 2rem rgba(35, 114, 214, 0.4);
+          box-shadow: 0 0 3rem 2rem rgba(35, 114, 214, 0.4);
+  -webkit-animation: entry 1s linear 1;
+          animation: entry 1s linear 1;
+}
+
+.legends-header {
+  font-family: "Henny Penny", cursive;
+  color: #F6F285;
+  font-size: 5rem;
+  text-align: center;
+}
+
+#c1 {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #59476f), to(#7b88d1));
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  -webkit-box-shadow: 0 0 3rem 2rem rgba(35, 114, 214, 0.4);
+          box-shadow: 0 0 3rem 2rem rgba(35, 114, 214, 0.4);
+  left: 100%;
+  z-index: 0;
+}
+
+#c2 {
+  left: -100%;
+  z-index: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #59476f), to(#7b88d1));
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  -webkit-box-shadow: 0 0 3rem 2rem rgba(35, 114, 214, 0.4);
+          box-shadow: 0 0 3rem 2rem rgba(35, 114, 214, 0.4);
+}
+
+.l-container:hover {
+  cursor: pointer;
+  -webkit-transform: rotate(0deg) scale(1) translateY(10px);
+          transform: rotate(0deg) scale(1) translateY(10px);
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  z-index: 400;
+}
+
+.image {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 45%;
+  background: #2094ff;
+  overflow: hidden;
+}
+
+#i1 {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #59476f), to(#7b88d1));
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+}
+
+#i2 {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #59476f), to(#7b88d1));
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+}
+
+.story {
+  position: absolute;
+  top: 45%;
+  left: 0%;
+  height: 55%;
+  width: 100%;
+  background: #2094ff;
+  z-index: 30;
+}
+
+#s1 {
+  background: #2094ff;
+}
+
+#s2 {
+  background: #2094ff;
+}
+
+.info {
+  position: absolute;
+  top: 10%;
+}
+
+.l-title {
+  text-align: center;
+  text-shadow: 0px 0px 10px #eee;
+  color: #eee;
+  letter-spacing: 2px;
+}
+
+#l-blurb {
+  font-size: 1.5rem;
+  color: #000;
+  font-family: "Underdog", cursive;
+  letter-spacing: .05rem;
+  line-height: 150%;
+}
+
 /* ATTRACTIONS */
 #attractionsbox {
   width: 100vw;
@@ -373,6 +497,7 @@ label #sign-two {
   color: #000;
   font-family: "Underdog", cursive;
   letter-spacing: .05rem;
+  line-height: 150%;
   color: #fff;
 }
 
@@ -452,6 +577,7 @@ label #sign-two {
   color: #000;
   font-family: "Underdog", cursive;
   letter-spacing: .05rem;
+  line-height: 150%;
   line-height: 150%;
 }
 
@@ -552,7 +678,6 @@ label #sign-two {
     }*/
   .img-title {
     font-size: 5vw;
-    background: none;
   }
   #btnbox {
     margin-top: 5rem;
@@ -656,14 +781,21 @@ label #sign-two {
     width: 100%;
   }
   .views-content:hover {
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    -webkit-transform: none;
-            transform: none;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   #h-blurb {
     padding-left: 3.5vw;
     padding-right: 3.5vw;
   }
+  /*.image-whole-1 {
+    background-color: rgba(110, 105, 4, 0.75);
+  }
+  .image-whole-2 {
+    background-color: rgba(178, 54, 23, 0.75);
+  }
+  .image-whole-3 {
+    background-color: rgba(8, 24, 97, 0.75);
+  }*/
 }
 /*# sourceMappingURL=style.css.map */
