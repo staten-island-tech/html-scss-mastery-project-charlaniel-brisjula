@@ -352,11 +352,14 @@ label #sign-two {
   color: color(bluee);
   text-transform: uppercase;
 }
+#a-blurb {
+  margin-bottom: 3vw;
+}
 .views-content:hover,
 .views-content-small:hover {
  transform: scale(1.3);
  z-index: 10;
- box-shadow: 0 0 3rem 1.5rem rgba(color(bluee), 0.4);
+ box-shadow: 0 0 3rem 2rem rgba(color(bluee), 0.4);
 }
 
 /* MEDIA QUERIES */
@@ -414,6 +417,9 @@ label #sign-two {
   }
   .a-name {
     font-size: 1.3rem;
+  }
+  .views-content-small {
+    display: none;
   }
 }
 
@@ -498,6 +504,9 @@ label #sign-two {
   }
   #attractionsbox {
     padding-top: 10vw;
-    height: 75vh;
+    height: 60vh;
+  }
+  .article-content {
+    font-size: 1.3rem;
   }
 }
