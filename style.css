@@ -234,6 +234,8 @@ label #sign-two {
   transition: all 0.3s;
   width: 100%;
   height: 100%;
+  -webkit-filter: blur(8);
+          filter: blur(8);
 }
 
 .image-whole {
@@ -312,7 +314,8 @@ label #sign-two {
           flex-direction: column-reverse;
 }
 
-.img-wrap:hover .img-info {
+.img-wrap:hover .img-info,
+.img-wrap:focus .img-info {
   visibility: visible;
   opacity: 100%;
   -webkit-transform: translateY(0vh);
@@ -323,11 +326,6 @@ label #sign-two {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.img-wrap:hover .img-img {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
 }
 
 /* ATTRACTIONS */
@@ -552,6 +550,10 @@ label #sign-two {
   /*#nav-bar {
         background-color: purple;
     }*/
+  .img-title {
+    font-size: 5vw;
+    background: none;
+  }
   #btnbox {
     margin-top: 5rem;
   }
