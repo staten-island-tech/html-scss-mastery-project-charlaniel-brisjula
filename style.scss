@@ -283,11 +283,12 @@ label #sign-two {
   box-shadow: 0 0 3rem 2rem rgba(color(bluee), 0.4);
   animation: entry 1s linear 1;
 }
-.legends-header {
+#legends-header {
   font-family: $mainfont;
-  color: color(yelloww);
+  color: color(bluee);
   font-size: 5rem;
   text-align: center;
+  letter-spacing: .1rem;
 }
 #c1 {
   background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
@@ -423,7 +424,6 @@ label #sign-two {
   flex: 1 100%;
   max-width: 100%;
 }
-
 .views-row-flex {
   flex: 1 33.33333333%;
   max-width: 33.33333333%;

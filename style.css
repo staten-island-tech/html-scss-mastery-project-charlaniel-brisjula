@@ -358,11 +358,12 @@ label #sign-two {
           animation: entry 1s linear 1;
 }
 
-.legends-header {
+#legends-header {
   font-family: "Henny Penny", cursive;
-  color: #F6F285;
+  color: #2372D6;
   font-size: 5rem;
   text-align: center;
+  letter-spacing: .1rem;
 }
 
 #c1 {
