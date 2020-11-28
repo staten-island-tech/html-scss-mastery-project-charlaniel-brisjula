@@ -769,7 +769,7 @@ label #sign-two {
         -ms-flex-direction: column;
             flex-direction: column;
     padding-top: 10vw;
-    height: 155vh;
+    height: 160vh;
   }
   .article-content {
     font-size: 1.3rem;
