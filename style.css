@@ -652,7 +652,8 @@ label #sign-two {
   .a-text,
   .a-name,
   #blurb,
-  #h-blurb {
+  #h-blurb,
+  .article-content {
     font-size: 1.3rem;
   }
   .views-content-small {
@@ -771,10 +772,6 @@ label #sign-two {
             flex-direction: column;
     padding-top: 10vw;
     height: 160vh;
-  }
-  .article-content {
-    font-size: 1.3rem;
-    padding-bottom: .5vw;
   }
   .article-image {
     width: 100%;
