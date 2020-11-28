@@ -271,7 +271,6 @@ label #sign-two {
   height: 50rem;
   perspective: 90rem;
 }
-
 .l-container {
   position: absolute;
   top: 0;
@@ -279,7 +278,7 @@ label #sign-two {
   height: 100%;
   transition: 0.5s all ease;
   transform: rotateX(60deg) scale(0.7);
-  perspective: 50rem;
+  perspective: 90rem;
   box-shadow: 0 0 3rem 2rem rgba(color(bluee), 0.4);
   animation: entry 1s linear 1;
 }
@@ -525,7 +524,7 @@ label #sign-two {
     display: none;
   }
   #attractionsbox {
-    height: 45vh;
+    height: 60vh;
   }
 }
 

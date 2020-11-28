@@ -350,8 +350,8 @@ label #sign-two {
   transition: 0.5s all ease;
   -webkit-transform: rotateX(60deg) scale(0.7);
           transform: rotateX(60deg) scale(0.7);
-  -webkit-perspective: 50rem;
-          perspective: 50rem;
+  -webkit-perspective: 90rem;
+          perspective: 90rem;
   -webkit-box-shadow: 0 0 3rem 2rem rgba(35, 114, 214, 0.4);
           box-shadow: 0 0 3rem 2rem rgba(35, 114, 214, 0.4);
   -webkit-animation: entry 1s linear 1;
@@ -659,7 +659,7 @@ label #sign-two {
     display: none;
   }
   #attractionsbox {
-    height: 45vh;
+    height: 60vh;
   }
 }
 
