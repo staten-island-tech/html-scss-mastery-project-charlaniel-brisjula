@@ -102,7 +102,7 @@ body
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   text-shadow: 0 0.5rem 0.5rem rgba(color(yelloww), 0.4);
-  margin-bottom: -1rem;
+  line-height: 4rem;
 }
 #blurb {
   color: #fff;
@@ -110,6 +110,7 @@ body
   font-size: 1.65rem;
   line-height: 2.5rem;
   letter-spacing: .1rem;
+  margin-top: 1.5vw;
 }
 #btnbox {
   position: relative;
@@ -686,6 +687,9 @@ label #sign-two {
   #h-blurb {
     padding-left: 3.5vw;
     padding-right: 3.5vw;
+  }
+  .imgs {
+    margin-top: 5vw;
   }
   /*.image-whole-1 {
     background-color: rgba(110, 105, 4, 0.75);
