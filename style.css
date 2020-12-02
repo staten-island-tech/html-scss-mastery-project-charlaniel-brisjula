@@ -12,7 +12,8 @@ html {
 }
 
 html,
-body {
+body
+* {
   font-size: 62.5%;
   padding: 0;
   margin: 0;
@@ -310,6 +311,8 @@ label #sign-two {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+  text-align: left;
+  padding-left: 3.5vw;
 }
 
 .image-whole:hover .img-info,
@@ -339,6 +342,7 @@ label #sign-two {
   height: 50rem;
   -webkit-perspective: 90rem;
           perspective: 90rem;
+  margin: 0 auto;
 }
 
 .l-container {
@@ -358,12 +362,17 @@ label #sign-two {
           animation: entry 1s linear 1;
 }
 
+#l-blurb {
+  padding-bottom: 1vw;
+}
+
 #legends-header {
   font-family: "Henny Penny", cursive;
   color: #2372D6;
   font-size: 5rem;
   text-align: center;
   letter-spacing: .1rem;
+  padding-top: 5.5vw;
 }
 
 #c1 {
@@ -455,8 +464,8 @@ label #sign-two {
 #attractionsbox {
   width: 100vw;
   height: 80vh;
-  padding-top: 5.5vw;
   background-color: #cce2ff;
+  position: relative;
 }
 
 *, *:before, *:after {
@@ -481,6 +490,7 @@ label #sign-two {
   width: 62.5vw;
   padding: 0 3.5vw;
   float: right;
+  margin-top: 5.5vw;
 }
 
 .views-row {
@@ -530,6 +540,9 @@ label #sign-two {
   width: 100%;
   border-bottom-left-radius: 1vw;
   border-bottom-right-radius: 1vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  text-transform: uppercase;
 }
 
 .views-row-fill {
@@ -572,12 +585,7 @@ label #sign-two {
   float: left;
   width: 30vw;
   padding-left: 3.5vw;
-  font-size: 1.5rem;
-  color: #000;
-  font-family: "Underdog", cursive;
-  letter-spacing: .05rem;
-  line-height: 150%;
-  line-height: 150%;
+  margin-top: 5.5vw;
 }
 
 #a-header {
@@ -589,7 +597,11 @@ label #sign-two {
 }
 
 #a-blurb {
-  margin-bottom: 3vw;
+  font-size: 1.5rem;
+  color: #000;
+  font-family: "Underdog", cursive;
+  letter-spacing: .05rem;
+  line-height: 150%;
 }
 
 .views-content:hover,

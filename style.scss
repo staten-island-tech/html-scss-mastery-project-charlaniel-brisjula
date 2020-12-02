@@ -5,7 +5,8 @@ html {
   scroll-behavior: smooth;
 }
 html,
-body {
+body 
+* {
   font-size: 62.5%;
   padding: 0;
   margin: 0;
@@ -248,6 +249,8 @@ label #sign-two {
   transform: translateY(5vh);
   display: flex;
   flex-direction: column-reverse;
+  text-align: left;
+  padding-left: 3.5vw;
 }
 .image-whole:hover .img-info,
 .image-whole:focus .img-info {
@@ -270,6 +273,7 @@ label #sign-two {
   width: 30rem;
   height: 50rem;
   perspective: 90rem;
+  margin: 0 auto;
 }
 .l-container {
   position: absolute;
@@ -282,12 +286,16 @@ label #sign-two {
   box-shadow: 0 0 3rem 2rem rgba(color(bluee), 0.4);
   animation: entry 1s linear 1;
 }
+#l-blurb {
+  padding-bottom: 1vw;
+}
 #legends-header {
   font-family: $mainfont;
   color: color(bluee);
   font-size: 5rem;
   text-align: center;
   letter-spacing: .1rem;
+  padding-top: 5.5vw;
 }
 #c1 {
   background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
@@ -366,8 +374,8 @@ label #sign-two {
 #attractionsbox {
   width: 100vw;
   height: 80vh;
-  padding-top: 5.5vw;
   background-color: #cce2ff;
+  position: relative;
 }
 
 *, *:before, *:after {
@@ -383,6 +391,7 @@ label #sign-two {
   width: 62.5vw;
   padding: 0 3.5vw;
   float: right;
+  margin-top: 5.5vw;
 }
 
 .views-row {
@@ -418,6 +427,9 @@ label #sign-two {
   width: 100%;
   border-bottom-left-radius: 1vw;
   border-bottom-right-radius: 1vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  text-transform: uppercase;
 }
 .views-row-fill {
   flex: 1 100%;
@@ -445,8 +457,7 @@ label #sign-two {
   float: left;
   width: 30vw;
   padding-left: 3.5vw;
-  @include text-stuff;
-  line-height: 150%;
+  margin-top: 5.5vw;
 }
 #a-header {
   font-family: $mainfont;
@@ -456,7 +467,7 @@ label #sign-two {
   text-transform: uppercase;
 }
 #a-blurb {
-  margin-bottom: 3vw;
+  @include text-stuff;
 }
 .views-content:hover,
 .views-content-small:hover {
