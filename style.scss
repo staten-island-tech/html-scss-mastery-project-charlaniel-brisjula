@@ -34,35 +34,35 @@ body
   align-content: flex-start;
 }
 .navwhole {
-  width: 100vw;
+  width: 100%;
   position: fixed;
-  z-index: 99999999;
+  z-index: 99;
 }
-/*.logobox {
+.logobox {
   background-color: color(whitee);
   width: 30%;
   text-align: left;
   float: left;
-  height: 4rem;
-}*/
+  height: 5rem;
+}
 .logo {
   color: color(bluee);
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-family: $mainfont;
   padding-left: 3.5vw;
   display: inline;
-  float: left;
+  height: 5rem;
 }
 #nav-bar {
-  width: 100%;
+  width: 70%;
   float: right;
   text-align: right;
   display: inline;
   background-color: color(whitee);
+  height: 5rem;
 }
 #nav-bar ul {
   list-style: none;
-  float: right;
 }
 #nav-bar li {
   display: inline-block;
@@ -90,7 +90,7 @@ body
   height: 50vh;
   left: 3.5vw;
   top: 9vw;
-  z-index: 100;
+  z-index: 2;
   margin-top: 5.5vw;
 }
 #header {
@@ -228,7 +228,6 @@ label #sign-two {
   @include text-stuff;
   padding-left: 20vw;
   padding-right: 20vw;
-  padding-bottom: 3vw;
   text-align: left;
   padding-bottom: 1vw;
   line-height: 150%;
@@ -437,7 +436,6 @@ label #sign-two {
   width: 62.5vw;
   padding: 0 3.5vw;
   float: right;
-  margin-top: 5.5vw;
 }
 
 .views-row {
@@ -536,9 +534,7 @@ label #sign-two {
   /*#nav-bar {
         background-color: green;
     }*/
-  .logo {
-    font-size: 2rem;
-  }
+
   #nav-bar a {
     font-size: 1.2rem;
   }
@@ -604,6 +600,7 @@ label #sign-two {
   /*#nav-bar {
         background-color: purple;
     }*/
+
   .img-title {
     font-size: 5vw;
     //background: none;
