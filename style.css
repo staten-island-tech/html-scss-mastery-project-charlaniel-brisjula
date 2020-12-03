@@ -744,6 +744,9 @@ label #sign-two {
   #attractionsbox {
     height: 60vh;
   }
+  #homeimg {
+    background-attachment: unset;
+  }
 }
 
 /* Medium devices (laptops/desktops, up to 62rem) */
