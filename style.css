@@ -773,6 +773,7 @@ label #sign-two {
     margin-top: 6rem;
   }
   #container {
+    margin-top: 5.5vw;
     width: 65vw;
   }
   /* the following code is for the responsive nav bar */
