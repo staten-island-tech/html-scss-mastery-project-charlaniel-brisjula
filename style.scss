@@ -83,7 +83,6 @@ body
 #nav-bar a:focus {
   color: color(bluee);
   border-bottom: color(yelloww) inset 0.25rem;
-  font-weight: 600;
 }
 #container {
   position: absolute;
@@ -102,7 +101,7 @@ body
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   text-shadow: 0 0.5rem 0.5rem rgba(color(yelloww), 0.4);
-  line-height: 8vw;
+  line-height: 4rem;
 }
 #blurb {
   color: #fff;
@@ -152,7 +151,7 @@ body
 #eventsbtn:hover,
 #eventsbtn:focus {
   @include sleek-border;
-  border: color(yelloww) solid 0.25rem;
+  border: #feffbc solid 0.25rem;
   padding: 1.25rem 2.25rem;
 }
 a {
