@@ -271,9 +271,9 @@ label #sign-two {
   width: 100vw;
   position: relative;
   text-align: center;
-  padding-top: 5.5vw;
   padding-bottom: 3.5vw;
   background-color: #cce2ff;
+  padding-top: 5.5vw;
 }
 
 .header-history {
@@ -442,7 +442,6 @@ label #sign-two {
   font-size: 5rem;
   text-align: center;
   letter-spacing: .1rem;
-  padding-top: 5.5vw;
 }
 
 #c1 {
@@ -762,6 +761,9 @@ label #sign-two {
   .logo {
     font-size: 2rem;
   }
+  .logobox, #nav-bar {
+    height: 4rem;
+  }
   .img-title {
     font-size: 5vw;
   }
@@ -857,8 +859,13 @@ label #sign-two {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-top: 10vw;
     height: 160vh;
+  }
+  #historybox, #legendsbox, #attractionsbox, #homeimg {
+    padding-top: 10vw;
+  }
+  .a-text {
+    margin-top: 0;
   }
   .article-image {
     width: 100%;
