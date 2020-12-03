@@ -864,9 +864,7 @@ label #sign-two {
   #h-blurb {
     padding-left: 3.5vw;
     padding-right: 3.5vw;
-  }
-  .imgs {
-    margin-top: 5vw;
+    margin-bottom: 5vw;
   }
   /*.image-whole-1 {
     background-color: rgba(110, 105, 4, 0.75);
