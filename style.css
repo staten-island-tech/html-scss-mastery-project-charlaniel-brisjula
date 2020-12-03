@@ -124,7 +124,6 @@ body
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   text-shadow: 0 0.5rem 0.5rem rgba(246, 242, 133, 0.4);
-  line-height: 4rem;
 }
 
 #blurb {
@@ -729,7 +728,9 @@ label #sign-two {
   .a-name,
   #blurb,
   #h-blurb,
-  .article-content {
+  #l-blurb,
+  #a-blurb
+.article-content {
     font-size: 1.3rem;
   }
   .views-content-small {
@@ -764,6 +765,9 @@ label #sign-two {
   .logobox, #nav-bar {
     height: 4rem;
   }
+  #header {
+    line-height: 4rem;
+  }
   .img-title {
     font-size: 5vw;
   }
@@ -786,9 +790,6 @@ label #sign-two {
     text-align: left;
     position: fixed;
     width: 100vw;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
     background: #F6F285;
     top: 0;
     left: -100%;
@@ -807,7 +808,7 @@ label #sign-two {
   }
   nav ul li {
     line-height: 2.5rem;
-    padding: 1rem;
+    padding-left: 1rem;
   }
   #nav-bar a:hover {
     border: none;
