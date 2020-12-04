@@ -566,7 +566,7 @@ body {
     height: 60vh;
   }
   .highlights {
-    margin-top: 10vw;
+    margin-top: 12vw;
   }
 }
 
@@ -622,7 +622,7 @@ body {
     height: 148vh;
   }
   #attractionsbox {
-    padding-top: 10vw;
+    padding-top: 12vw;
   }
   .a-text {
     margin-top: 0;
@@ -915,6 +915,7 @@ label #sign-two {
   }
   #blurb {
     line-height: 2rem;
+    font-size: 1.3rem;
   }
   .btn,
   .btn:link,
@@ -932,9 +933,6 @@ label #sign-two {
   }
   #btnbox {
     margin-top: 2rem;
-  }
-  #blurb {
-    font-size: 1.3rem;
   }
   #homeimg {
     background-attachment: unset;
