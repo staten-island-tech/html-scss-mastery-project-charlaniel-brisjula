@@ -532,9 +532,8 @@ label #sign-two {
   /*#nav-bar {
         background-color: green;
     }*/
-
-  #nav-bar a {
-    font-size: 1.2rem;
+  #nav-bar a{
+    font-size: 1.5rem;
   }
   #header {
     font-size: 3rem;
@@ -570,8 +569,7 @@ label #sign-two {
   #blurb,
   #h-blurb,
   #l-blurb,
-  #a-blurb
-  .article-content {
+  #a-blurb {
     font-size: 1.3rem;
   }
   .views-content-small {
@@ -582,9 +580,6 @@ label #sign-two {
   }
   #homeimg {
   background-attachment: unset;
-  }
-  .highlights {
-    padding-top: 5rem;
   }
 }
 
@@ -632,12 +627,12 @@ label #sign-two {
     text-align: left;
     position: fixed;
     width: 100vw;
-    background: color(yelloww);
+    background: color(bluee);
     top: 0;
     left: -100%;
     transition: 0.4s;
     z-index: -1;
-    padding-left: 0;
+    padding-left: 1rem;
     padding-top: 3.5rem;
     display: flex;
     flex-direction: column;
@@ -646,9 +641,13 @@ label #sign-two {
     line-height: 2.5rem;
     padding-left: 1rem;
   }
+  #nav-bar a{
+    color: #fff;
+  }
   #nav-bar a:hover {
     border: none;
     letter-spacing: .3rem;
+    color: color(yelloww);
   }
   #res-menu:checked ~ ul {
     left: 0;
