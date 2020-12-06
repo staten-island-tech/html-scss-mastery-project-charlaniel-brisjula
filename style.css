@@ -71,6 +71,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
   width: 100vw;
   height: 40vh;
 }
@@ -120,7 +121,6 @@ body {
   background-color: #2372D6;
   border-radius: 1vw;
   margin: 0;
-  top: 0.5vh;
   -webkit-transform: translateY(5vh);
           transform: translateY(5vh);
   display: -webkit-box;
@@ -130,8 +130,8 @@ body {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
-  text-align: left;
-  padding-left: 3.5vw;
+  text-align: center;
+  padding-left: 2vw;
 }
 
 .image-whole:hover .img-info,
