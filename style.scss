@@ -3,6 +3,7 @@
 @import "_history.scss";
 @import "_legends.scss";
 @import "_attractions.scss";
+@import "_wildlife.scss";
 
 html {
   scroll-behavior: smooth;
@@ -227,12 +228,11 @@ label #sign-two {
   }
   #blurb {
     line-height: 2rem;
-    font-size: 1.3rem;
+    //font-size: 1.3rem;
   }
   .btn,
   .btn:link,
   .btn:visited {
-    font-size: 1.3rem;
     padding: 1.25rem 1.5rem;
   }
   #eventsbtn {

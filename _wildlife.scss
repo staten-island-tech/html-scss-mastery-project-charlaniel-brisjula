@@ -1,0 +1,96 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+
+#wildlifebox {
+    position: relative;
+    background-color: #bddaff;
+    padding: 3.5vw;
+    padding-top: 5.5vw;
+    width: 100vw;
+    height: 80vh;
+}
+.w-row{
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-top: 2vw;
+    width: 100%;
+    height: 22vw;
+  }
+  .w-card {
+    /*float: left;*/
+    position: relative;
+    height: 20vw;
+    width: 20vw;
+    flex-basis: 20vw;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border-radius: 1vw;
+    background-color: #e4f0ff;
+    margin-right: 1vw;
+  }
+  
+  .w-card-text {
+    position: absolute;
+    font-size: 1.5rem;
+    bottom: 0;
+    background-color: rgba(235, 88, 119, 0.9);
+    width: 100%;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    @include text-stuff;
+    color: #fff;
+    display: flex; 
+    justify-content: center;
+  }
+
+  .w-img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      transform: translateY(-2.5vw);
+      display: flex;
+  }
+
+  /* Extra large devices (large laptops and desktops, 75rem and up) */
+@media only screen and (min-width: 75rem) {
+    /*#nav-bar {
+          background-color: blue;
+      }*/
+  }
+  
+  /* Large devices (laptops/desktops, up to 75rem) */
+  @media only screen and (max-width: 75rem) {
+    /*#nav-bar {
+          background-color: green;
+      }*/
+  }
+  
+  /* Medium devices (laptops/desktops, up to 62rem) */
+  @media only screen and (max-width: 62rem) {
+    /*#nav-bar {
+          background-color: yellow;
+      }*/
+  }
+  
+  /* Small devices (tablets/phones, up to 48rem) */
+  @media only screen and (max-width: 48rem) {
+    /*#nav-bar {
+          background-color: purple;
+      }*/
+    .w-card {
+        height: 35vw;
+        width: 35vw;
+        flex-basis: 35vw;
+    }
+    .w-row {
+        height: 37vw;
+    }
+  }
+  

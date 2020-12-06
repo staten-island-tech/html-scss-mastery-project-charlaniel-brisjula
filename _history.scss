@@ -92,7 +92,7 @@
     transform: translateY(5vh);
     display: flex;
     flex-direction: column-reverse;
-    text-align: center;
+    text-align: left;
     padding-left: 2vw;
   }
   .image-whole:hover .img-info,
@@ -120,9 +120,9 @@
     .header-history {
       font-size: 3rem;
     }
-    #l-blurb {
-      font-size: 1.3rem;
-    }
+    //#h-blurb {
+    //  font-size: 1.3rem;
+    //}
   }
   
   /* Medium devices (laptops/desktops, up to 62rem) */

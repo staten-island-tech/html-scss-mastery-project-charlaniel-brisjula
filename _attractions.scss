@@ -33,6 +33,7 @@
   .a-name {
     @include text-stuff;
     color: #fff;
+    font-weight: unset;
   }
   .views-content,
   .views-content-small {
@@ -124,11 +125,7 @@
     #a-header {
       font-size: 3rem;
     }
-    .a-text,
-    .a-name,
-    #a-blurb {
-      font-size: 1.3rem;
-    }
+    
     .views-content-small {
       display: none;
     }
