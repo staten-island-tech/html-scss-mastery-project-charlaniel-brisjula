@@ -406,8 +406,12 @@ label #sign-two {
 }
 
 #l-blurb {
-  @include text-stuff;
+  @include text-stuff
 }
+
+
+
+
 
 /* ATTRACTIONS */
 #attractionsbox {
@@ -417,9 +421,7 @@ label #sign-two {
   background-color: #e4f0ff;
 }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   box-sizing: border-box;
 }
 
@@ -436,7 +438,7 @@ label #sign-two {
 
 .views-row {
   display: flex;
-  padding: 0.5vw;
+  padding: .5vw;
   text-align: center;
 }
 .a-name {
@@ -449,13 +451,13 @@ label #sign-two {
   height: 17vw;
   border-radius: 1vw;
   position: relative;
-  transition: all 0.3s;
+  transition: all .3s;
 }
 .views-content-small {
   height: 12vw;
 }
 .article-image {
-  max-width: 100%;
+  max-width: 100%;    
   border-radius: 1vw;
   height: 100%;
 }
@@ -463,7 +465,7 @@ label #sign-two {
   position: absolute;
   z-index: 1;
   bottom: 0;
-  background-color: rgba(35, 114, 214, 0.9);
+  background-color: rgba(35, 114, 214, .9);
   width: 100%;
   border-bottom-left-radius: 1vw;
   border-bottom-right-radius: 1vw;
@@ -501,7 +503,7 @@ label #sign-two {
 #a-header {
   font-family: $mainfont;
   font-size: 5rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: .1rem;
   color: color(bluee);
   text-transform: uppercase;
 }
@@ -510,9 +512,9 @@ label #sign-two {
 }
 .views-content:hover,
 .views-content-small:hover {
-  transform: scale(1.3);
-  z-index: 10;
-  box-shadow: 0 0 3rem 2rem rgba(color(bluee), 0.4);
+ transform: scale(1.3);
+ z-index: 10;
+ box-shadow: 0 0 3rem 2rem rgba(color(bluee), 0.4);
 }
 
 /* MEDIA QUERIES */
@@ -623,9 +625,13 @@ label #sign-two {
   }
   #nav-bar a:hover {
     border: none;
+<<<<<<< HEAD
     letter-spacing: 0.3rem;
     letter-spacing: .3rem;
     color: color(yelloww);
+=======
+    letter-spacing: .3rem;
+>>>>>>> parent of 8cf7ee0... I don't know what these are
   }
   #res-menu:checked ~ ul {
     left: 0;
@@ -645,8 +651,8 @@ label #sign-two {
     text-align: center;
   }
   .views-content {
-    height: 40vh;
-    width: 100vw;
+  height: 40vh;
+  width: 100vw;
   }
   .views-row-flex,
   .views-row-flex-25,
@@ -667,7 +673,7 @@ label #sign-two {
   }
   .article-content {
     font-size: 1.3rem;
-    padding-bottom: 0.5vw;
+    padding-bottom: .5vw;
   }
   .article-image {
     width: 100%;

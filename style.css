@@ -350,9 +350,7 @@ body {
       }*/
 }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 /* Large devices (laptops/desktops, up to 75rem) */
@@ -428,7 +426,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0.5vw;
+  padding: .5vw;
   text-align: center;
 }
 
@@ -449,8 +447,8 @@ body {
   height: 17vw;
   border-radius: 1vw;
   position: relative;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .views-content-small {
@@ -521,7 +519,7 @@ body {
 #a-header {
   font-family: "Henny Penny", cursive;
   font-size: 5rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: .1rem;
   color: #2372D6;
   text-transform: uppercase;
 }
@@ -1012,9 +1010,13 @@ label #sign-two {
   }
   #nav-bar a:hover {
     border: none;
+<<<<<<< HEAD
     letter-spacing: 0.3rem;
     letter-spacing: .3rem;
     color: #F6F285;
+=======
+    letter-spacing: .3rem;
+>>>>>>> parent of 8cf7ee0... I don't know what these are
   }
   #res-menu:checked ~ ul {
     left: 0;
@@ -1032,7 +1034,7 @@ label #sign-two {
   }
   .article-content {
     font-size: 1.3rem;
-    padding-bottom: 0.5vw;
+    padding-bottom: .5vw;
   }
   .article-image {
     width: 100%;
