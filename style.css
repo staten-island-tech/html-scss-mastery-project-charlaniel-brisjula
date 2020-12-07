@@ -1049,6 +1049,7 @@ label #sign-two {
   }
   #nav-bar a:hover {
     border: none;
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1064,6 +1065,9 @@ label #sign-two {
 =======
     letter-spacing: 0.3rem;
 >>>>>>> Stashed changes
+=======
+    letter-spacing: .3rem;
+>>>>>>> parent of 8cf7ee0... I don't know what these are
   }
   #res-menu:checked ~ ul {
     left: 0;
@@ -1081,7 +1085,7 @@ label #sign-two {
   }
   .article-content {
     font-size: 1.3rem;
-    padding-bottom: 0.5vw;
+    padding-bottom: .5vw;
   }
   .article-image {
     width: 100%;
