@@ -394,11 +394,6 @@ body {
   position: relative;
 }
 
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 .highlights {
   -ms-box-orient: horizontal;
   display: -webkit-box;
