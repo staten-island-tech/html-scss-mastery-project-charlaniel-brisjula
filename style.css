@@ -748,6 +748,7 @@ body
   margin-top: 5.5vw;
 }
 
+<<<<<<< Updated upstream
 #header {
   color: #F6F285;
   font-family: "Henny Penny", cursive;
@@ -756,6 +757,13 @@ body
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   text-shadow: 0 0.5rem 0.5rem rgba(246, 242, 133, 0.4);
+=======
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+>>>>>>> Stashed changes
 }
 
 #blurb {
@@ -766,10 +774,19 @@ body
   letter-spacing: .1rem;
 }
 
+<<<<<<< Updated upstream
 #btnbox {
   position: relative;
   height: 5rem;
   margin-top: 5rem;
+=======
+.views-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5vw;
+  text-align: center;
+>>>>>>> Stashed changes
 }
 
 .btn,
@@ -787,11 +804,24 @@ body
   letter-spacing: .1rem;
 }
 
+<<<<<<< Updated upstream
 #attractionsbtn {
   border-bottom-left-radius: 2.5rem;
   border-top-right-radius: 2.5rem;
   background-color: #F6F285;
   color: #0036c9;
+=======
+.views-content,
+.views-content-small {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 17vw;
+  border-radius: 1vw;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+>>>>>>> Stashed changes
 }
 
 #attractionsbtn:hover,
@@ -867,6 +897,7 @@ a {
   }
 }
 
+<<<<<<< Updated upstream
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     -webkit-transform: translateY(0);
@@ -880,6 +911,14 @@ a {
     -webkit-transform: translateY(-15px);
             transform: translateY(-15px);
   }
+=======
+#a-header {
+  font-family: "Henny Penny", cursive;
+  font-size: 5rem;
+  letter-spacing: 0.1rem;
+  color: #2372D6;
+  text-transform: uppercase;
+>>>>>>> Stashed changes
 }
 
 label #sign-one,
@@ -1010,6 +1049,7 @@ label #sign-two {
   }
   #nav-bar a:hover {
     border: none;
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
     letter-spacing: 0.3rem;
@@ -1021,6 +1061,9 @@ label #sign-two {
 =======
     letter-spacing: .3rem;
 >>>>>>> parent of 8cf7ee0... I don't know what these are
+=======
+    letter-spacing: 0.3rem;
+>>>>>>> Stashed changes
   }
   #res-menu:checked ~ ul {
     left: 0;
@@ -1038,7 +1081,7 @@ label #sign-two {
   }
   .article-content {
     font-size: 1.3rem;
-    padding-bottom: .5vw;
+    padding-bottom: 0.5vw;
   }
   .article-image {
     width: 100%;
