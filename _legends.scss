@@ -1,0 +1,147 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+//LEGENDS
+#legendsbox {
+    background-color: #bddaff;
+    height: 95vh;
+    font-family: $subfont;
+    position: relative;
+  }
+  .wrapper {
+    position: relative;
+    top: 0;
+    width: 30rem;
+    height: 50rem;
+    perspective: 90rem;
+    margin: 0 auto;
+  }
+  .l-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s all ease;
+    transform: rotateX(60deg) scale(0.7);
+    perspective: 90rem;
+    box-shadow: 0 0 3rem 2rem rgba(color(bluee), 0.4);
+    animation: entry 1s linear 1;
+  }
+  #l-blurb {
+    padding-bottom: 1vw;
+  }
+  #legends-header {
+    font-family: $mainfont;
+    color: color(bluee);
+    font-size: 5rem;
+    text-align: center;
+    letter-spacing: .1rem;
+  }
+  #c1 {
+    background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+    box-shadow: 0 0 3rem 2rem rgba(color(bluee), 0.4);
+    left: 100%;
+    z-index: 0;
+  }
+  
+  #c2 {
+    left: -100%;
+    z-index: 0;
+    background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+    box-shadow: 0 0 3rem 2rem rgba(color(bluee), 0.4);
+  }
+  
+  .l-container:hover {
+    cursor: pointer;
+    transform: rotate(0deg) scale(1) translateY(10px);
+    transition: 0.5s all ease;
+    z-index: 400;
+  }
+  
+  .image {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 45%;
+    background: #2094ff;
+    overflow: hidden;
+  }
+  
+  #i1 {
+    background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  }
+  
+  #i2 {
+    background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  }
+  .story {
+    position: absolute;
+    top: 45%;
+    left: 0%;
+    height: 55%;
+    width: 100%;
+    background: #2094ff;
+    z-index: 30;
+  }
+  
+  #s1 {
+    background: #2094ff;
+  }
+  
+  #s2 {
+    background: #2094ff;
+  }
+  
+  .info {
+    position: absolute;
+    top: 10%;
+  }
+  
+  .l-title {
+    text-align: center;
+    text-shadow: 0px 0px 10px #eee;
+    color: #eee;
+    letter-spacing: .1rem;
+  }
+  
+  #l-blurb {
+    @include text-stuff
+  }
+  
+  /* MEDIA QUERIES */
+
+/* Extra large devices (large laptops and desktops, 75rem and up) */
+@media only screen and (min-width: 75rem) {
+    /*#nav-bar {
+          background-color: blue;
+      }*/
+  }
+  
+  /* Large devices (laptops/desktops, up to 75rem) */
+  @media only screen and (max-width: 75rem) {
+    /*#nav-bar {
+          background-color: green;
+      }*/
+    #l-blurb {
+      font-size: 1.3rem;
+    }
+  }
+  
+  /* Medium devices (laptops/desktops, up to 62rem) */
+  @media only screen and (max-width: 62rem) {
+    /*#nav-bar {
+          background-color: yellow;
+      }*/
+  }
+  
+  /* Small devices (tablets/phones, up to 48rem) */
+  @media only screen and (max-width: 48rem) {
+    /*#nav-bar {
+          background-color: purple;
+      }*/
+    #legendsbox {
+      padding-top: 10vw;
+    }
+  }
+  
