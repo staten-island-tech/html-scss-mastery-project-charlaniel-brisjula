@@ -213,7 +213,7 @@ body {
 
 #legendsbox {
   background-color: #bddaff;
-  height: 95vh;
+  height: 92vh;
   font-family: "Underdog", cursive;
   position: relative;
 }
@@ -254,7 +254,7 @@ body {
   color: #2372D6;
   font-size: 5rem;
   text-align: center;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 #c1 {
@@ -312,6 +312,8 @@ body {
   width: 100%;
   background: #2094ff;
   z-index: 30;
+  font-size: 5rem;
+  text-align: center;
 }
 
 #s1 {
@@ -331,7 +333,8 @@ body {
   text-align: center;
   text-shadow: 0px 0px 10px #eee;
   color: #eee;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
+  padding-bottom: 1rem;
 }
 
 #l-blurb {
