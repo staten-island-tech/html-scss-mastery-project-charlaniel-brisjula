@@ -41,9 +41,10 @@ body
   width: 100%;
   position: fixed;
   z-index: 99;
+  box-shadow: 0 .5rem .5rem -.3rem rgba(0,0,0,.2);
 }
 .logobox {
-  background-color: color(whitee);
+  background-color: rgba(color(whitee), .95);
   width: 30%;
   text-align: left;
   float: left;
@@ -62,7 +63,7 @@ body
   float: right;
   text-align: right;
   display: inline;
-  background-color: color(whitee);
+  background-color: rgba(color(whitee), .95);
   height: 5rem;
 }
 #nav-bar ul {
