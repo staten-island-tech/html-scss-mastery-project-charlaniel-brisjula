@@ -45,7 +45,6 @@ body {
   padding-right: 20vw;
   text-align: left;
   padding-bottom: 1vw;
-  line-height: 150%;
 }
 
 .img-img {
@@ -163,7 +162,7 @@ body {
   .header-history {
     font-size: 3rem;
   }
-  #l-blurb {
+  #h-blurb, .img-info {
     font-size: 1.3rem;
   }
 }
@@ -216,6 +215,7 @@ body {
   height: 94vh;
   font-family: "Underdog", cursive;
   position: relative;
+  padding-top: 5.5vw;
 }
 
 .wrapper {
@@ -246,17 +246,23 @@ body {
 }
 
 #l-blurb {
+  font-size: 1.5rem;
+  color: #000;
+  font-family: "Underdog", cursive;
+  letter-spacing: .05rem;
+  line-height: 150%;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  text-align: left;
   padding-bottom: 1vw;
-  text-align: center;
 }
 
-#legends-header {
+#l-header {
   font-family: "Henny Penny", cursive;
   color: #2372D6;
   font-size: 5rem;
   text-align: center;
   letter-spacing: 0.1rem;
-  padding-top: 5rem;
 }
 
 #c1 {
@@ -370,6 +376,9 @@ body {
   /*#nav-bar {
           background-color: yellow;
       }*/
+  #l-header {
+    font-size: 3rem;
+  }
 }
 
 /* Small devices (tablets/phones, up to 48rem) */
@@ -379,6 +388,11 @@ body {
       }*/
   #legendsbox {
     padding-top: 10vw;
+  }
+  #l-blurb {
+    padding-left: 3.5vw;
+    padding-right: 3.5vw;
+    margin-bottom: 5vw;
   }
 }
 
@@ -764,7 +778,7 @@ body
   color: #fff;
   font-family: "Underdog", cursive;
   font-size: 1.65rem;
-  line-height: 2.5rem;
+  line-height: 150%;
   letter-spacing: .1rem;
 }
 

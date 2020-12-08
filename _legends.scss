@@ -7,6 +7,7 @@
   height: 94vh;
   font-family: $subfont;
   position: relative;
+  padding-top: 5.5vw;
 }
 .wrapper {
   position: relative;
@@ -28,16 +29,18 @@
   animation: entry 1s linear 1;
 }
 #l-blurb {
-  padding-bottom: 1vw;
-  text-align: center;
+  @include text-stuff;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    text-align: left;
+    padding-bottom: 1vw;
 }
-#legends-header {
+#l-header {
   font-family: $mainfont;
   color: color(bluee);
   font-size: 5rem;
   text-align: center;
   letter-spacing: 0.1rem;
-  padding-top: 5rem;
 }
 #c1 {
   background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
@@ -138,6 +141,9 @@
   /*#nav-bar {
           background-color: yellow;
       }*/
+    #l-header {
+      font-size: 3rem;
+    }
 }
 
 /* Small devices (tablets/phones, up to 48rem) */
@@ -147,5 +153,10 @@
       }*/
   #legendsbox {
     padding-top: 10vw;
+  }
+  #l-blurb {
+    padding-left: 3.5vw;
+      padding-right: 3.5vw;
+      margin-bottom: 5vw;
   }
 }
