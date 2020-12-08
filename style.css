@@ -40,12 +40,11 @@ body {
   color: #000;
   font-family: "Underdog", cursive;
   letter-spacing: .05rem;
-  line-height: 150%;
+  line-height: 130%;
   padding-left: 20vw;
   padding-right: 20vw;
   text-align: left;
   padding-bottom: 1vw;
-  line-height: 150%;
 }
 
 .img-img {
@@ -336,7 +335,7 @@ body {
   color: #000;
   font-family: "Underdog", cursive;
   letter-spacing: .05rem;
-  line-height: 150%;
+  line-height: 130%;
 }
 
 /* MEDIA QUERIES */
@@ -426,7 +425,7 @@ body {
   color: #000;
   font-family: "Underdog", cursive;
   letter-spacing: .05rem;
-  line-height: 150%;
+  line-height: 130%;
   color: #fff;
   font-weight: unset;
 }
@@ -521,7 +520,7 @@ body {
   color: #000;
   font-family: "Underdog", cursive;
   letter-spacing: .05rem;
-  line-height: 150%;
+  line-height: 130%;
 }
 
 .views-content:hover,
@@ -641,7 +640,27 @@ body {
   padding: 3.5vw;
   padding-top: 5.5vw;
   width: 100vw;
-  height: 80vh;
+}
+
+#w-header {
+  font-size: 5rem;
+  color: #2372D6;
+  font-family: "Henny Penny", cursive;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+#w-blurb {
+  font-size: 1.5rem;
+  color: #000;
+  font-family: "Underdog", cursive;
+  letter-spacing: .05rem;
+  line-height: 130%;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  text-align: left;
 }
 
 .w-row {
@@ -659,9 +678,9 @@ body {
       flex-wrap: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
-  padding-top: 2vw;
+  padding-top: 3vw;
   width: 100%;
-  height: 22vw;
+  height: 23vw;
 }
 
 .w-card {
@@ -695,7 +714,7 @@ body {
   color: #000;
   font-family: "Underdog", cursive;
   letter-spacing: .05rem;
-  line-height: 150%;
+  line-height: 130%;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -728,6 +747,9 @@ body {
   /*#nav-bar {
           background-color: green;
       }*/
+  #w-header {
+    font-size: 3rem;
+  }
 }
 
 /* Medium devices (laptops/desktops, up to 62rem) */
@@ -749,7 +771,16 @@ body {
         flex-basis: 35vw;
   }
   .w-row {
-    height: 37vw;
+    height: 36vw;
+    padding-top: 1vw;
+  }
+  #wildlifebox {
+    padding-top: 10vw;
+  }
+  #w-blurb {
+    padding-left: 3.5vw;
+    padding-right: 3.5vw;
+    margin-bottom: 5vw;
   }
 }
 
@@ -800,11 +831,13 @@ body
 }
 
 .logobox {
-  background-color: #FFFFF3;
+  background-color: rgba(255, 255, 243, 0.95);
   width: 30%;
   text-align: left;
   float: left;
   height: 5rem;
+  -webkit-box-shadow: 0 0.5rem 0.5rem -0.3rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 0.5rem -0.3rem rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -821,8 +854,10 @@ body
   float: right;
   text-align: right;
   display: inline;
-  background-color: #FFFFF3;
+  background-color: rgba(255, 255, 243, 0.95);
   height: 5rem;
+  -webkit-box-shadow: 0 0.5rem 0.5rem -0.3rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 0.5rem -0.3rem rgba(0, 0, 0, 0.2);
 }
 
 #nav-bar ul {
@@ -876,7 +911,7 @@ body
   color: #fff;
   font-family: "Underdog", cursive;
   font-size: 1.65rem;
-  line-height: 2.5rem;
+  line-height: 130%;
   letter-spacing: .1rem;
 }
 
