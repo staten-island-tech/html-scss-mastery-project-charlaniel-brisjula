@@ -4,7 +4,7 @@
 //LEGENDS
 #legendsbox {
   background-color: #bddaff;
-  height: 94vh;
+  height: 90vh;
   font-family: $subfont;
   position: relative;
   padding-top: 5.5vw;
@@ -12,8 +12,8 @@
 .wrapper {
   position: relative;
   top: 0;
-  width: 30rem;
-  height: 50rem;
+  width: 25rem;
+  height: 40rem;
   perspective: 90rem;
   margin: 0 auto;
 }
@@ -30,10 +30,10 @@
 }
 #l-blurb {
   @include text-stuff;
-    padding-left: 20vw;
-    padding-right: 20vw;
-    text-align: left;
-    padding-bottom: 1vw;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  text-align: left;
+  padding-bottom: 1vw;
 }
 #l-header {
   font-family: $mainfont;
@@ -88,7 +88,7 @@
   width: 100%;
   background: #2094ff;
   z-index: 30;
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: center;
 }
 
@@ -141,9 +141,9 @@
   /*#nav-bar {
           background-color: yellow;
       }*/
-    #l-header {
-      font-size: 3rem;
-    }
+  #l-header {
+    font-size: 3rem;
+  }
 }
 
 /* Small devices (tablets/phones, up to 48rem) */
@@ -156,7 +156,7 @@
   }
   #l-blurb {
     padding-left: 3.5vw;
-      padding-right: 3.5vw;
-      margin-bottom: 5vw;
+    padding-right: 3.5vw;
+    margin-bottom: 5vw;
   }
 }
