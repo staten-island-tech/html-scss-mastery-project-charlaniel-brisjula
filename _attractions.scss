@@ -4,14 +4,14 @@
 /* ATTRACTIONS */
 #attractionsbox {
     width: 100vw;
-    height: 80vh;
+    height: 80.5vh;
     background-color: #cce2ff;
     position: relative;
   }
   
-  //*, *:before, *:after {
-  //  box-sizing: border-box;
-  //}
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
   
   .highlights {
     -ms-box-orient: horizontal;
@@ -106,7 +106,7 @@
    z-index: 10;
    box-shadow: 0 0 3rem 2rem rgba(color(bluee), 0.4);
   }
-  
+
   /* MEDIA QUERIES */
 
 /* Extra large devices (large laptops and desktops, 75rem and up) */
@@ -177,7 +177,7 @@
     #attractionsbox {
       display: flex;
       flex-direction: column;
-      height: 148vh;
+      height: 150vh;
     }
     #attractionsbox {
       padding-top: 12vw;
