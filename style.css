@@ -213,7 +213,7 @@ body {
 
 #legendsbox {
   background-color: #bddaff;
-  height: 92vh;
+  height: 94vh;
   font-family: "Underdog", cursive;
   position: relative;
 }
@@ -247,6 +247,7 @@ body {
 
 #l-blurb {
   padding-bottom: 1vw;
+  text-align: center;
 }
 
 #legends-header {
@@ -255,6 +256,7 @@ body {
   font-size: 5rem;
   text-align: center;
   letter-spacing: 0.1rem;
+  padding-top: 5rem;
 }
 
 #c1 {

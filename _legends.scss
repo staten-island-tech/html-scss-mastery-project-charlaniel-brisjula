@@ -4,7 +4,7 @@
 //LEGENDS
 #legendsbox {
   background-color: #bddaff;
-  height: 92vh;
+  height: 94vh;
   font-family: $subfont;
   position: relative;
 }
@@ -29,6 +29,7 @@
 }
 #l-blurb {
   padding-bottom: 1vw;
+  text-align: center;
 }
 #legends-header {
   font-family: $mainfont;
@@ -36,6 +37,7 @@
   font-size: 5rem;
   text-align: center;
   letter-spacing: 0.1rem;
+  padding-top: 5rem;
 }
 #c1 {
   background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
