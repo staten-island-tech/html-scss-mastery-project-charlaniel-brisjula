@@ -47,44 +47,43 @@ body {
   padding-bottom: 1vw;
 }
 
-.img-img {
-  border-radius: 1vw;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  width: 100%;
-  height: 100%;
-}
-
-.img-history-1 {
-  display: none;
-}
-
-.img-history-2 {
-  display: none;
-}
-
-.img-history-3 {
-  display: none;
-}
-
 .image-whole {
   position: relative;
-  padding: 3.5vw;
-  padding-top: 0.5vw;
-  padding-bottom: 0.5vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  width: 100vw;
-  height: 40vh;
+  margin-bottom: 1vw;
+}
+
+.h-img-1 {
+  width: 93vw;
+  height: 39vh;
+  border-radius: 1vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(/Images/FM2.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.h-img-2 {
+  width: 93vw;
+  height: 39vh;
+  border-radius: 1vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(/Images/WM3.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.h-img-3 {
+  width: 93vw;
+  height: 39vh;
+  border-radius: 1vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(/Images/BM1.jpg);
+  background-size: cover;
+  position: relative;
+  background-color: red;
 }
 
 .img-title {
@@ -142,7 +141,6 @@ body {
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
   text-align: center;
-  padding-left: 2vw;
 }
 
 .image-whole:hover .img-info,
@@ -225,7 +223,7 @@ body {
 
 #legendsbox {
   background-color: #bddaff;
-  height: 90vh;
+  width: 100vw;
   font-family: "Underdog", cursive;
   position: relative;
   padding-top: 5.5vw;
@@ -426,7 +424,9 @@ body {
   position: relative;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -455,7 +455,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: .5vw;
+  padding: 0.5vw;
   text-align: center;
 }
 
@@ -476,8 +476,8 @@ body {
   height: 17vw;
   border-radius: 1vw;
   position: relative;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .views-content-small {
@@ -548,7 +548,7 @@ body {
 #a-header {
   font-family: "Henny Penny", cursive;
   font-size: 5rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   color: #2372D6;
   text-transform: uppercase;
 }
