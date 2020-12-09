@@ -210,6 +210,17 @@ body {
     .image-whole-3 {
       background-color: rgba(8, 24, 97, 0.75);
     }*/
+  .image-whole:active {
+    opacity: 100%;
+    -webkit-transform: translateY(0vh);
+            transform: translateY(0vh);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 html,

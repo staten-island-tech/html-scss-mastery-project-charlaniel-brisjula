@@ -172,4 +172,10 @@
     .image-whole-3 {
       background-color: rgba(8, 24, 97, 0.75);
     }*/
+  .image-whole:active {
+    opacity: 100%;
+    transform: translateY(0vh);
+    display: flex;
+    justify-content: center;
+  }
 }
