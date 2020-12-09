@@ -57,7 +57,8 @@
   box-shadow: 0 0 3rem 2rem rgba(color(bluee), 0.4);
 }
 
-.l-container:hover {
+.l-container:hover,
+.l-container:focus {
   cursor: pointer;
   transform: rotate(0deg) scale(1) translateY(10px);
   transition: 0.5s all ease;

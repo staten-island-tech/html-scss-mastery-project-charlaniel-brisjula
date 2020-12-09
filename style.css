@@ -108,11 +108,11 @@ body {
 }
 
 .img-title-1 {
-  background-color: rgba(73, 110, 4, 0.75);
+  background-color: rgba(55, 110, 4, 0.75);
 }
 
 .img-title-2 {
-  background-color: rgba(178, 85, 23, 0.75);
+  background-color: rgba(178, 111, 23, 0.7);
 }
 
 .img-title-3 {
@@ -120,11 +120,11 @@ body {
 }
 
 .img-info-1 {
-  background-color: #496e04;
+  background-color: #376e04;
 }
 
 .img-info-2 {
-  background-color: #b25517;
+  background-color: #b26f17;
 }
 
 .img-info-3 {
@@ -169,6 +169,11 @@ body {
           justify-content: center;
 }
 
+.image-whole:hover .img-info-2,
+.image-whole:focus .img-info-2 {
+  opacity: 80%;
+}
+
 .image-whole:hover .img-title,
 .image-whole:focus .img-title {
   z-index: 1;
@@ -179,14 +184,14 @@ body {
 
 .image-whole:hover .img-info-1,
 .image-whole:focus .img-info-1 {
-  -webkit-box-shadow: 0 0 3rem 2rem rgba(73, 110, 4, 0.4);
-          box-shadow: 0 0 3rem 2rem rgba(73, 110, 4, 0.4);
+  -webkit-box-shadow: 0 0 3rem 2rem rgba(55, 110, 4, 0.4);
+          box-shadow: 0 0 3rem 2rem rgba(55, 110, 4, 0.4);
 }
 
 .image-whole:hover .img-info-2,
 .image-whole:focus .img-info-2 {
-  -webkit-box-shadow: 0 0 3rem 2rem rgba(178, 85, 23, 0.4);
-          box-shadow: 0 0 3rem 2rem rgba(178, 85, 23, 0.4);
+  -webkit-box-shadow: 0 0 3rem 2rem rgba(178, 111, 23, 0.4);
+          box-shadow: 0 0 3rem 2rem rgba(178, 111, 23, 0.4);
 }
 
 .image-whole:hover .img-info-3,
@@ -344,7 +349,8 @@ body {
           box-shadow: 0 0 3rem 2rem rgba(35, 114, 214, 0.4);
 }
 
-.l-container:hover {
+.l-container:hover,
+.l-container:focus {
   cursor: pointer;
   -webkit-transform: rotate(0deg) scale(1) translateY(10px);
           transform: rotate(0deg) scale(1) translateY(10px);
@@ -598,7 +604,6 @@ body {
 #a-header {
   font-family: "Henny Penny", cursive;
   font-size: 5rem;
-  letter-spacing: 0.1rem;
   color: #2372D6;
   text-transform: uppercase;
 }
@@ -796,6 +801,7 @@ body {
 .w-card-text {
   position: absolute;
   font-size: 1.5rem;
+  font-weight: 600;
   bottom: 0;
   background-color: rgba(235, 88, 119, 0.9);
   width: 100%;
