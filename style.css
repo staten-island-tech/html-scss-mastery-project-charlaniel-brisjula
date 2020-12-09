@@ -98,7 +98,7 @@ body {
 }
 
 .img-title-2 {
-  background-color: rgba(178, 111, 23, 0.8);
+  background-color: rgba(178, 79, 23, 0.8);
 }
 
 .img-title-3 {
@@ -110,7 +110,7 @@ body {
 }
 
 .img-info-2 {
-  background-color: #b26f17;
+  background-color: #b24f17;
 }
 
 .img-info-3 {
@@ -174,8 +174,8 @@ body {
 
 .image-whole:hover .img-info-2,
 .image-whole:focus .img-info-2 {
-  -webkit-box-shadow: 0 0 3rem 1rem rgba(178, 111, 23, 0.5);
-          box-shadow: 0 0 3rem 1rem rgba(178, 111, 23, 0.5);
+  -webkit-box-shadow: 0 0 3rem 1rem rgba(178, 79, 23, 0.5);
+          box-shadow: 0 0 3rem 1rem rgba(178, 79, 23, 0.5);
 }
 
 .image-whole:hover .img-info-3,
