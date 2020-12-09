@@ -4,151 +4,161 @@
 //this is charley's
 
 #historybox {
-    width: 100vw;
-    // padding-top: 0.6vw;
-    position: relative;
-    text-align: center;
-    padding-bottom: 3.5vw;
-    background-color: #cce2ff;
-    padding-top: 5.5vw;
-  }
-  .header-history {
-    font-size: 5rem;
-    color: color(bluee);
-    font-family: $mainfont;
-    margin: 0;
-    text-align: center;
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
-  }
-  #h-blurb {
-    @include text-stuff;
-    padding-left: 20vw;
-    padding-right: 20vw;
-    text-align: left;
-    padding-bottom: 1vw;
-  }
-  .img-img {
-    // width: 93vw;
-    // height: 19vh;
-    border-radius: 1vw;
-    transition: all 0.3s;
-    // max-width: 100%;
-    // width: auto;
-    width: 100%;
-    height: 100%;
-  }
-  .image-whole {
-    position: relative;
-    padding: 3.5vw;
-    padding-top: 0.5vw;
-    padding-bottom: 0.5vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    width: 100vw;
-    height: 40vh;
-  }
-  .img-title {
-    font-size: 3vw;
-    width: fit-content;
-    font-family: $subfont;
-    color: color(yelloww);
-    padding: 1vw 2vw;
-    border-radius: 1vw;
-    position: absolute;
-    line-height: 5vw;
-    text-transform: uppercase;
-    margin: 0;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-  }
-  .img-title-1 {
-    background-color: rgba(110, 105, 4, 0.75);
-  }
-  .img-title-2 {
-    background-color: rgba(178, 54, 23, 0.75);
-  }
-  .img-title-3 {
-    background-color: rgba(8, 24, 97, 0.75);
-  }
-  .img-info {
-    position: absolute;
-    color: #fff;
-    font-size: 1.5rem;
-    font-family: $subfont;
-    opacity: 0;
-    transition: all 0.3s;
-    width: 93vw;
-    height: 39vh;
-    background-color: color(bluee);
-    border-radius: 1vw;
-    margin: 0;
-    //top: 0.5vh;
-    transform: translateY(5vh);
-    display: flex;
-    flex-direction: column-reverse;
-    text-align: center;
-    padding-left: 2vw;
-  }
-  .image-whole:hover .img-info,
-  .image-whole:focus .img-info {
-    opacity: 100%;
-    transform: translateY(0vh);
-    display: flex;
-    justify-content: center;
-  }
+  width: 100vw;
+  // padding-top: 0.6vw;
+  position: relative;
+  text-align: center;
+  padding-bottom: 3.5vw;
+  background-color: #cce2ff;
+  padding-top: 5.5vw;
+}
+.header-history {
+  font-size: 5rem;
+  color: color(bluee);
+  font-family: $mainfont;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+#h-blurb {
+  @include text-stuff;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  text-align: left;
+  padding-bottom: 1vw;
+}
+.img-img {
+  // width: 93vw;
+  // height: 19vh;
+  border-radius: 1vw;
+  transition: all 0.3s;
+  // max-width: 100%;
+  // width: auto;
+  width: 100%;
+  height: 100%;
+}
+.img-history-1 {
+  display: none;
+}
+.img-history-2 {
+  display: none;
+}
+.img-history-3 {
+  display: none;
+}
+.image-whole {
+  position: relative;
+  padding: 3.5vw;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  height: 40vh;
+}
+.img-title {
+  font-size: 3vw;
+  width: fit-content;
+  font-family: $subfont;
+  color: color(yelloww);
+  padding: 1vw 2vw;
+  border-radius: 1vw;
+  position: absolute;
+  line-height: 5vw;
+  text-transform: uppercase;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.img-title-1 {
+  background-color: rgba(110, 105, 4, 0.75);
+}
+.img-title-2 {
+  background-color: rgba(178, 54, 23, 0.75);
+}
+.img-title-3 {
+  background-color: rgba(8, 24, 97, 0.75);
+}
+.img-info {
+  position: absolute;
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: $subfont;
+  opacity: 0;
+  transition: all 0.3s;
+  width: 93vw;
+  height: 39vh;
+  background-color: color(bluee);
+  border-radius: 1vw;
+  margin: 0;
+  //top: 0.5vh;
+  transform: translateY(5vh);
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+  padding-left: 2vw;
+}
+.image-whole:hover .img-info,
+.image-whole:focus .img-info {
+  opacity: 100%;
+  transform: translateY(0vh);
+  display: flex;
+  justify-content: center;
+}
 
-  /* MEDIA QUERIES */
+/* MEDIA QUERIES */
 
 /* Extra large devices (large laptops and desktops, 75rem and up) */
 @media only screen and (min-width: 75rem) {
-    /*#nav-bar {
+  /*#nav-bar {
           background-color: blue;
       }*/
-  }
-  
-  /* Large devices (laptops/desktops, up to 75rem) */
-  @media only screen and (max-width: 75rem) {
-    /*#nav-bar {
+}
+
+/* Large devices (laptops/desktops, up to 75rem) */
+@media only screen and (max-width: 75rem) {
+  /*#nav-bar {
           background-color: green;
       }*/
-    .header-history {
-      font-size: 3rem;
-    }
-    #h-blurb, .img-info {
-      font-size: 1.3rem;
-    }
+  .header-history {
+    font-size: 3rem;
   }
-  
-  /* Medium devices (laptops/desktops, up to 62rem) */
-  @media only screen and (max-width: 62rem) {
-    /*#nav-bar {
+  #h-blurb,
+  .img-info {
+    font-size: 1.3rem;
+  }
+}
+
+/* Medium devices (laptops/desktops, up to 62rem) */
+@media only screen and (max-width: 62rem) {
+  /*#nav-bar {
           background-color: yellow;
       }*/
-  }
-  
-  /* Small devices (tablets/phones, up to 48rem) */
-  @media only screen and (max-width: 48rem) {
-    /*#nav-bar {
+}
+
+/* Small devices (tablets/phones, up to 48rem) */
+@media only screen and (max-width: 48rem) {
+  /*#nav-bar {
           background-color: purple;
       }*/
-    .img-title {
-      font-size: 5vw;
-      //background: none;
-    }
-    #historybox {
-      padding-top: 10vw;
-    }
-    #h-blurb {
-      padding-left: 3.5vw;
-      padding-right: 3.5vw;
-      margin-bottom: 5vw;
-    }
-    /*.image-whole-1 {
+  .img-title {
+    font-size: 5vw;
+    //background: none;
+  }
+  #historybox {
+    padding-top: 10vw;
+  }
+  #h-blurb {
+    padding-left: 3.5vw;
+    padding-right: 3.5vw;
+    margin-bottom: 5vw;
+  }
+  /*.image-whole-1 {
       background-color: rgba(110, 105, 4, 0.75);
     }
     .image-whole-2 {
@@ -157,5 +167,4 @@
     .image-whole-3 {
       background-color: rgba(8, 24, 97, 0.75);
     }*/
-  }
-  
+}

@@ -55,6 +55,18 @@ body {
   height: 100%;
 }
 
+.img-history-1 {
+  display: none;
+}
+
+.img-history-2 {
+  display: none;
+}
+
+.img-history-3 {
+  display: none;
+}
+
 .image-whole {
   position: relative;
   padding: 3.5vw;
@@ -162,7 +174,8 @@ body {
   .header-history {
     font-size: 3rem;
   }
-  #h-blurb, .img-info {
+  #h-blurb,
+  .img-info {
     font-size: 1.3rem;
   }
 }
