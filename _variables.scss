@@ -9,7 +9,10 @@ body {
 $colors: (
     whitee: #FFFFF3,
     yelloww: #F6F285,
-    bluee: #2372D6
+    bluee: #2372D6,
+    hgreen: #496e04,
+    hred: #b25517,
+    hblue: #5d2bd1
 );
 
 @function color($color-name) {
