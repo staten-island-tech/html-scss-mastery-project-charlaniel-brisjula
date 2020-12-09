@@ -108,15 +108,15 @@ body {
 }
 
 .img-title-1 {
-  background-color: rgba(55, 110, 4, 0.75);
+  background-color: rgba(55, 110, 4, 0.85);
 }
 
 .img-title-2 {
-  background-color: rgba(178, 111, 23, 0.7);
+  background-color: rgba(178, 111, 23, 0.8);
 }
 
 .img-title-3 {
-  background-color: rgba(93, 43, 209, 0.75);
+  background-color: rgba(93, 43, 209, 0.85);
 }
 
 .img-info-1 {
@@ -167,11 +167,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.image-whole:hover .img-info-2,
-.image-whole:focus .img-info-2 {
-  opacity: 80%;
 }
 
 .image-whole:hover .img-title,
@@ -265,6 +260,9 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .img-title {
+    padding: 2vw 3vw;
+  }
 }
 
 html,
@@ -282,9 +280,10 @@ body {
   font-family: "Underdog", cursive;
   position: relative;
   padding-top: 5.5vw;
+  padding-bottom: 3.5vw;
 }
 
-.wrapper {
+.l-wrapper {
   position: relative;
   top: 0;
   width: 25rem;
@@ -455,6 +454,13 @@ body {
       }*/
   #legendsbox {
     padding-top: 10vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #l-blurb {
     padding-left: 3.5vw;
@@ -846,6 +852,10 @@ body {
       }*/
   #w-header {
     font-size: 3rem;
+  }
+  .w-card-text,
+  #w-blurb {
+    font-size: 1.3rem;
   }
 }
 

@@ -80,13 +80,13 @@
   transition: all 0.3s;
 }
 .img-title-1 {
-  background-color: rgba(color(hgreen), 0.75);
+  background-color: rgba(color(hgreen), 0.85);
 }
 .img-title-2 {
-  background-color: rgba(color(hred), 0.70);
+  background-color: rgba(color(hred), 0.80);
 }
 .img-title-3 {
-  background-color: rgba(color(hblue), 0.75);
+  background-color: rgba(color(hblue), 0.85);
 }
 .img-info-1 {
   background-color: color(hgreen);
@@ -122,10 +122,6 @@
   transform: translateY(0vh);
   display: flex;
   justify-content: center;
-}
-.image-whole:hover .img-info-2,
-.image-whole:focus .img-info-2 {
-  opacity: 80%;
 }
 .image-whole:hover .img-title,
 .image-whole:focus .img-title {
@@ -207,5 +203,8 @@
     transform: translateY(0vh);
     display: flex;
     justify-content: center;
+  }
+  .img-title {
+    padding: 2vw 3vw;
   }
 }

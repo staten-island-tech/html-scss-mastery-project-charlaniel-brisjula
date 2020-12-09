@@ -9,8 +9,9 @@
   font-family: $subfont;
   position: relative;
   padding-top: 5.5vw;
+  padding-bottom: 3.5vw;
 }
-.wrapper {
+.l-wrapper {
   position: relative;
   top: 0;
   width: 25rem;
@@ -155,6 +156,8 @@
       }*/
   #legendsbox {
     padding-top: 10vw;
+    display: flex;
+    flex-direction: column;
   }
   #l-blurb {
     padding-left: 3.5vw;
