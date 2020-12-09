@@ -872,13 +872,13 @@ body {
           background-color: purple;
       }*/
   .w-card {
-    height: 35vw;
-    width: 35vw;
-    -ms-flex-preferred-size: 35vw;
-        flex-basis: 35vw;
+    height: 40vw;
+    width: 40vw;
+    -ms-flex-preferred-size: 40vw;
+        flex-basis: 40vw;
   }
   .w-row {
-    height: 36vw;
+    height: 41vw;
     padding-top: 1vw;
   }
   #wildlifebox {
