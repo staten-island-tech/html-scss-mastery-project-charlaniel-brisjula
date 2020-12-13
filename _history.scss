@@ -8,7 +8,7 @@
   // padding-top: 0.6vw;
   position: relative;
   text-align: center;
-  padding-bottom: 3.5vw;
+  padding-bottom: 2.5vw;
   background-color: #cce2ff;
   padding-top: 5.5vw;
 }
@@ -190,6 +190,14 @@
     justify-content: center;
   }
   .img-title {
-    padding: 2vw 3vw;
+    z-index: 1;
+    top: 25%;
+    background-color: rgba(0,0,0,0);
+    padding: none;
+  }
+  .img-info {
+    opacity: 90%;
+    transform: translate(0);
+    justify-content: center;
   }
 }

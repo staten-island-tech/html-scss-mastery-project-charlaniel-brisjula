@@ -20,7 +20,7 @@ body {
   width: 100vw;
   position: relative;
   text-align: center;
-  padding-bottom: 3.5vw;
+  padding-bottom: 2.5vw;
   background-color: #cce2ff;
   padding-top: 5.5vw;
 }
@@ -250,7 +250,18 @@ body {
             justify-content: center;
   }
   .img-title {
-    padding: 2vw 3vw;
+    z-index: 1;
+    top: 25%;
+    background-color: rgba(0, 0, 0, 0);
+    padding: none;
+  }
+  .img-info {
+    opacity: 90%;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -494,8 +505,8 @@ body {
 
 .l-card {
   width: 25rem;
-  height: 30rem;
-  margin: 2.5vw;
+  height: 40vw;
+  margin: .5vw;
   border-radius: 1vw;
   -webkit-box-shadow: 0 1px 6px 0;
           box-shadow: 0 1px 6px 0;
@@ -515,15 +526,16 @@ body {
   bottom: 0;
 }
 
+.legends-whole {
+  display: none;
+}
+
 /* MEDIA QUERIES */
 /* Extra large devices (large laptops and desktops, 75rem and up) */
 @media only screen and (min-width: 75rem) {
   /*#nav-bar {
           background-color: blue;
       }*/
-  .legends-whole {
-    display: none;
-  }
 }
 
 /* Large devices (laptops/desktops, up to 75rem) */
@@ -572,6 +584,9 @@ body {
   .legends-whole {
     display: block;
     display: initial;
+  }
+  .l-card {
+    width: 93vw;
   }
 }
 

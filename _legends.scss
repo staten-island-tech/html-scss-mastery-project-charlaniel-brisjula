@@ -203,8 +203,8 @@
 
 .l-card {
   width: 25rem;
-  height: 30rem;
-  margin: 2.5vw;
+  height: 40vw;
+  margin: .5vw;
   border-radius: 1vw;
   box-shadow: 0 1px 6px 0;
 }
@@ -222,7 +222,9 @@
   top: 0;
   bottom: 0;
 }
-
+.legends-whole {
+  display: none;
+}
 /* MEDIA QUERIES */
 
 /* Extra large devices (large laptops and desktops, 75rem and up) */
@@ -230,9 +232,6 @@
   /*#nav-bar {
           background-color: blue;
       }*/
-  .legends-whole {
-    display: none;
-  }
 }
 
 /* Large devices (laptops/desktops, up to 75rem) */
@@ -283,5 +282,8 @@
   .legends-whole {
     display: block;
     display: initial;
+  }
+  .l-card {
+    width: 93vw;
   }
 }
