@@ -387,7 +387,7 @@ body {
   line-height: 150%;
 }
 
-.whatever {
+.legends-whole {
   background-color: #bddaff;
   width: 100vw;
   font-family: "Underdog", cursive;
@@ -521,6 +521,9 @@ body {
   /*#nav-bar {
           background-color: blue;
       }*/
+  .legends-whole {
+    display: none;
+  }
 }
 
 /* Large devices (laptops/desktops, up to 75rem) */
@@ -531,6 +534,9 @@ body {
   #l-blurb {
     font-size: 1.3rem;
   }
+  .legends-whole {
+    display: none;
+  }
 }
 
 /* Medium devices (laptops/desktops, up to 62rem) */
@@ -540,6 +546,9 @@ body {
       }*/
   #l-header {
     font-size: 3rem;
+  }
+  .legends-whole {
+    display: none;
   }
 }
 
@@ -566,7 +575,7 @@ body {
   #legendsbox {
     display: none;
   }
-  #legendsbox2 {
+  .legends-whole {
     display: block;
     display: initial;
   }

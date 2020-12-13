@@ -113,7 +113,7 @@
 }
 
 //lEGENDS FOR MOBILE
-.whatever {
+.legends-whole {
   background-color: #bddaff;
   // height: 90vh;
   width: 100vw;
@@ -230,6 +230,9 @@
   /*#nav-bar {
           background-color: blue;
       }*/
+  .legends-whole {
+    display: none;
+  }
 }
 
 /* Large devices (laptops/desktops, up to 75rem) */
@@ -239,6 +242,9 @@
       }*/
   #l-blurb {
     font-size: 1.3rem;
+  }
+  .legends-whole {
+    display: none;
   }
 }
 
@@ -250,6 +256,9 @@
   #l-header {
     font-size: 3rem;
   }
+  .legends-whole {
+    display: none;
+  }
 }
 
 /* Small devices (tablets/phones, up to 48rem) */
@@ -257,6 +266,7 @@
   /*#nav-bar {
           background-color: purple;
       }*/
+
   #legendsbox {
     padding-top: 10vw;
     display: flex;
@@ -270,7 +280,7 @@
   #legendsbox {
     display: none;
   }
-  #legendsbox2 {
+  .legends-whole {
     display: block;
     display: initial;
   }
