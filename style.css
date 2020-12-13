@@ -534,9 +534,6 @@ body {
   #l-blurb {
     font-size: 1.3rem;
   }
-  .legends-whole {
-    display: none;
-  }
 }
 
 /* Medium devices (laptops/desktops, up to 62rem) */
@@ -546,9 +543,6 @@ body {
       }*/
   #l-header {
     font-size: 3rem;
-  }
-  .legends-whole {
-    display: none;
   }
 }
 
@@ -571,13 +565,6 @@ body {
     padding-left: 3.5vw;
     padding-right: 3.5vw;
     margin-bottom: 5vw;
-  }
-  #legendsbox {
-    display: none;
-  }
-  .legends-whole {
-    display: block;
-    display: initial;
   }
 }
 

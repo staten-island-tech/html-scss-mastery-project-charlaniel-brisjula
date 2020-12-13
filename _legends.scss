@@ -243,9 +243,9 @@
   #l-blurb {
     font-size: 1.3rem;
   }
-  .legends-whole {
-    display: none;
-  }
+  // .legends-whole {
+  //   display: none;
+  // }
 }
 
 /* Medium devices (laptops/desktops, up to 62rem) */
@@ -256,9 +256,9 @@
   #l-header {
     font-size: 3rem;
   }
-  .legends-whole {
-    display: none;
-  }
+  // .legends-whole {
+  //   display: none;
+  // }
 }
 
 /* Small devices (tablets/phones, up to 48rem) */
@@ -277,11 +277,11 @@
     padding-right: 3.5vw;
     margin-bottom: 5vw;
   }
-  #legendsbox {
-    display: none;
-  }
-  .legends-whole {
-    display: block;
-    display: initial;
-  }
+  // #legendsbox {
+  //   display: none;
+  // }
+  // .legends-whole {
+  //   display: block;
+  //   display: initial;
+  // }
 }
