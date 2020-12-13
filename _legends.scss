@@ -109,3 +109,72 @@
   top: 0;
   bottom: 0;
 }
+//MEDIA QUERIES
+
+/* Large devices (laptops/desktops, up to 75rem) */
+@media only screen and (max-width: 75rem) {
+  /*#nav-bar {
+          background-color: green;
+      }*/
+  #l-blurb {
+    font-size: 1.3rem;
+  }
+  // .legends-whole {
+  //   display: none;
+  // }
+}
+
+/* Medium devices (laptops/desktops, up to 62rem) */
+@media only screen and (max-width: 62rem) {
+  /*#nav-bar {
+          background-color: yellow;
+      }*/
+  #l-header {
+    font-size: 3rem;
+  }
+  // .legends-whole {
+  //   display: none;
+  // }
+}
+
+/* Small devices (tablets/phones, up to 48rem) */
+@media only screen and (max-width: 48rem) {
+  /*#nav-bar {
+          background-color: purple;
+      }*/
+
+  #legendsbox {
+    padding-top: 10vw;
+    display: flex;
+    flex-direction: column;
+  }
+  #l-blurb {
+    padding-left: 3.5vw;
+    padding-right: 3.5vw;
+    margin-bottom: 5vw;
+  }
+  .l-card-container {
+    display: flex;
+    flex-direction: column;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  // #legendsbox {
+  //   display: none;
+  // }
+  // .legends-whole {
+  //   display: block;
+  //   display: initial;
+  // }
+}
