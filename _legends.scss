@@ -29,7 +29,8 @@
           perspective: 500px;
 }
 
-.card-container:hover .card{
+.card-container:hover .card,
+.card-container:focus .card{
           transform: rotateY( 180deg );
 }
 
