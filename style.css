@@ -272,12 +272,8 @@ body {
   padding-bottom: 2vw;
 }
 
-#l-header {
-  font-family: "Henny Penny", cursive;
-  color: #2372D6;
-  font-size: 5rem;
-  text-align: center;
-  letter-spacing: 0.1rem;
+#legendsbox2 {
+  display: none;
 }
 
 #l-blurb {
@@ -297,39 +293,12 @@ body {
           perspective: 500px;
 }
 
-.card-container:hover .card,
-.card-container:focus .card {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-.card {
-  -webkit-transition: -webkit-transform 0.7s;
-  transition: -webkit-transform 0.7s;
-  transition: transform 0.7s;
-  transition: transform 0.7s, -webkit-transform 0.7s;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
-
-.front,
-.back {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-}
-
-.back {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-/*Custom Styles*/
-.cards-container {
+.l-wrapper {
+  -webkit-perspective: 90rem;
+          perspective: 90rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  box-orient: horizontal;
-  box-direction: normal;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -337,8 +306,46 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 3.5vw;
-  margin-right: 3.5vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.l-container {
+  top: 0;
+  width: 25rem;
+  height: 40rem;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  -webkit-transform: rotateX(40deg) scale(0.7);
+          transform: rotateX(40deg) scale(0.7);
+  -webkit-box-shadow: 0 0 3rem 2rem rgba(35, 114, 214, 0.4);
+          box-shadow: 0 0 3rem 2rem rgba(35, 114, 214, 0.4);
+  -webkit-animation: entry 1s linear 1;
+          animation: entry 1s linear 1;
+}
+
+.l-container:hover,
+.l-container:focus {
+  cursor: pointer;
+  -webkit-transform: rotate(0deg) scale(1) translateY(3rem);
+          transform: rotate(0deg) scale(1) translateY(3rem);
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.story {
+  position: absolute;
+  top: 45%;
+  height: 55%;
+  width: 100%;
+  background: #2372D6;
+  font-size: 4rem;
 }
 
 .card {
@@ -386,12 +393,151 @@ body {
   font-size: 1.5rem;
 }
 
+#l-blurb {
+  font-size: 1.5rem;
+  color: #000;
+  font-family: "Underdog", cursive;
+  letter-spacing: .05rem;
+  line-height: 150%;
+}
+
+.legends-whole {
+  background-color: #bddaff;
+  width: 100vw;
+  font-family: "Underdog", cursive;
+  position: relative;
+  padding-top: 5.5vw;
+  padding-bottom: 3.5vw;
+}
+
+#l-header {
+  font-family: "Henny Penny", cursive;
+  color: #2372D6;
+  font-size: 5rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  padding-top: 2rem;
+}
+
+#l-blurb {
+  font-size: 1.5rem;
+  color: #000;
+  font-family: "Underdog", cursive;
+  letter-spacing: .05rem;
+  line-height: 150%;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  text-align: left;
+  padding-bottom: 1vw;
+}
+
+.l-card-container {
+  -webkit-perspective: 500px;
+  perspective: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.l-card-container:hover .l-card {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.l-card {
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: -webkit-transform 0.7s;
+  transition: transform 0.7s;
+  transition: transform 0.7s, -webkit-transform 0.7s;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.l-front,
+.l-back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.l-back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.l-front-1 {
+  background-image: url(/Images/Lantern3.jpg);
+  background-size: cover;
+  border-radius: 1vw;
+}
+
+.l-front-2 {
+  background-image: url(/Images/D3.jpg);
+  background-size: cover;
+  border-radius: 1vw;
+}
+
+.l-front-3 {
+  background-image: url(/Images/Space1.jpeg);
+  background-size: cover;
+  border-radius: 1vw;
+}
+
+/*Custom Styles*/
+.l-cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.l-card {
+  width: 25rem;
+  height: 30rem;
+  margin: 2.5vw;
+  border-radius: 1vw;
+  -webkit-box-shadow: 0 1px 6px 0;
+          box-shadow: 0 1px 6px 0;
+}
+
+.l-image {
+  width: 20rem;
+  height: 30rem;
+  display: block;
+}
+
+.l-front,
+.l-back {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+
 /* MEDIA QUERIES */
 /* Extra large devices (large laptops and desktops, 75rem and up) */
 @media only screen and (min-width: 75rem) {
   /*#nav-bar {
           background-color: blue;
       }*/
+  .legends-whole {
+    display: none;
+  }
 }
 
 /* Large devices (laptops/desktops, up to 75rem) */
@@ -428,21 +574,12 @@ body {
     padding-right: 3.5vw;
     margin-bottom: 5vw;
   }
-  .cards-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  #legendsbox {
+    display: none;
   }
-  .card {
-    width: 93vw;
-    margin: 0.5vw;
+  .legends-whole {
+    display: block;
+    display: initial;
   }
 }
 

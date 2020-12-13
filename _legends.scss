@@ -11,12 +11,8 @@
   padding-top: 5.5vw;
   padding-bottom: 2vw;
 }
-#l-header {
-  font-family: $mainfont;
-  color: color(bluee);
-  font-size: 5rem;
-  text-align: center;
-  letter-spacing: 0.1rem;
+#legendsbox2 {
+  display: none;
 }
 #l-blurb {
   @include text-stuff;
@@ -28,35 +24,59 @@
 .card-container {
   perspective: 500px;
 }
-
-.card-container:hover .card,
-.card-container:focus .card {
-  transform: rotateY(180deg);
-}
-
-.card {
-  transition: transform 0.7s;
-  transform-style: preserve-3d;
-}
-
-.front,
-.back {
-  backface-visibility: hidden;
-}
-
-.back {
-  transform: rotateY(180deg);
-}
-
-/*Custom Styles*/
-.cards-container {
+.l-wrapper {
+  // position: relative;
+  // top: 0;
+  // width: 25rem;
+  // height: 40rem;
+  perspective: 90rem;
+  // margin: 0 auto;
   display: flex;
-  box-orient: horizontal;
-  box-direction: normal;
   flex-direction: row;
   justify-content: center;
-  margin-left: 3.5vw;
-  margin-right: 3.5vw;
+  align-items: center;
+}
+.l-container {
+  // position: absolute;
+  top: 0;
+  width: 25rem;
+  height: 40rem;
+  transition: 0.5s all ease;
+  transform: rotateX(40deg) scale(0.7);
+  box-shadow: 0 0 3rem 2rem rgba(color(bluee), 0.4);
+  animation: entry 1s linear 1;
+}
+// #c1 {
+//   left: 100%;
+//   z-index: 0;
+// }
+
+// #c2 {
+//   left: -100%;
+//   z-index: 0;
+// }
+
+.l-container:hover,
+.l-container:focus {
+  cursor: pointer;
+  transform: rotate(0deg) scale(1) translateY(3rem);
+  transition: 0.5s all ease;
+  // z-index: 400;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.story {
+  position: absolute;
+  top: 45%;
+  // left: 0%;
+  height: 55%;
+  width: 100%;
+  background: color(bluee);
+  // z-index: 30;
+  font-size: 4rem;
 }
 
 .card {
@@ -97,6 +117,121 @@
   font-size: 1.5rem;
 }
 
+#l-blurb {
+  @include text-stuff;
+}
+
+//lEGENDS FOR MOBILE
+.legends-whole {
+  background-color: #bddaff;
+  // height: 90vh;
+  width: 100vw;
+  font-family: $subfont;
+  position: relative;
+  padding-top: 5.5vw;
+  padding-bottom: 3.5vw;
+}
+#l-header {
+  font-family: $mainfont;
+  color: color(bluee);
+  font-size: 5rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  padding-top: 2rem;
+}
+#l-blurb {
+  @include text-stuff;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  text-align: left;
+  padding-bottom: 1vw;
+}
+.l-card-container {
+  -webkit-perspective: 500px;
+  perspective: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.l-card-container:hover .l-card {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.l-card {
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: transform 0.7s;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.l-front,
+.l-back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.l-back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.l-front-1 {
+  background-image: url(/Images/Lantern3.jpg);
+  background-size: cover;
+  border-radius: 1vw;
+}
+.l-front-2 {
+  background-image: url(/Images/D3.jpg);
+  background-size: cover;
+  border-radius: 1vw;
+}
+.l-front-3 {
+  background-image: url(/Images/Space1.jpeg);
+  background-size: cover;
+  border-radius: 1vw;
+}
+
+/*Custom Styles*/
+.l-cards-container {
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.l-card {
+  width: 25rem;
+  height: 30rem;
+  margin: 2.5vw;
+  border-radius: 1vw;
+  box-shadow: 0 1px 6px 0;
+}
+
+.l-image {
+  width: 20rem;
+  height: 30rem;
+  display: block;
+}
+
+.l-front,
+.l-back {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+
 /* MEDIA QUERIES */
 
 /* Extra large devices (large laptops and desktops, 75rem and up) */
@@ -104,6 +239,9 @@
   /*#nav-bar {
           background-color: blue;
       }*/
+  .legends-whole {
+    display: none;
+  }
 }
 
 /* Large devices (laptops/desktops, up to 75rem) */
@@ -114,6 +252,9 @@
   #l-blurb {
     font-size: 1.3rem;
   }
+  // .legends-whole {
+  //   display: none;
+  // }
 }
 
 /* Medium devices (laptops/desktops, up to 62rem) */
@@ -124,6 +265,9 @@
   #l-header {
     font-size: 3rem;
   }
+  // .legends-whole {
+  //   display: none;
+  // }
 }
 
 /* Small devices (tablets/phones, up to 48rem) */
@@ -131,6 +275,7 @@
   /*#nav-bar {
           background-color: purple;
       }*/
+
   #legendsbox {
     padding-top: 10vw;
     padding-bottom: 3vw;
@@ -140,13 +285,11 @@
     padding-right: 3.5vw;
     margin-bottom: 5vw;
   }
-  .cards-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  #legendsbox {
+    display: none;
   }
-  .card {
-    width: 93vw;
-    margin: 0.5vw;
+  .legends-whole {
+    display: block;
+    display: initial;
   }
 }
