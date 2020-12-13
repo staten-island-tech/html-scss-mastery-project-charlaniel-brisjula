@@ -251,12 +251,16 @@ body {
   }
   .img-title {
     z-index: 1;
-    top: 25%;
+    top: 15%;
     background-color: rgba(0, 0, 0, 0);
     padding: none;
   }
+  .image-whole:hover .img-title,
+  .image-whole:focus .img-title {
+    top: 15%;
+  }
   .img-info {
-    opacity: 90%;
+    opacity: 85%;
     -webkit-transform: translate(0);
             transform: translate(0);
     -webkit-box-pack: center;
