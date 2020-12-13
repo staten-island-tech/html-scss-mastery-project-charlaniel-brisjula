@@ -204,6 +204,24 @@ body {
   .img-info {
     font-size: 1.3rem;
   }
+  .img-title {
+    z-index: 1;
+    top: 20%;
+    background-color: rgba(0, 0, 0, 0);
+    padding: none;
+  }
+  .image-whole:hover .img-title,
+  .image-whole:focus .img-title {
+    top: 20%;
+  }
+  .img-info {
+    opacity: 85%;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 /* Medium devices (laptops/desktops, up to 62rem) */
@@ -249,24 +267,6 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .img-title {
-    z-index: 1;
-    top: 15%;
-    background-color: rgba(0, 0, 0, 0);
-    padding: none;
-  }
-  .image-whole:hover .img-title,
-  .image-whole:focus .img-title {
-    top: 15%;
-  }
-  .img-info {
-    opacity: 85%;
-    -webkit-transform: translate(0);
-            transform: translate(0);
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
 }
 
 html,
@@ -291,7 +291,7 @@ body {
   display: none;
 }
 
-#l-blurb {
+.l-blurb {
   font-size: 1.5rem;
   color: #000;
   font-family: "Underdog", cursive;
@@ -303,7 +303,7 @@ body {
   padding-bottom: 1vw;
 }
 
-#l-header {
+.l-header {
   font-family: "Henny Penny", cursive;
   color: #2372D6;
   font-size: 5rem;
@@ -394,14 +394,6 @@ body {
   font-size: 1.5rem;
 }
 
-#l-blurb {
-  font-size: 1.5rem;
-  color: #000;
-  font-family: "Underdog", cursive;
-  letter-spacing: .05rem;
-  line-height: 150%;
-}
-
 .legends-whole {
   background-color: #bddaff;
   width: 100vw;
@@ -411,7 +403,7 @@ body {
   padding-bottom: 3.5vw;
 }
 
-#l-header {
+.l-header {
   font-family: "Henny Penny", cursive;
   color: #2372D6;
   font-size: 5rem;
@@ -420,7 +412,7 @@ body {
   padding-top: 2rem;
 }
 
-#l-blurb {
+.l-blurb {
   font-size: 1.5rem;
   color: #000;
   font-family: "Underdog", cursive;
@@ -509,7 +501,7 @@ body {
 
 .l-card {
   width: 25rem;
-  height: 40vw;
+  height: 40vh;
   margin: .5vw;
   border-radius: 1vw;
   -webkit-box-shadow: 0 1px 6px 0;
@@ -547,7 +539,7 @@ body {
   /*#nav-bar {
           background-color: green;
       }*/
-  #l-blurb {
+  .l-blurb {
     font-size: 1.3rem;
   }
 }
@@ -557,7 +549,7 @@ body {
   /*#nav-bar {
           background-color: yellow;
       }*/
-  #l-header {
+  .l-header {
     font-size: 3rem;
   }
 }
@@ -577,7 +569,7 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #l-blurb {
+  .l-blurb {
     padding-left: 3.5vw;
     padding-right: 3.5vw;
     margin-bottom: 5vw;
@@ -978,8 +970,10 @@ body {
   #w-header {
     font-size: 3rem;
   }
-  .w-card-text,
   #w-blurb {
+    font-size: 1.3rem;
+  }
+  .w-card-text {
     font-size: 1.3rem;
   }
 }

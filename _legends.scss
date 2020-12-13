@@ -14,14 +14,14 @@
 #legendsbox2 {
   display: none;
 }
-#l-blurb {
+.l-blurb {
   @include text-stuff;
   padding-left: 20vw;
   padding-right: 20vw;
   text-align: left;
   padding-bottom: 1vw;
 }
-#l-header {
+.l-header {
   font-family: $mainfont;
   color: color(bluee);
   font-size: 5rem;
@@ -108,10 +108,6 @@
   font-size: 1.5rem;
 }
 
-#l-blurb {
-  @include text-stuff;
-}
-
 //lEGENDS FOR MOBILE
 .legends-whole {
   background-color: #bddaff;
@@ -122,7 +118,7 @@
   padding-top: 5.5vw;
   padding-bottom: 3.5vw;
 }
-#l-header {
+.l-header {
   font-family: $mainfont;
   color: color(bluee);
   font-size: 5rem;
@@ -130,7 +126,7 @@
   letter-spacing: 0.1rem;
   padding-top: 2rem;
 }
-#l-blurb {
+.l-blurb {
   @include text-stuff;
   padding-left: 20vw;
   padding-right: 20vw;
@@ -203,7 +199,7 @@
 
 .l-card {
   width: 25rem;
-  height: 40vw;
+  height: 40vh;
   margin: .5vw;
   border-radius: 1vw;
   box-shadow: 0 1px 6px 0;
@@ -239,7 +235,7 @@
   /*#nav-bar {
           background-color: green;
       }*/
-  #l-blurb {
+  .l-blurb {
     font-size: 1.3rem;
   }
   // .legends-whole {
@@ -252,7 +248,7 @@
   /*#nav-bar {
           background-color: yellow;
       }*/
-  #l-header {
+  .l-header {
     font-size: 3rem;
   }
   // .legends-whole {
@@ -271,7 +267,7 @@
     display: flex;
     flex-direction: column;
   }
-  #l-blurb {
+  .l-blurb {
     padding-left: 3.5vw;
     padding-right: 3.5vw;
     margin-bottom: 5vw;

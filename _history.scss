@@ -148,6 +148,21 @@
   .img-info {
     font-size: 1.3rem;
   }
+  .img-title {
+    z-index: 1;
+    top: 20%;
+    background-color: rgba(0,0,0,0);
+    padding: none;
+  }
+  .image-whole:hover .img-title,
+.image-whole:focus .img-title {
+  top: 20%;
+}
+  .img-info {
+    opacity: 85%;
+    transform: translate(0);
+    justify-content: center;
+  }
 }
 
 /* Medium devices (laptops/desktops, up to 62rem) */
@@ -187,21 +202,6 @@
     opacity: 100%;
     transform: translateY(0vh);
     display: flex;
-    justify-content: center;
-  }
-  .img-title {
-    z-index: 1;
-    top: 15%;
-    background-color: rgba(0,0,0,0);
-    padding: none;
-  }
-  .image-whole:hover .img-title,
-.image-whole:focus .img-title {
-  top: 15%;
-}
-  .img-info {
-    opacity: 85%;
-    transform: translate(0);
     justify-content: center;
   }
 }
