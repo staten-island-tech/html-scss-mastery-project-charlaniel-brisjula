@@ -118,6 +118,15 @@
   padding-top: 5.5vw;
   padding-bottom: 3.5vw;
 }
+.l-another-container {
+  background-color: #bddaff;
+  // height: 90vh;
+  width: 100vw;
+  font-family: $subfont;
+  position: relative;
+  padding-top: 5.5vw;
+  padding-bottom: 3.5vw;
+}
 .l-header {
   font-family: $mainfont;
   color: color(bluee);
@@ -200,7 +209,7 @@
 .l-card {
   width: 25rem;
   height: 40vh;
-  margin: .5vw;
+  margin: 0.5vw;
   border-radius: 1vw;
   box-shadow: 0 1px 6px 0;
 }
