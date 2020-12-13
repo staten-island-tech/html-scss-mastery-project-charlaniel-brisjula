@@ -312,7 +312,8 @@ body {
           transform-style: preserve-3d;
 }
 
-.front, .back {
+.front,
+.back {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
@@ -343,10 +344,21 @@ body {
 .card {
   width: 23rem;
   height: 40vh;
-  background-image: url(/Images/Lantern3.jpg);
   background-size: cover;
   border-radius: 1vw;
   margin: 1.5vw;
+}
+
+.front1 {
+  background-image: url(/Images/Lantern3.jpg);
+}
+
+.front2 {
+  background-image: url(/Images/D3.jpg);
+}
+
+.front3 {
+  background-image: url(/Images/Space1.jpeg);
 }
 
 .l-image {
@@ -355,7 +367,8 @@ body {
   display: block;
 }
 
-.front, .back {
+.front,
+.back {
   position: absolute;
   width: 100%;
   top: 0;
@@ -429,7 +442,7 @@ body {
   }
   .card {
     width: 93vw;
-    margin: .5vw;
+    margin: 0.5vw;
   }
 }
 

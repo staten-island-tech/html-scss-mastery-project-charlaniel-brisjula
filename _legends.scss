@@ -26,60 +26,69 @@
   padding-bottom: 1vw;
 }
 .card-container {
-          perspective: 500px;
+  perspective: 500px;
 }
 
 .card-container:hover .card,
-.card-container:focus .card{
-          transform: rotateY( 180deg );
+.card-container:focus .card {
+  transform: rotateY(180deg);
 }
 
 .card {
-          transition: transform 0.7s;
-          transform-style: preserve-3d;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
 }
 
-.front, .back {
-          backface-visibility: hidden;
+.front,
+.back {
+  backface-visibility: hidden;
 }
 
 .back {
-          transform: rotateY( 180deg );
+  transform: rotateY(180deg);
 }
 
 /*Custom Styles*/
-.cards-container{
- display: flex;
- box-orient: horizontal;
- box-direction: normal;
-         flex-direction: row;
-        justify-content: center;
+.cards-container {
+  display: flex;
+  box-orient: horizontal;
+  box-direction: normal;
+  flex-direction: row;
+  justify-content: center;
   margin-left: 3.5vw;
   margin-right: 3.5vw;
 }
 
 .card {
-width: 23rem;
-height: 40vh;
-background-image: url(/Images/Lantern3.jpg);
-background-size: cover;
-border-radius: 1vw;
-margin: 1.5vw;
+  width: 23rem;
+  height: 40vh;
+  background-size: cover;
+  border-radius: 1vw;
+  margin: 1.5vw;
+}
+.front1 {
+  background-image: url(/Images/Lantern3.jpg);
+}
+.front2 {
+  background-image: url(/Images/D3.jpg);
+}
+.front3 {
+  background-image: url(/Images/Space1.jpeg);
 }
 
 .l-image {
   width: 20rem;
-height: 30rem;
-display: block;
+  height: 30rem;
+  display: block;
 }
 
-.front, .back {
-position: absolute;
-width: 100%;
-top: 0;
-bottom: 0;
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
 }
-
 
 .l-pg {
   @include text-stuff;
@@ -138,6 +147,6 @@ bottom: 0;
   }
   .card {
     width: 93vw;
-    margin: .5vw;
+    margin: 0.5vw;
   }
 }
