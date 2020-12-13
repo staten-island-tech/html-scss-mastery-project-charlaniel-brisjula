@@ -11,7 +11,88 @@
   padding-top: 5.5vw;
   padding-bottom: 3.5vw;
 }
-.l-wrapper {
+#l-header {
+  font-family: $mainfont;
+  color: color(bluee);
+  font-size: 5rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+#l-blurb {
+  @include text-stuff;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  text-align: left;
+  padding-bottom: 1vw;
+}
+.card-container {
+  -webkit-perspective: 500px;
+          perspective: 500px;
+}
+
+.card-container:hover .card{
+  -webkit-transform: rotateY( 180deg );
+          transform: rotateY( 180deg );
+}
+
+.card {
+  -webkit-transition: -webkit-transform 0.7s;
+          transition: transform 0.7s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.front, .back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.back {
+  -webkit-transform: rotateY( 180deg );
+          transform: rotateY( 180deg );
+}
+
+/*Custom Styles*/
+.cards-container{
+ display: -webkit-flex;
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-flex-direction: row;
+ -webkit-box-orient: horizontal;
+ -webkit-box-direction: normal;
+     -ms-flex-direction: row;
+         flex-direction: row;
+-webkit-box-pack: center;
+-webkit-justify-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+}
+
+.card {
+width: 25rem;
+height: 30rem;
+margin: 2.5vw;
+background-image: url(/Images/Lantern3.jpg);
+background-size: cover;
+border-radius: 1vw;
+box-shadow: 0 1px 6px 0;
+}
+
+.l-image {
+  width: 20rem;
+height: 30rem;
+display: block;
+}
+
+.front, .back {
+position: absolute;
+width: 100%;
+top: 0;
+bottom: 0;
+}
+
+/*.l-wrapper {
   position: relative;
   top: 0;
   width: 25rem;
@@ -30,20 +111,7 @@
   box-shadow: 0 0 3rem 2rem rgba(color(bluee), 0.4);
   animation: entry 1s linear 1;
 }
-#l-blurb {
-  @include text-stuff;
-  padding-left: 20vw;
-  padding-right: 20vw;
-  text-align: left;
-  padding-bottom: 1vw;
-}
-#l-header {
-  font-family: $mainfont;
-  color: color(bluee);
-  font-size: 5rem;
-  text-align: center;
-  letter-spacing: 0.1rem;
-}
+
 #c1 {
   box-shadow: 0 0 3rem 2rem rgba(color(bluee), 0.4);
   left: 100%;
@@ -95,17 +163,13 @@
   letter-spacing: 0.1rem;
   padding-bottom: 1rem;
   font-size: 2.25rem;
-}
+}*/
 
 .l-pg {
   @include text-stuff;
   color: #fff;
   padding: 0 1vw;
   font-size: 1.5rem;
-}
-
-#l-blurb {
-  @include text-stuff;
 }
 
 /* MEDIA QUERIES */
@@ -144,12 +208,14 @@
       }*/
   #legendsbox {
     padding-top: 10vw;
-    display: flex;
-    flex-direction: column;
   }
   #l-blurb {
     padding-left: 3.5vw;
     padding-right: 3.5vw;
     margin-bottom: 5vw;
+  }
+  .cards-container {
+    display: flex;
+    flex-direction: column;
   }
 }
