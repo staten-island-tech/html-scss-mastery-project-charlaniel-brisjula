@@ -451,7 +451,9 @@ body {
           align-items: center;
 }
 
-.l-card-container:hover .l-card {
+.l-card-container:hover .l-card,
+.l-card-container:focus .l-card,
+.l-card-container:active .l-card {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
