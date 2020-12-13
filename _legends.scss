@@ -11,6 +11,9 @@
   padding-top: 5.5vw;
   padding-bottom: 3.5vw;
 }
+#legendsbox2 {
+  display: none;
+}
 #l-blurb {
   @include text-stuff;
   padding-left: 20vw;
@@ -109,6 +112,117 @@
   @include text-stuff;
 }
 
+//lEGENDS FOR MOBILE
+.whatever {
+  background-color: #bddaff;
+  // height: 90vh;
+  width: 100vw;
+  font-family: $subfont;
+  position: relative;
+  padding-top: 5.5vw;
+  padding-bottom: 3.5vw;
+}
+#l-header {
+  font-family: $mainfont;
+  color: color(bluee);
+  font-size: 5rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  padding-top: 2rem;
+}
+#l-blurb {
+  @include text-stuff;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  text-align: left;
+  padding-bottom: 1vw;
+}
+.l-card-container {
+  -webkit-perspective: 500px;
+  perspective: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.l-card-container:hover .l-card {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.l-card {
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: transform 0.7s;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.l-front,
+.l-back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.l-back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.l-front-1 {
+  background-image: url(/Images/Lantern3.jpg);
+  background-size: cover;
+  border-radius: 1vw;
+}
+.l-front-2 {
+  background-image: url(/Images/D3.jpg);
+  background-size: cover;
+  border-radius: 1vw;
+}
+.l-front-3 {
+  background-image: url(/Images/Space1.jpeg);
+  background-size: cover;
+  border-radius: 1vw;
+}
+
+/*Custom Styles*/
+.l-cards-container {
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.l-card {
+  width: 25rem;
+  height: 30rem;
+  margin: 2.5vw;
+  border-radius: 1vw;
+  box-shadow: 0 1px 6px 0;
+}
+
+.l-image {
+  width: 20rem;
+  height: 30rem;
+  display: block;
+}
+
+.l-front,
+.l-back {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+
 /* MEDIA QUERIES */
 
 /* Extra large devices (large laptops and desktops, 75rem and up) */
@@ -153,7 +267,11 @@
     padding-right: 3.5vw;
     margin-bottom: 5vw;
   }
-  .l-wrapper {
+  #legendsbox {
     display: none;
+  }
+  #legendsbox2 {
+    display: block;
+    display: initial;
   }
 }
