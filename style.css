@@ -566,6 +566,13 @@ body {
     padding-right: 3.5vw;
     margin-bottom: 5vw;
   }
+  #legendsbox {
+    display: none;
+  }
+  .legends-whole {
+    display: block;
+    display: initial;
+  }
 }
 
 html,
