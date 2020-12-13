@@ -9,33 +9,7 @@
   font-family: $subfont;
   position: relative;
   padding-top: 5.5vw;
-  padding-bottom: 3.5vw;
-}
-.l-wrapper {
-  position: relative;
-  top: 0;
-  width: 25rem;
-  height: 40rem;
-  perspective: 90rem;
-  margin: 0 auto;
-}
-.l-container {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  transition: 0.5s all ease;
-  transform: rotateX(60deg) scale(0.7);
-  perspective: 90rem;
-  box-shadow: 0 0 3rem 2rem rgba(color(bluee), 0.4);
-  animation: entry 1s linear 1;
-}
-#l-blurb {
-  @include text-stuff;
-  padding-left: 20vw;
-  padding-right: 20vw;
-  text-align: left;
-  padding-bottom: 1vw;
+  padding-bottom: 2vw;
 }
 #l-header {
   font-family: $mainfont;
@@ -44,68 +18,73 @@
   text-align: center;
   letter-spacing: 0.1rem;
 }
-#c1 {
-  box-shadow: 0 0 3rem 2rem rgba(color(bluee), 0.4);
-  left: 100%;
-  z-index: 0;
+#l-blurb {
+  @include text-stuff;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  text-align: left;
+  padding-bottom: 1vw;
+}
+.card-container {
+          perspective: 500px;
 }
 
-#c2 {
-  left: -100%;
-  z-index: 0;
-  box-shadow: 0 0 3rem 2rem rgba(color(bluee), 0.4);
+.card-container:hover .card{
+          transform: rotateY( 180deg );
 }
 
-.l-container:hover,
-.l-container:focus {
-  cursor: pointer;
-  transform: rotate(0deg) scale(1) translateY(10px);
-  transition: 0.5s all ease;
-  z-index: 400;
+.card {
+          transition: transform 0.7s;
+          transform-style: preserve-3d;
 }
 
-.image {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 45%;
-  overflow: hidden;
+.front, .back {
+          backface-visibility: hidden;
 }
 
-.story {
-  position: absolute;
-  top: 45%;
-  left: 0%;
-  height: 55%;
-  width: 100%;
-  background: color(bluee);
-  z-index: 30;
-  font-size: 4rem;
+.back {
+          transform: rotateY( 180deg );
 }
 
-.info {
-  position: absolute;
-  top: 10%;
+/*Custom Styles*/
+.cards-container{
+ display: flex;
+ box-orient: horizontal;
+ box-direction: normal;
+         flex-direction: row;
+        justify-content: center;
+  margin-left: 3.5vw;
+  margin-right: 3.5vw;
 }
 
-.l-title {
-  text-align: center;
-  color: color(yelloww);
-  letter-spacing: 0.1rem;
-  padding-bottom: 1rem;
-  font-size: 2.25rem;
+.card {
+width: 23rem;
+height: 40vh;
+background-image: url(/Images/Lantern3.jpg);
+background-size: cover;
+border-radius: 1vw;
+margin: 1.5vw;
 }
+
+.l-image {
+  width: 20rem;
+height: 30rem;
+display: block;
+}
+
+.front, .back {
+position: absolute;
+width: 100%;
+top: 0;
+bottom: 0;
+}
+
 
 .l-pg {
   @include text-stuff;
   color: #fff;
   padding: 0 1vw;
   font-size: 1.5rem;
-}
-
-#l-blurb {
-  @include text-stuff;
 }
 
 /* MEDIA QUERIES */
@@ -144,12 +123,20 @@
       }*/
   #legendsbox {
     padding-top: 10vw;
-    display: flex;
-    flex-direction: column;
+    padding-bottom: 3vw;
   }
   #l-blurb {
     padding-left: 3.5vw;
     padding-right: 3.5vw;
     margin-bottom: 5vw;
+  }
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card {
+    width: 93vw;
+    margin: .5vw;
   }
 }

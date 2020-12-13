@@ -269,34 +269,15 @@ body {
   font-family: "Underdog", cursive;
   position: relative;
   padding-top: 5.5vw;
-  padding-bottom: 3.5vw;
+  padding-bottom: 2vw;
 }
 
-.l-wrapper {
-  position: relative;
-  top: 0;
-  width: 25rem;
-  height: 40rem;
-  -webkit-perspective: 90rem;
-          perspective: 90rem;
-  margin: 0 auto;
-}
-
-.l-container {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-transition: 0.5s all ease;
-  transition: 0.5s all ease;
-  -webkit-transform: rotateX(60deg) scale(0.7);
-          transform: rotateX(60deg) scale(0.7);
-  -webkit-perspective: 90rem;
-          perspective: 90rem;
-  -webkit-box-shadow: 0 0 3rem 2rem rgba(35, 114, 214, 0.4);
-          box-shadow: 0 0 3rem 2rem rgba(35, 114, 214, 0.4);
-  -webkit-animation: entry 1s linear 1;
-          animation: entry 1s linear 1;
+#l-header {
+  font-family: "Henny Penny", cursive;
+  color: #2372D6;
+  font-size: 5rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
 }
 
 #l-blurb {
@@ -311,69 +292,75 @@ body {
   padding-bottom: 1vw;
 }
 
-#l-header {
-  font-family: "Henny Penny", cursive;
-  color: #2372D6;
-  font-size: 5rem;
-  text-align: center;
-  letter-spacing: 0.1rem;
+.card-container {
+  -webkit-perspective: 500px;
+          perspective: 500px;
 }
 
-#c1 {
-  -webkit-box-shadow: 0 0 3rem 2rem rgba(35, 114, 214, 0.4);
-          box-shadow: 0 0 3rem 2rem rgba(35, 114, 214, 0.4);
-  left: 100%;
-  z-index: 0;
+.card-container:hover .card {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
-#c2 {
-  left: -100%;
-  z-index: 0;
-  -webkit-box-shadow: 0 0 3rem 2rem rgba(35, 114, 214, 0.4);
-          box-shadow: 0 0 3rem 2rem rgba(35, 114, 214, 0.4);
+.card {
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: -webkit-transform 0.7s;
+  transition: transform 0.7s;
+  transition: transform 0.7s, -webkit-transform 0.7s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
-.l-container:hover,
-.l-container:focus {
-  cursor: pointer;
-  -webkit-transform: rotate(0deg) scale(1) translateY(10px);
-          transform: rotate(0deg) scale(1) translateY(10px);
-  -webkit-transition: 0.5s all ease;
-  transition: 0.5s all ease;
-  z-index: 400;
+.front, .back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
-.image {
+.back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+/*Custom Styles*/
+.cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  box-orient: horizontal;
+  box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 3.5vw;
+  margin-right: 3.5vw;
+}
+
+.card {
+  width: 23rem;
+  height: 40vh;
+  background-image: url(/Images/Lantern3.jpg);
+  background-size: cover;
+  border-radius: 1vw;
+  -webkit-box-shadow: 0 1px 6px 0;
+          box-shadow: 0 1px 6px 0;
+  margin: 1.5vw;
+}
+
+.l-image {
+  width: 20rem;
+  height: 30rem;
+  display: block;
+}
+
+.front, .back {
   position: absolute;
-  top: 0%;
-  left: 0%;
   width: 100%;
-  height: 45%;
-  overflow: hidden;
-}
-
-.story {
-  position: absolute;
-  top: 45%;
-  left: 0%;
-  height: 55%;
-  width: 100%;
-  background: #2372D6;
-  z-index: 30;
-  font-size: 4rem;
-}
-
-.info {
-  position: absolute;
-  top: 10%;
-}
-
-.l-title {
-  text-align: center;
-  color: #F6F285;
-  letter-spacing: 0.1rem;
-  padding-bottom: 1rem;
-  font-size: 2.25rem;
+  top: 0;
+  bottom: 0;
 }
 
 .l-pg {
@@ -385,14 +372,6 @@ body {
   color: #fff;
   padding: 0 1vw;
   font-size: 1.5rem;
-}
-
-#l-blurb {
-  font-size: 1.5rem;
-  color: #000;
-  font-family: "Underdog", cursive;
-  letter-spacing: .05rem;
-  line-height: 150%;
 }
 
 /* MEDIA QUERIES */
@@ -430,6 +409,14 @@ body {
       }*/
   #legendsbox {
     padding-top: 10vw;
+    padding-bottom: 3vw;
+  }
+  #l-blurb {
+    padding-left: 3.5vw;
+    padding-right: 3.5vw;
+    margin-bottom: 5vw;
+  }
+  .cards-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -437,11 +424,13 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  #l-blurb {
-    padding-left: 3.5vw;
-    padding-right: 3.5vw;
-    margin-bottom: 5vw;
+  .card {
+    width: 93vw;
+    margin: .5vw;
   }
 }
 
