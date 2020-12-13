@@ -496,6 +496,36 @@ body {
   border-radius: 1vw;
 }
 
+.l-paragraph {
+  text-align: center;
+  font-size: 2rem;
+  font: "Underdog", cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 3rem;
+}
+
+.l-back-1 {
+  border-radius: 1vw;
+  background-color: #51290f;
+}
+
+.l-back-2 {
+  border-radius: 1vw;
+  background-color: #5dbcd2;
+}
+
+.l-back-3 {
+  border-radius: 1vw;
+  background-color: #57377e;
+}
+
 /*Custom Styles*/
 .l-cards-container {
   display: -webkit-box;
@@ -570,22 +600,12 @@ body {
   /*#nav-bar {
           background-color: purple;
       }*/
-  #legendsbox {
-    padding-top: 10vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   .l-blurb {
     padding-left: 3.5vw;
     padding-right: 3.5vw;
     margin-bottom: 5vw;
   }
-  #legendsbox {
+  .legend {
     display: none;
   }
   .legends-whole {

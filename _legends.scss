@@ -190,6 +190,27 @@
   background-size: cover;
   border-radius: 1vw;
 }
+.l-paragraph {
+  text-align: center;
+  font-size: 2rem;
+  font: $subfont;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 3rem;
+}
+.l-back-1 {
+  border-radius: 1vw;
+  background-color: #51290f;
+}
+.l-back-2 {
+  border-radius: 1vw;
+  background-color: #5dbcd2;
+}
+.l-back-3 {
+  border-radius: 1vw;
+  background-color: #57377e;
+}
 
 /*Custom Styles*/
 .l-cards-container {
@@ -273,17 +294,12 @@
           background-color: purple;
       }*/
 
-  #legendsbox {
-    padding-top: 10vw;
-    display: flex;
-    flex-direction: column;
-  }
   .l-blurb {
     padding-left: 3.5vw;
     padding-right: 3.5vw;
     margin-bottom: 5vw;
   }
-  #legendsbox {
+  .legend {
     display: none;
   }
   .legends-whole {
