@@ -278,7 +278,8 @@ body {
           box-sizing: border-box;
 }
 
-#legendsbox, .l-another-container {
+#legendsbox,
+.l-another-container {
   background-color: #bddaff;
   width: 100vw;
   font-family: "Underdog", cursive;
@@ -415,9 +416,13 @@ body {
   padding-bottom: 1vw;
 }
 
-.l-card-container {
-  -webkit-perspective: 100rem;
-  perspective: 100rem;
+.legends-whole {
+  display: none;
+}
+
+.l-box {
+  width: 95vw;
+  height: 20vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -428,147 +433,62 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.l-card-container:hover .l-card,
-.l-card-container:focus .l-card,
-.l-card-container:active .l-card {
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-}
-
-.l-card {
-  -webkit-transition: -webkit-transform 0.7s;
-  transition: -webkit-transform 0.7s;
-  transition: transform 0.7s;
-  transition: transform 0.7s, -webkit-transform 0.7s;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transition: all .7s;
-  transition: all .7s;
-}
-
-.l-front,
-.l-back {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  background-size: cover;
   border-radius: 1vw;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }
 
-.l-back {
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
+.l-pic-box {
+  height: 20vh;
+  width: 36vw;
+  border-radius: 1vw;
+  position: absolute;
 }
 
-.l-front-1 {
-  background-image: url(/Images/D3.jpg);
-}
-
-.l-front-2 {
-  background-image: url(/Images/Space1.jpeg);
-}
-
-.l-front-3 {
+.l-pic-1 {
   background-image: url(/Images/Lantern3.jpg);
+  background-size: cover;
+  right: 0;
 }
 
-.l-paragraph {
-  text-align: center;
+.l-pic-2 {
+  background-image: url(/Images/D3.jpg);
+  background-size: cover;
+  left: 0;
+}
+
+.l-pic-3 {
+  background-image: url(/Images/Space1.jpeg);
+  background-size: cover;
+  right: 0;
+}
+
+.l-words-box {
   font-size: 2rem;
   font: "Underdog", cursive;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  padding: 2rem;
-}
-
-.mobile-pg {
-  padding: 0 2vw;
-}
-
-.l-back-1 {
+  text-align: left;
+  float: right;
+  width: 60vw;
+  height: 20vh;
   border-radius: 1vw;
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(40, 94, 165, 0)), color-stop(0%, rgba(44, 135, 187, 0.95))), url(/Images/D3.jpg);
-  background-image: linear-gradient(to left, rgba(40, 94, 165, 0) 0%, rgba(44, 135, 187, 0.95) 0%), url(/Images/D3.jpg);
-}
-
-.l-back-2 {
-  border-radius: 1vw;
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(40, 94, 165, 0)), color-stop(0%, rgba(76, 74, 192, 0.85))), url(/Images/Space1.jpeg);
-  background-image: linear-gradient(to left, rgba(40, 94, 165, 0) 0%, rgba(76, 74, 192, 0.85) 0%), url(/Images/Space1.jpeg);
-  background-size: cover;
-}
-
-.l-back-3 {
-  border-radius: 1vw;
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(40, 94, 165, 0)), color-stop(0%, rgba(107, 82, 48, 0.85))), url(/Images/Lantern3.jpg);
-  background-image: linear-gradient(to left, rgba(40, 94, 165, 0) 0%, rgba(107, 82, 48, 0.85) 0%), url(/Images/Lantern3.jpg);
-}
-
-.l-card-1:hover,
-.l-card-1:focus {
-  -webkit-box-shadow: 0 0 3rem 1rem rgba(44, 135, 187, 0.6);
-          box-shadow: 0 0 3rem 1rem rgba(44, 135, 187, 0.6);
-}
-
-.l-card-2:hover,
-.l-card-2:focus {
-  -webkit-box-shadow: 0 0 3rem 1rem rgba(76, 74, 192, 0.6);
-          box-shadow: 0 0 3rem 1rem rgba(76, 74, 192, 0.6);
-}
-
-.l-card-3:hover,
-.l-card-3:focus {
-  -webkit-box-shadow: 0 0 3rem 1rem rgba(107, 82, 48, 0.6);
-          box-shadow: 0 0 3rem 1rem rgba(107, 82, 48, 0.6);
-}
-
-/*Custom Styles*/
-.l-cards-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.l-card {
-  width: 25rem;
-  height: 40vh;
-  margin: 0.5vw;
-  border-radius: 1vw;
-}
-
-.l-image {
-  width: 20rem;
-  height: 30rem;
-  display: block;
-}
-
-.l-front,
-.l-back {
   position: absolute;
-  width: 100%;
-  top: 0;
-  bottom: 0;
+  padding: 2vw;
+  color: #ffff;
 }
 
-.legends-whole {
-  display: none;
+.l-words-1 {
+  background-color: #8d3d12;
+}
+
+.l-words-2 {
+  right: 0;
+  background-color: #1f859c;
+}
+
+.l-words-3 {
+  background-color: #6252a4;
 }
 
 /* MEDIA QUERIES */
@@ -584,7 +504,8 @@ body {
   /*#nav-bar {
           background-color: green;
       }*/
-  .l-blurb, .l-pg {
+  .l-blurb,
+  .l-pg {
     font-size: 1.4rem;
   }
 }
@@ -616,8 +537,8 @@ body {
     display: block;
     display: initial;
   }
-  .l-card {
-    width: 93vw;
+  .l-words-box {
+    font-size: 1rem;
   }
 }
 
