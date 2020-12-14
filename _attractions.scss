@@ -127,26 +127,47 @@
     font-size: 3rem;
   }
   .a-text,
-  .a-name,
   #a-blurb {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
-  .views-content-small {
-    display: none;
-  }
-  #attractionsbox {
-    height: 60vh;
-  }
-  .highlights {
-    margin-top: 12vw;
+  .a-name {
+    font-size: 1.3rem;
   }
 }
 
-/* Medium devices (laptops/desktops, up to 62rem) */
+/* Medium devices (tablets/laptops, up to 62rem) */
 @media only screen and (max-width: 62rem) {
   /*#nav-bar {
           background-color: yellow;
       }*/
+      .a-text {
+        float: none;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+      }
+      #a-header {
+        justify-content: center;
+        text-align: center;
+      }
+      #a-blurb {
+        text-align: left;
+        padding-left: 16.5rem;
+        padding-right: 20rem;
+        width: 100vw;
+      }
+      #attractionsbox {
+        height: 67vh;
+        display: flex;
+        flex-direction: column;
+      }
+      .highlights {
+        margin: 2vw 15vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70vw;
+      }
 }
 
 /* Small devices (tablets/phones, up to 48rem) */
@@ -159,6 +180,11 @@
   }
   #a-header {
     text-align: center;
+  }
+  #a-blurb {
+    text-align: left;
+    padding-left: 0;
+    padding-right: 3.5vw;
   }
   .views-content {
     height: 40vh;
@@ -174,11 +200,12 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
-    margin-top: 3.5vw;
+    margin: 2vw 0;
+  }
+  .views-content-small {
+    display: none;
   }
   #attractionsbox {
-    display: flex;
-    flex-direction: column;
     height: 150vh;
   }
   #attractionsbox {

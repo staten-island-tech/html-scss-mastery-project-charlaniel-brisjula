@@ -20,7 +20,6 @@
   padding-left: 20vw;
   padding-right: 20vw;
   text-align: left;
-  padding-bottom: 1vw;
 }
 .l-header {
   font-family: $mainfont;
@@ -106,7 +105,6 @@
   @include text-stuff;
   color: #fff;
   padding: 0 1vw;
-  font-size: 1.5rem;
 }
 
 //lEGENDS FOR MOBILE
@@ -129,13 +127,13 @@
   display: none;
 }
 .l-box {
-  width: 95vw;
+  width: 93vw;
   height: 20vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-radius: 1vw;
-  margin-bottom: 2rem;
+  margin-bottom: .5rem;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -174,14 +172,14 @@
   color: #ffff;
 }
 .l-words-1 {
-  background-color: #8d3d12;
+  background-color: #9b542e;
 }
 .l-words-2 {
   right: 0;
-  background-color: #1f859c;
+  background-color: #2b96b1;
 }
 .l-words-3 {
-  background-color: #6252a4;
+  background-color: #644ebd;
 }
 /* MEDIA QUERIES */
 
@@ -197,9 +195,11 @@
   /*#nav-bar {
           background-color: green;
       }*/
-  .l-blurb,
+  .l-blurb {
+    font-size: 1.3rem;
+  }
   .l-pg {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   // .legends-whole {
   //   display: none;
@@ -235,8 +235,5 @@
   #legends-whole {
     display: block;
     display: initial;
-  }
-  .l-words-box {
-    font-size: 1rem;
   }
 }
