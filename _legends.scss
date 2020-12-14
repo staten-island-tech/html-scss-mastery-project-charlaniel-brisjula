@@ -2,16 +2,16 @@
 @import "_mixins.scss";
 
 //LEGENDS
-#legendsbox {
+#legendsbox, .l-another-container {
   background-color: #bddaff;
   // height: 90vh;
   width: 100vw;
   font-family: $subfont;
   position: relative;
   padding-top: 5.5vw;
-  padding-bottom: 3.5vw;
+  padding-bottom: 6vw;
 }
-#legendsbox2 {
+#legends-whole {
   display: none;
 }
 .l-blurb {
@@ -43,7 +43,7 @@
 .l-container {
   // position: absolute;
   top: 0;
-  width: 25rem;
+  width: 30rem;
   height: 40rem;
   transition: 0.5s all ease;
   transform: rotateX(40deg) scale(0.7);
@@ -109,24 +109,6 @@
 }
 
 //lEGENDS FOR MOBILE
-.legends-whole {
-  background-color: #bddaff;
-  // height: 90vh;
-  width: 100vw;
-  font-family: $subfont;
-  position: relative;
-  padding-top: 5.5vw;
-  padding-bottom: 3.5vw;
-}
-.l-another-container {
-  background-color: #bddaff;
-  // height: 90vh;
-  width: 100vw;
-  font-family: $subfont;
-  position: relative;
-  padding-top: 5.5vw;
-  padding-bottom: 3.5vw;
-}
 .l-header {
   font-family: $mainfont;
   color: color(bluee);
@@ -143,8 +125,8 @@
   padding-bottom: 1vw;
 }
 .l-card-container {
-  -webkit-perspective: 500px;
-  perspective: 500px;
+  -webkit-perspective: 100rem;
+  perspective: 100rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -199,19 +181,33 @@
   align-content: center;
   padding: 2rem;
 }
+.mobile-pg {
+  padding: 0 2vw;
+}
 .l-back-1 {
   border-radius: 1vw;
-  background-color: #51290f;
+  background-color: #6b4730;
 }
 .l-back-2 {
   border-radius: 1vw;
-  background-color: #5dbcd2;
+  background-color: #2c87bb;
 }
 .l-back-3 {
   border-radius: 1vw;
   background-color: #57377e;
 }
-
+.l-card-1:hover,
+.l-card-1:focus {
+  box-shadow: 0 0 3rem 1rem rgba(#6b4730, 0.5);
+}
+.l-card-2:hover,
+.l-card-2:focus{
+  box-shadow: 0 0 3rem 1rem rgba(#2c87bb, 0.5);
+}
+.l-card-3:hover,
+.l-card-3:focus {
+  box-shadow: 0 0 3rem 1rem rgba(#57377e, 0.5);
+}
 /*Custom Styles*/
 .l-cards-container {
   display: -webkit-flex;
@@ -234,7 +230,6 @@
   height: 40vh;
   margin: 0.5vw;
   border-radius: 1vw;
-  box-shadow: 0 1px 6px 0;
 }
 
 .l-image {
@@ -267,8 +262,8 @@
   /*#nav-bar {
           background-color: green;
       }*/
-  .l-blurb {
-    font-size: 1.3rem;
+  .l-blurb, .l-pg {
+    font-size: 1.4rem;
   }
   // .legends-whole {
   //   display: none;
@@ -299,10 +294,10 @@
     padding-right: 3.5vw;
     margin-bottom: 5vw;
   }
-  .legend {
+  #legendsbox {
     display: none;
   }
-  .legends-whole {
+  #legends-whole {
     display: block;
     display: initial;
   }

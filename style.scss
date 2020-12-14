@@ -207,6 +207,9 @@ label #sign-two {
   display: none;
 }
 
+.l-mobile {
+  display: none;
+}
 
 /* Extra large devices (large laptops and desktops, 75rem and up) */
 @media only screen and (min-width: 75rem) {
@@ -228,12 +231,12 @@ label #sign-two {
   }
   #blurb {
     line-height: 2rem;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
   .btn,
   .btn:link,
   .btn:visited {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     padding: 1.25rem 1.5rem;
   }
   #eventsbtn {
@@ -326,5 +329,11 @@ label #sign-two {
   }
   #res-menu:checked ~ label #sign-two {
     display: block;
+  }
+  .l-mobile {
+    display: block;
+  }
+  .l-desktop {
+    display: none;
   }
 }
