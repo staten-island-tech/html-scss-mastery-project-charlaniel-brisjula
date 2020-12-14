@@ -163,7 +163,7 @@
   background-size: cover;
   border-radius: 1vw;
 }
-.l-front-2 {
+.l-front-2{
   background-image: url(/Images/D3.jpg);
   background-size: cover;
   border-radius: 1vw;
@@ -187,15 +187,16 @@
 }
 .l-back-1 {
   border-radius: 1vw;
-  background-color: #6b5230;
+  background-image: linear-gradient(to left,rgba(40, 94, 165, 0)0%, rgba(#6b5230, .85)0%), url(/Images/Lantern3.jpg);
 }
 .l-back-2 {
   border-radius: 1vw;
-  background-color: #2c87bb;
+  background-image: linear-gradient(to left,rgba(40, 94, 165, 0)0%, rgba(#2c87bb, .95)0%), url(/Images/D3.jpg);
+  background-size: cover;
 }
 .l-back-3 {
   border-radius: 1vw;
-  background-color: #4c4ac0;
+  background-image: linear-gradient(to left,rgba(40, 94, 165, 0)0%, rgba(#4c4ac0, .85)0%), url(/Images/Space1.jpeg);
 }
 .l-card-1:hover,
 .l-card-1:focus {
