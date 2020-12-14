@@ -433,9 +433,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  border: 0.5rem black solid;
   border-radius: 1vw;
   margin-bottom: 2rem;
   margin-left: auto;
@@ -445,7 +442,7 @@ body {
 
 .l-pic-box {
   height: 20vh;
-  width: 30vw;
+  width: 36vw;
   border-radius: 1vw;
   position: absolute;
 }
@@ -459,6 +456,7 @@ body {
 .l-pic-2 {
   background-image: url(/Images/D3.jpg);
   background-size: cover;
+  left: 0;
 }
 
 .l-pic-3 {
@@ -468,11 +466,28 @@ body {
 }
 
 .l-words-box {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font: "Underdog", cursive;
   text-align: left;
   float: right;
   width: 60vw;
+  height: 20vh;
+  border-radius: 1vw;
+  position: absolute;
+  padding: 2vw;
+}
+
+.l-words-1 {
+  background-color: #8d3d12;
+}
+
+.l-words-2 {
+  right: 0;
+  background-color: #1f859c;
+}
+
+.l-words-3 {
+  background-color: #6252a4;
 }
 
 /* MEDIA QUERIES */
@@ -521,8 +536,8 @@ body {
     display: block;
     display: initial;
   }
-  .l-card {
-    width: 93vw;
+  .l-words-box {
+    font-size: 1rem;
   }
 }
 
