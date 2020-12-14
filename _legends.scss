@@ -152,6 +152,8 @@
 .l-back {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  background-size: cover;
+  border-radius: 1vw;
 }
 
 .l-back {
@@ -159,19 +161,13 @@
   transform: rotateY(180deg);
 }
 .l-front-1 {
-  background-image: url(/Images/Lantern3.jpg);
-  background-size: cover;
-  border-radius: 1vw;
+  background-image: url(/Images/D3.jpg);
 }
 .l-front-2{
-  background-image: url(/Images/D3.jpg);
-  background-size: cover;
-  border-radius: 1vw;
+  background-image: url(/Images/Space1.jpeg);
 }
 .l-front-3 {
-  background-image: url(/Images/Space1.jpeg);
-  background-size: cover;
-  border-radius: 1vw;
+  background-image: url(/Images/Lantern3.jpg);
 }
 .l-paragraph {
   text-align: center;
@@ -187,28 +183,28 @@
 }
 .l-back-1 {
   border-radius: 1vw;
-  background-image: linear-gradient(to left,rgba(40, 94, 165, 0)0%, rgba(#6b5230, .85)0%), url(/Images/Lantern3.jpg);
+  background-image: linear-gradient(to left,rgba(40, 94, 165, 0)0%, rgba(#2c87bb, .95)0%), url(/Images/D3.jpg);
 }
 .l-back-2 {
   border-radius: 1vw;
-  background-image: linear-gradient(to left,rgba(40, 94, 165, 0)0%, rgba(#2c87bb, .95)0%), url(/Images/D3.jpg);
+  background-image: linear-gradient(to left,rgba(40, 94, 165, 0)0%, rgba(#4c4ac0, .85)0%), url(/Images/Space1.jpeg);
   background-size: cover;
 }
 .l-back-3 {
   border-radius: 1vw;
-  background-image: linear-gradient(to left,rgba(40, 94, 165, 0)0%, rgba(#4c4ac0, .85)0%), url(/Images/Space1.jpeg);
+  background-image: linear-gradient(to left,rgba(40, 94, 165, 0)0%, rgba(#6b5230, .85)0%), url(/Images/Lantern3.jpg);
 }
 .l-card-1:hover,
 .l-card-1:focus {
-  box-shadow: 0 0 3rem 1rem rgba(#6b5230, 0.5);
+  box-shadow: 0 0 3rem 1rem rgba(#2c87bb, 0.6);
 }
 .l-card-2:hover,
 .l-card-2:focus{
-  box-shadow: 0 0 3rem 1rem rgba(#2c87bb, 0.5);
+  box-shadow: 0 0 3rem 1rem rgba(#4c4ac0, 0.6);
 }
 .l-card-3:hover,
 .l-card-3:focus {
-  box-shadow: 0 0 3rem 1rem rgba(#373e7e, 0.5);
+  box-shadow: 0 0 3rem 1rem rgba(#6b5230, 0.6);
 }
 /*Custom Styles*/
 .l-cards-container {
