@@ -2,7 +2,8 @@
 @import "_mixins.scss";
 
 //LEGENDS
-#legendsbox, .l-another-container {
+#legendsbox,
+.l-another-container {
   background-color: #bddaff;
   // height: 90vh;
   width: 100vw;
@@ -133,37 +134,37 @@
   align-items: center;
 }
 
-.l-card-container:hover .l-card,
-.l-card-container:focus .l-card,
-.l-card-container:active .l-card {
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-}
+// .l-card-container:hover .l-card,
+// .l-card-container:focus .l-card,
+// .l-card-container:active .l-card {
+//   -webkit-transform: rotateY(180deg);
+//   transform: rotateY(180deg);
+// }
 
-.l-card {
-  -webkit-transition: -webkit-transform 0.7s;
-  transition: transform 0.7s;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  transition: all .7s;
-}
+// .l-card {
+//   -webkit-transition: -webkit-transform 0.7s;
+//   transition: transform 0.7s;
+//   -webkit-transform-style: preserve-3d;
+//   transform-style: preserve-3d;
+//   transition: all .7s;
+// }
 
-.l-front,
-.l-back {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  background-size: cover;
-  border-radius: 1vw;
-}
+// .l-front,
+// .l-back {
+//   -webkit-backface-visibility: hidden;
+//   backface-visibility: hidden;
+//   background-size: cover;
+//   border-radius: 1vw;
+// }
 
-.l-back {
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-}
+// .l-back {
+//   -webkit-transform: rotateY(180deg);
+//   transform: rotateY(180deg);
+// }
 .l-front-1 {
   background-image: url(/Images/D3.jpg);
 }
-.l-front-2{
+.l-front-2 {
   background-image: url(/Images/Space1.jpeg);
 }
 .l-front-3 {
@@ -181,25 +182,46 @@
 .mobile-pg {
   padding: 0 2vw;
 }
+.l-card {
+  padding-bottom: 2rem;
+  border: 1rem red solid;
+}
 .l-back-1 {
   border-radius: 1vw;
-  background-image: linear-gradient(to left,rgba(40, 94, 165, 0)0%, rgba(#2c87bb, .95)0%), url(/Images/D3.jpg);
+  background-image: linear-gradient(
+      to left,
+      rgba(40, 94, 165, 0) 0%,
+      rgba(#2c87bb, 0.95) 0%
+    ),
+    url(/Images/D3.jpg);
+  background-size: cover;
 }
 .l-back-2 {
   border-radius: 1vw;
-  background-image: linear-gradient(to left,rgba(40, 94, 165, 0)0%, rgba(#4c4ac0, .85)0%), url(/Images/Space1.jpeg);
+  background-image: linear-gradient(
+      to left,
+      rgba(40, 94, 165, 0) 0%,
+      rgba(#4c4ac0, 0.85) 0%
+    ),
+    url(/Images/Space1.jpeg);
   background-size: cover;
 }
 .l-back-3 {
   border-radius: 1vw;
-  background-image: linear-gradient(to left,rgba(40, 94, 165, 0)0%, rgba(#6b5230, .85)0%), url(/Images/Lantern3.jpg);
+  background-image: linear-gradient(
+      to left,
+      rgba(40, 94, 165, 0) 0%,
+      rgba(#6b5230, 0.85) 0%
+    ),
+    url(/Images/Lantern3.jpg);
+  background-size: cover;
 }
 .l-card-1:hover,
 .l-card-1:focus {
   box-shadow: 0 0 3rem 1rem rgba(#2c87bb, 0.6);
 }
 .l-card-2:hover,
-.l-card-2:focus{
+.l-card-2:focus {
   box-shadow: 0 0 3rem 1rem rgba(#4c4ac0, 0.6);
 }
 .l-card-3:hover,
@@ -224,17 +246,17 @@
 }
 
 .l-card {
-  width: 25rem;
+  width: 20rem;
   height: 40vh;
   margin: 0.5vw;
   border-radius: 1vw;
 }
 
-.l-image {
-  width: 20rem;
-  height: 30rem;
-  display: block;
-}
+// .l-image {
+//   width: 20rem;
+//   height: 30rem;
+//   display: block;
+// }
 
 .l-front,
 .l-back {
@@ -260,7 +282,8 @@
   /*#nav-bar {
           background-color: green;
       }*/
-  .l-blurb, .l-pg {
+  .l-blurb,
+  .l-pg {
     font-size: 1.4rem;
   }
   // .legends-whole {
