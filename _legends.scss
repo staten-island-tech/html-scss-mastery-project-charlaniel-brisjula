@@ -2,7 +2,8 @@
 @import "_mixins.scss";
 
 //LEGENDS
-#legendsbox, .l-another-container {
+#legendsbox,
+.l-another-container {
   background-color: #bddaff;
   // height: 90vh;
   width: 100vw;
@@ -124,127 +125,51 @@
   text-align: left;
   padding-bottom: 1vw;
 }
-.l-card-container {
-  -webkit-perspective: 100rem;
-  perspective: 100rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.l-card-container:hover .l-card,
-.l-card-container:focus .l-card,
-.l-card-container:active .l-card {
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-}
-
-.l-card {
-  -webkit-transition: -webkit-transform 0.7s;
-  transition: transform 0.7s;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  transition: all .7s;
-}
-
-.l-front,
-.l-back {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  background-size: cover;
-  border-radius: 1vw;
-}
-
-.l-back {
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-}
-.l-front-1 {
-  background-image: url(/Images/D3.jpg);
-}
-.l-front-2{
-  background-image: url(/Images/Space1.jpeg);
-}
-.l-front-3 {
-  background-image: url(/Images/Lantern3.jpg);
-}
-.l-paragraph {
-  text-align: center;
-  font-size: 2rem;
-  font: $subfont;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  padding: 2rem;
-}
-.mobile-pg {
-  padding: 0 2vw;
-}
-.l-back-1 {
-  border-radius: 1vw;
-  background-image: linear-gradient(to left,rgba(40, 94, 165, 0)0%, rgba(#2c87bb, .95)0%), url(/Images/D3.jpg);
-}
-.l-back-2 {
-  border-radius: 1vw;
-  background-image: linear-gradient(to left,rgba(40, 94, 165, 0)0%, rgba(#4c4ac0, .85)0%), url(/Images/Space1.jpeg);
-  background-size: cover;
-}
-.l-back-3 {
-  border-radius: 1vw;
-  background-image: linear-gradient(to left,rgba(40, 94, 165, 0)0%, rgba(#6b5230, .85)0%), url(/Images/Lantern3.jpg);
-}
-.l-card-1:hover,
-.l-card-1:focus {
-  box-shadow: 0 0 3rem 1rem rgba(#2c87bb, 0.6);
-}
-.l-card-2:hover,
-.l-card-2:focus{
-  box-shadow: 0 0 3rem 1rem rgba(#4c4ac0, 0.6);
-}
-.l-card-3:hover,
-.l-card-3:focus {
-  box-shadow: 0 0 3rem 1rem rgba(#6b5230, 0.6);
-}
-/*Custom Styles*/
-.l-cards-container {
-  display: -webkit-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.l-card {
-  width: 25rem;
-  height: 40vh;
-  margin: 0.5vw;
-  border-radius: 1vw;
-}
-
-.l-image {
-  width: 20rem;
-  height: 30rem;
-  display: block;
-}
-
-.l-front,
-.l-back {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  bottom: 0;
-}
 .legends-whole {
   display: none;
+}
+.l-box {
+  width: 95vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  border: 0.5rem black solid;
+  border-radius: 1vw;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.l-pic-box {
+  height: 20vh;
+  width: 30vw;
+  border-radius: 1vw;
+  position: absolute;
+}
+.l-pic-1 {
+  background-image: url(/Images/Lantern3.jpg);
+  background-size: cover;
+  right: 0;
+}
+.l-pic-2 {
+  background-image: url(/Images/D3.jpg);
+  background-size: cover;
+}
+.l-pic-3 {
+  background-image: url(/Images/Space1.jpeg);
+  background-size: cover;
+  right: 0;
+}
+.l-words-box {
+  font-size: 1.5rem;
+  font: $subfont;
+  text-align: left;
+  float: right;
+  width: 60vw;
+}
+.l-words-2 {
 }
 /* MEDIA QUERIES */
 
@@ -260,7 +185,8 @@
   /*#nav-bar {
           background-color: green;
       }*/
-  .l-blurb, .l-pg {
+  .l-blurb,
+  .l-pg {
     font-size: 1.4rem;
   }
   // .legends-whole {
