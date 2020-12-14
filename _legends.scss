@@ -145,6 +145,7 @@
   transition: transform 0.7s;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  transition: all .7s;
 }
 
 .l-front,
@@ -186,7 +187,7 @@
 }
 .l-back-1 {
   border-radius: 1vw;
-  background-color: #6b4730;
+  background-color: #6b5230;
 }
 .l-back-2 {
   border-radius: 1vw;
@@ -194,11 +195,11 @@
 }
 .l-back-3 {
   border-radius: 1vw;
-  background-color: #57377e;
+  background-color: #4c4ac0;
 }
 .l-card-1:hover,
 .l-card-1:focus {
-  box-shadow: 0 0 3rem 1rem rgba(#6b4730, 0.5);
+  box-shadow: 0 0 3rem 1rem rgba(#6b5230, 0.5);
 }
 .l-card-2:hover,
 .l-card-2:focus{
@@ -206,7 +207,7 @@
 }
 .l-card-3:hover,
 .l-card-3:focus {
-  box-shadow: 0 0 3rem 1rem rgba(#57377e, 0.5);
+  box-shadow: 0 0 3rem 1rem rgba(#373e7e, 0.5);
 }
 /*Custom Styles*/
 .l-cards-container {

@@ -447,6 +447,8 @@ body {
   transition: transform 0.7s, -webkit-transform 0.7s;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  -webkit-transition: all .7s;
+  transition: all .7s;
 }
 
 .l-front,
@@ -499,7 +501,7 @@ body {
 
 .l-back-1 {
   border-radius: 1vw;
-  background-color: #6b4730;
+  background-color: #6b5230;
 }
 
 .l-back-2 {
@@ -509,13 +511,13 @@ body {
 
 .l-back-3 {
   border-radius: 1vw;
-  background-color: #57377e;
+  background-color: #4c4ac0;
 }
 
 .l-card-1:hover,
 .l-card-1:focus {
-  -webkit-box-shadow: 0 0 3rem 1rem rgba(107, 71, 48, 0.5);
-          box-shadow: 0 0 3rem 1rem rgba(107, 71, 48, 0.5);
+  -webkit-box-shadow: 0 0 3rem 1rem rgba(107, 82, 48, 0.5);
+          box-shadow: 0 0 3rem 1rem rgba(107, 82, 48, 0.5);
 }
 
 .l-card-2:hover,
@@ -526,8 +528,8 @@ body {
 
 .l-card-3:hover,
 .l-card-3:focus {
-  -webkit-box-shadow: 0 0 3rem 1rem rgba(87, 55, 126, 0.5);
-          box-shadow: 0 0 3rem 1rem rgba(87, 55, 126, 0.5);
+  -webkit-box-shadow: 0 0 3rem 1rem rgba(55, 62, 126, 0.5);
+          box-shadow: 0 0 3rem 1rem rgba(55, 62, 126, 0.5);
 }
 
 /*Custom Styles*/
