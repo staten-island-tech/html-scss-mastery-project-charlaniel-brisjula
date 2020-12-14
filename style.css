@@ -278,8 +278,7 @@ body {
           box-sizing: border-box;
 }
 
-#legendsbox,
-.l-another-container {
+#legendsbox, .l-another-container {
   background-color: #bddaff;
   width: 100vw;
   font-family: "Underdog", cursive;
@@ -434,6 +433,37 @@ body {
           align-items: center;
 }
 
+.l-card-container:hover .l-card,
+.l-card-container:focus .l-card,
+.l-card-container:active .l-card {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.l-card {
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: -webkit-transform 0.7s;
+  transition: transform 0.7s;
+  transition: transform 0.7s, -webkit-transform 0.7s;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all .7s;
+  transition: all .7s;
+}
+
+.l-front,
+.l-back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-size: cover;
+  border-radius: 1vw;
+}
+
+.l-back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
 .l-front-1 {
   background-image: url(/Images/D3.jpg);
 }
@@ -465,16 +495,10 @@ body {
   padding: 0 2vw;
 }
 
-.l-card {
-  padding-bottom: 2rem;
-  border: 1rem red solid;
-}
-
 .l-back-1 {
   border-radius: 1vw;
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(40, 94, 165, 0)), color-stop(0%, rgba(44, 135, 187, 0.95))), url(/Images/D3.jpg);
   background-image: linear-gradient(to left, rgba(40, 94, 165, 0) 0%, rgba(44, 135, 187, 0.95) 0%), url(/Images/D3.jpg);
-  background-size: cover;
 }
 
 .l-back-2 {
@@ -488,7 +512,6 @@ body {
   border-radius: 1vw;
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(40, 94, 165, 0)), color-stop(0%, rgba(107, 82, 48, 0.85))), url(/Images/Lantern3.jpg);
   background-image: linear-gradient(to left, rgba(40, 94, 165, 0) 0%, rgba(107, 82, 48, 0.85) 0%), url(/Images/Lantern3.jpg);
-  background-size: cover;
 }
 
 .l-card-1:hover,
@@ -524,10 +547,16 @@ body {
 }
 
 .l-card {
-  width: 20rem;
+  width: 25rem;
   height: 40vh;
   margin: 0.5vw;
   border-radius: 1vw;
+}
+
+.l-image {
+  width: 20rem;
+  height: 30rem;
+  display: block;
 }
 
 .l-front,
@@ -555,8 +584,7 @@ body {
   /*#nav-bar {
           background-color: green;
       }*/
-  .l-blurb,
-  .l-pg {
+  .l-blurb, .l-pg {
     font-size: 1.4rem;
   }
 }
