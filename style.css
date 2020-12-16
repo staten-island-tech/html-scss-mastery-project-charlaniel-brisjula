@@ -39,7 +39,7 @@ body {
   font-size: 1.5rem;
   color: #000;
   font-family: "Underdog", cursive;
-  letter-spacing: .05rem;
+  letter-spacing: .1rem;
   line-height: 150%;
   padding-left: 20vw;
   padding-right: 20vw;
@@ -121,7 +121,7 @@ body {
   font-size: 1.5rem;
   color: #000;
   font-family: "Underdog", cursive;
-  letter-spacing: .05rem;
+  letter-spacing: .1rem;
   line-height: 150%;
   color: #fff;
   opacity: 0;
@@ -201,7 +201,7 @@ body {
   }
   #h-blurb,
   .img-info {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
   .img-title {
     z-index: 1;
@@ -295,7 +295,7 @@ body {
   font-size: 1.5rem;
   color: #000;
   font-family: "Underdog", cursive;
-  letter-spacing: .05rem;
+  letter-spacing: .1rem;
   line-height: 150%;
   padding-left: 20vw;
   padding-right: 20vw;
@@ -386,7 +386,7 @@ body {
   font-size: 1.5rem;
   color: #000;
   font-family: "Underdog", cursive;
-  letter-spacing: .05rem;
+  letter-spacing: .1rem;
   line-height: 150%;
   color: #fff;
   padding: 0 1vw;
@@ -405,7 +405,7 @@ body {
   font-size: 1.5rem;
   color: #000;
   font-family: "Underdog", cursive;
-  letter-spacing: .05rem;
+  letter-spacing: .1rem;
   line-height: 150%;
   padding-left: 20vw;
   padding-right: 20vw;
@@ -502,7 +502,7 @@ body {
           background-color: green;
       }*/
   .l-blurb {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
   .l-pg {
     font-size: 1.2rem;
@@ -595,7 +595,7 @@ body {
   font-size: 1.5rem;
   color: #000;
   font-family: "Underdog", cursive;
-  letter-spacing: .05rem;
+  letter-spacing: .1rem;
   line-height: 150%;
   color: #fff;
 }
@@ -688,7 +688,7 @@ body {
   font-size: 1.5rem;
   color: #000;
   font-family: "Underdog", cursive;
-  letter-spacing: .05rem;
+  letter-spacing: .1rem;
   line-height: 150%;
 }
 
@@ -719,10 +719,10 @@ body {
   }
   .a-text,
   #a-blurb {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
   .a-name {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -869,7 +869,7 @@ body {
   font-size: 1.5rem;
   color: #000;
   font-family: "Underdog", cursive;
-  letter-spacing: .05rem;
+  letter-spacing: .1rem;
   line-height: 150%;
   padding-left: 20vw;
   padding-right: 20vw;
@@ -927,7 +927,7 @@ body {
   font-size: 1.5rem;
   color: #000;
   font-family: "Underdog", cursive;
-  letter-spacing: .05rem;
+  letter-spacing: .1rem;
   line-height: 150%;
   color: #fff;
   display: -webkit-box;
@@ -964,7 +964,7 @@ body {
   }
   .w-card-text,
   #w-blurb {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 }
 
