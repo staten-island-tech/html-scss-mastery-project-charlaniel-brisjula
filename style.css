@@ -255,7 +255,7 @@ body {
     .image-whole-3 {
       background-color: rgba(8, 24, 97, 0.75);
     }*/
-  .image-whole:active {
+  .image-whole {
     opacity: 100%;
     -webkit-transform: translateY(0vh);
             transform: translateY(0vh);
