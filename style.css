@@ -419,7 +419,7 @@ body {
 
 .l-box {
   width: 93vw;
-  height: 20vh;
+  height: 25vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -438,9 +438,8 @@ body {
 }
 
 .l-pic-box {
-  height: 20vh;
+  height: 25vh;
   width: 36vw;
-  border-radius: 1vw;
   position: absolute;
 }
 
@@ -448,18 +447,24 @@ body {
   background-image: url(/Images/Lantern3.jpg);
   background-size: cover;
   right: 0;
+  border-top-right-radius: 1vw;
+  border-bottom-right-radius: 1vw;
 }
 
 .l-pic-2 {
   background-image: url(/Images/D3.jpg);
   background-size: cover;
   left: 0;
+  border-top-left-radius: 1vw;
+  border-bottom-left-radius: 1vw;
 }
 
 .l-pic-3 {
   background-image: url(/Images/Space1.jpeg);
   background-size: cover;
   right: 0;
+  border-top-right-radius: 1vw;
+  border-bottom-right-radius: 1vw;
 }
 
 .l-words-box {
@@ -468,8 +473,7 @@ body {
   text-align: left;
   float: right;
   width: 60vw;
-  height: 20vh;
-  border-radius: 1vw;
+  height: 25vh;
   position: absolute;
   padding: 2vw;
   color: #ffff;
@@ -477,15 +481,21 @@ body {
 
 .l-words-1 {
   background-color: #9b542e;
+  border-top-left-radius: 1vw;
+  border-bottom-left-radius: 1vw;
 }
 
 .l-words-2 {
   right: 0;
   background-color: #2b96b1;
+  border-top-right-radius: 1vw;
+  border-bottom-right-radius: 1vw;
 }
 
 .l-words-3 {
   background-color: #644ebd;
+  border-top-left-radius: 1vw;
+  border-bottom-left-radius: 1vw;
 }
 
 /* MEDIA QUERIES */
@@ -501,11 +511,8 @@ body {
   /*#nav-bar {
           background-color: green;
       }*/
-  .l-blurb {
+  .l-blurb, .l-pg {
     font-size: 1.4rem;
-  }
-  .l-pg {
-    font-size: 1.2rem;
   }
 }
 
