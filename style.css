@@ -117,7 +117,7 @@ body {
 }
 
 .img-info {
-  position: absolute;
+  position: relative;
   font-size: 1.5rem;
   color: #000;
   font-family: "Underdog", cursive;
@@ -133,24 +133,21 @@ body {
   margin: 0;
   -webkit-transform: translateY(5vh);
           transform: translateY(5vh);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-  text-align: left;
-  padding: 0 2vw;
 }
 
 .h-info {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: left;
+  padding: 0 2vw;
+  position: absolute;
   font-size: 1.5rem;
   color: #000;
   font-family: "Underdog", cursive;
   letter-spacing: .1rem;
   line-height: 150%;
   color: #fff;
+  top: 100%;
 }
 
 .image-whole:hover .img-info,
@@ -158,12 +155,11 @@ body {
   opacity: 90%;
   -webkit-transform: translateY(0vh);
           transform: translateY(0vh);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+.image-whole:hover .h-info,
+.image-whole:focus .h-info {
+  top: 40%;
 }
 
 .image-whole:hover .img-title,
@@ -268,6 +264,13 @@ body {
     opacity: 100%;
     -webkit-transform: translateY(0vh);
             transform: translateY(0vh);
+  }
+  .h-info {
+    top: 35%;
+  }
+  .image-whole:hover .h-info,
+  .image-whole:focus .h-info {
+    top: 35%;
   }
 }
 

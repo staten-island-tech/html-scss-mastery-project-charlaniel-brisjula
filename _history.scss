@@ -83,7 +83,7 @@
   background-color: color(hblue);
 }
 .img-info {
-  position: absolute;
+  position: relative;
   @include text-stuff;
   color: #fff;
   opacity: 0;
@@ -94,22 +94,25 @@
   margin: 0;
   //top: 0.5vh;
   transform: translateY(5vh);
-  display: flex;
-  flex-direction: column-reverse;
-  text-align: left;
-  padding: 0 2vw;
   // padding-left: 2vw;
 }
 .h-info {
+  transition: all 0.3s;
+  text-align: left;
+  padding: 0 2vw;
+  position: absolute;
   @include text-stuff;
   color: #fff;
+  top: 100%;
 }
 .image-whole:hover .img-info,
 .image-whole:focus .img-info {
   opacity: 90%;
   transform: translateY(0vh);
-  display: flex;
-  justify-content: center;
+}
+.image-whole:hover .h-info,
+.image-whole:focus .h-info {
+  top: 40%;
 }
 .image-whole:hover .img-title,
 .image-whole:focus .img-title {
@@ -211,7 +214,11 @@
     // display: flex;
     // justify-content: center;
   }
-  //.h-info {
-   // font-size: 90%;
-  //}
+  .h-info {
+    top: 35%;
+  }
+  .image-whole:hover .h-info,
+.image-whole:focus .h-info {
+  top: 35%;
+}
 }
