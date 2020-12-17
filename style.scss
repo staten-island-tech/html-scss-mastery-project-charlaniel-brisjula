@@ -38,7 +38,7 @@ body
   align-content: flex-start;
 }
 .navwhole {
-  width: 100%;
+  width: 100vw;
   position: fixed;
   z-index: 99;
   box-shadow: 0 .5rem .5rem -.3rem rgba(0,0,0,.2);
@@ -60,7 +60,7 @@ body
 }
 #nav-bar {
   width: 70%;
-  float: right;
+  float: left;
   text-align: right;
   display: inline;
   background-color: rgba(color(whitee), .95);
