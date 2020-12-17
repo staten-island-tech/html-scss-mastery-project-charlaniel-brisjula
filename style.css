@@ -150,7 +150,10 @@ body {
   font-family: "Underdog", cursive;
   letter-spacing: .1rem;
   line-height: 150%;
+  font-size: 0.2rem;
   color: #fff;
+  position: absolute;
+  top: 35%;
 }
 
 .image-whole:hover .img-info,
@@ -158,12 +161,6 @@ body {
   opacity: 90%;
   -webkit-transform: translateY(0vh);
           transform: translateY(0vh);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .image-whole:hover .img-title,
@@ -226,9 +223,6 @@ body {
     opacity: 85%;
     -webkit-transform: translate(0);
             transform: translate(0);
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 
@@ -277,8 +271,6 @@ body {
   }
   .h-info {
     font-size: 90%;
-    position: relative;
-    top: 1%;
   }
 }
 

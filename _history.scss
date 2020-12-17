@@ -102,14 +102,17 @@
 }
 .h-info {
   @include text-stuff;
+  font-size: 0.2rem;
   color: #fff;
+  position: absolute;
+  top: 35%;
 }
 .image-whole:hover .img-info,
 .image-whole:focus .img-info {
   opacity: 90%;
   transform: translateY(0vh);
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
 }
 .image-whole:hover .img-title,
 .image-whole:focus .img-title {
@@ -164,7 +167,7 @@
   .img-info {
     opacity: 85%;
     transform: translate(0);
-    justify-content: center;
+    // justify-content: center;
   }
 }
 
@@ -213,7 +216,5 @@
   }
   .h-info {
     font-size: 90%;
-    position: relative;
-    top: 1%;
   }
 }
