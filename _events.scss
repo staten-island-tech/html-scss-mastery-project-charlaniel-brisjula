@@ -1,0 +1,23 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+#eventsbox {
+  width: 100vw;
+}
+.e-header {
+  font-size: 5rem;
+  color: color(bluee);
+  font-family: $mainfont;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  padding-top: 3rem;
+}
+.e-blurb {
+  @include text-stuff;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  text-align: left;
+  padding-bottom: 2.5vw;
+}

@@ -1011,6 +1011,42 @@ body {
   }
 }
 
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#eventsbox {
+  width: 100vw;
+}
+
+.e-header {
+  font-size: 5rem;
+  color: #2372D6;
+  font-family: "Henny Penny", cursive;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  padding-top: 3rem;
+}
+
+.e-blurb {
+  font-size: 1.5rem;
+  color: #000;
+  font-family: "Underdog", cursive;
+  letter-spacing: .1rem;
+  line-height: 150%;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  text-align: left;
+  padding-bottom: 2.5vw;
+}
+
 html {
   scroll-behavior: smooth;
 }
