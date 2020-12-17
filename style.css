@@ -209,7 +209,7 @@ body {
     font-size: 3rem;
   }
   #h-blurb,
-  .img-info {
+  .h-info {
     font-size: 1.4rem;
   }
   .img-title {
@@ -237,12 +237,6 @@ body {
   /*#nav-bar {
           background-color: yellow;
       }*/
-}
-
-@media only screen and (min-width: 320px) {
-  .h-info {
-    font-size: 3rem;
-  }
 }
 
 /* Small devices (tablets/phones, up to 48rem) */
@@ -274,11 +268,6 @@ body {
     opacity: 100%;
     -webkit-transform: translateY(0vh);
             transform: translateY(0vh);
-  }
-  .h-info {
-    font-size: 90%;
-    position: relative;
-    top: 1%;
   }
 }
 
@@ -1062,7 +1051,7 @@ body
 }
 
 .navwhole {
-  width: 100%;
+  width: 100vw;
   position: fixed;
   z-index: 99;
   -webkit-box-shadow: 0 0.5rem 0.5rem -0.3rem rgba(0, 0, 0, 0.2);
@@ -1088,7 +1077,7 @@ body
 
 #nav-bar {
   width: 70%;
-  float: right;
+  float: left;
   text-align: right;
   display: inline;
   background-color: rgba(255, 255, 243, 0.95);
