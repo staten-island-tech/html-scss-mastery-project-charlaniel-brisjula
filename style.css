@@ -64,11 +64,11 @@ body {
 }
 
 .h-img-2 {
-  background-image: url(/Images/WM3.jpg);
+  background-image: url(/Images/WM3-min.jpg);
 }
 
 .h-img-3 {
-  background-image: url(/Images/BM1.jpg);
+  background-image: url(/Images/BM1-min.jpg);
 }
 
 .img-title {
@@ -422,7 +422,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 1vw;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -435,7 +435,7 @@ body {
 }
 
 .l-pic-1 {
-  background-image: url(/Images/Lantern3.jpg);
+  background-image: url(/Images/Lantern3-min.jpg);
   background-size: cover;
   right: 0;
   border-top-right-radius: 1vw;
@@ -443,7 +443,7 @@ body {
 }
 
 .l-pic-2 {
-  background-image: url(/Images/D3.jpg);
+  background-image: url(/Images/D3-min.jpg);
   background-size: cover;
   left: 0;
   border-top-left-radius: 1vw;
@@ -451,7 +451,7 @@ body {
 }
 
 .l-pic-3 {
-  background-image: url(/Images/Space1.jpeg);
+  background-image: url(/Images/Space1-min.jpeg);
   background-size: cover;
   right: 0;
   border-top-right-radius: 1vw;
@@ -502,7 +502,8 @@ body {
   /*#nav-bar {
           background-color: green;
       }*/
-  .l-blurb, .l-pg {
+  .l-blurb,
+  .l-pg {
     font-size: 1.4rem;
   }
 }
