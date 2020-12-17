@@ -144,6 +144,15 @@ body {
   padding: 0 2vw;
 }
 
+.h-info {
+  font-size: 1.5rem;
+  color: #000;
+  font-family: "Underdog", cursive;
+  letter-spacing: .1rem;
+  line-height: 150%;
+  color: #fff;
+}
+
 .image-whole:hover .img-info,
 .image-whole:focus .img-info {
   opacity: 90%;
@@ -265,6 +274,11 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .h-info {
+    font-size: 80%;
+    position: relative;
+    top: 0.5%;
   }
 }
 
