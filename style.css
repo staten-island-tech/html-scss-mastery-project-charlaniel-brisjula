@@ -995,13 +995,13 @@ body {
           background-color: purple;
       }*/
   .w-card {
-    height: 40vw;
-    width: 40vw;
-    -ms-flex-preferred-size: 40vw;
-        flex-basis: 40vw;
+    height: 55vw;
+    width: 55vw;
+    -ms-flex-preferred-size: 55vw;
+        flex-basis: 55vw;
   }
   .w-row {
-    height: 41vw;
+    height: 56vw;
     padding-top: 1vw;
   }
   #wildlifebox {
