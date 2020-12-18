@@ -1047,6 +1047,24 @@ body {
   padding-bottom: 2.5vw;
 }
 
+.e-content {
+  list-style: none;
+  text-align: center;
+}
+
+.e-card-h,
+.e-card-content,
+.e-card-button {
+  z-index: 99;
+  position: relative;
+}
+
+.e-card-content,
+.e-card {
+  display: block;
+  position: absolute;
+}
+
 html {
   scroll-behavior: smooth;
 }
