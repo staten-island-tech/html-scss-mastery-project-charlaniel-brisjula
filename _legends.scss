@@ -176,7 +176,7 @@
   color: #ffff;
 }
 .l-words-1 {
-  background-color: #9b542e;
+  background-color: color(hred);
   border-top-left-radius: 1vw;
   border-bottom-left-radius: 1vw;
 }
@@ -187,7 +187,7 @@
   border-bottom-right-radius: 1vw;
 }
 .l-words-3 {
-  background-color: #644ebd;
+  background-color: color(hblue);
   border-top-left-radius: 1vw;
   border-bottom-left-radius: 1vw;
 }
@@ -205,11 +205,9 @@
   /*#nav-bar {
           background-color: green;
       }*/
-  .l-blurb {
-    font-size: 1.4rem;
-  }
+  .l-blurb,
   .l-pg {
-    font-size: 5vw;
+    font-size: 1.4rem;
   }
   // .legends-whole {
   //   display: none;
@@ -245,5 +243,8 @@
   #legends-whole {
     display: block;
     display: initial;
+  }
+  .l-title-mobile {
+    font-size: 5vw;
   }
 }

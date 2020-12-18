@@ -486,7 +486,7 @@ body {
 }
 
 .l-words-1 {
-  background-color: #9b542e;
+  background-color: #b24f17;
   border-top-left-radius: 1vw;
   border-bottom-left-radius: 1vw;
 }
@@ -499,7 +499,7 @@ body {
 }
 
 .l-words-3 {
-  background-color: #644ebd;
+  background-color: #5d2bd1;
   border-top-left-radius: 1vw;
   border-bottom-left-radius: 1vw;
 }
@@ -517,11 +517,9 @@ body {
   /*#nav-bar {
           background-color: green;
       }*/
-  .l-blurb {
-    font-size: 1.4rem;
-  }
+  .l-blurb,
   .l-pg {
-    font-size: 5vw;
+    font-size: 1.4rem;
   }
 }
 
@@ -551,6 +549,9 @@ body {
   #legends-whole {
     display: block;
     display: initial;
+  }
+  .l-title-mobile {
+    font-size: 5vw;
   }
 }
 
