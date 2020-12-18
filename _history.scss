@@ -60,7 +60,6 @@
   margin: 0;
   top: 50%;
   left: 50%;
-  margin-right: -50%;
   transform: translate(-50%, -50%);
   transition: all 0.3s;
 }
@@ -103,7 +102,7 @@
   position: absolute;
   @include text-stuff;
   color: #fff;
-  top: 100%;
+  top: 75%;
 }
 .image-whole:hover .img-info,
 .image-whole:focus .img-info {
