@@ -1022,7 +1022,6 @@ body {
 
 #eventsbox {
   width: 100vw;
-  height: 85vh;
   background-color: #cce2ff;
 }
 
@@ -1105,7 +1104,7 @@ body {
 }
 
 .e-content .e-card .e-card-h {
-  font-size: 5rem;
+  font-size: 3rem;
   background: -webkit-linear-gradient(#28fff7, #8128ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1130,7 +1129,7 @@ body {
 }
 
 .e-card-content {
-  font-size: 4rem;
+  font-size: 2rem;
   color: #999;
 }
 
