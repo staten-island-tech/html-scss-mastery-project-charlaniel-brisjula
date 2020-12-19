@@ -5,6 +5,8 @@
   width: 100vw;
   // height: 85vh;
   background-color: #cce2ff;
+  padding: 3.5vw;
+  padding-top: 5.5vw;
 }
 .e-header {
   font-size: 5rem;
@@ -18,14 +20,19 @@
 }
 .e-blurb {
   @include text-stuff;
-  padding-left: 20vw;
-  padding-right: 20vw;
-  text-align: left;
   padding-bottom: 2.5vw;
+}
+.e-header,
+.e-blurb {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 30vw;
 }
 .e-content {
   list-style: none;
-  text-align: center;
+  float: left;
+  padding-left: 100vw;
   // position: absolute;
   /*   transform: translate(-50%,-50%); */
   // left: 50%;
@@ -33,10 +40,17 @@
   // margin-left: -125px;
   // margin-top: -180px;
 }
+.e-card {
+  border-radius: 1vw;
+  overflow: hidden;
+}
 .e-card-h,
 .e-card-content {
   z-index: 1;
   position: relative;
+}
+.e-card-h {
+  text-align: center;
 }
 .e-content .e-card {
   display: block;

@@ -1033,6 +1033,8 @@ body {
 #eventsbox {
   width: 100vw;
   background-color: #cce2ff;
+  padding: 3.5vw;
+  padding-top: 5.5vw;
 }
 
 .e-header {
@@ -1052,22 +1054,42 @@ body {
   font-family: "Underdog", cursive;
   letter-spacing: .1rem;
   line-height: 150%;
-  padding-left: 20vw;
-  padding-right: 20vw;
-  text-align: left;
   padding-bottom: 2.5vw;
+}
+
+.e-header,
+.e-blurb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  width: 30vw;
 }
 
 .e-content {
   list-style: none;
-  text-align: center;
+  float: left;
+  padding-left: 100vw;
   /*   transform: translate(-50%,-50%); */
+}
+
+.e-card {
+  border-radius: 1vw;
+  overflow: hidden;
 }
 
 .e-card-h,
 .e-card-content {
   z-index: 1;
   position: relative;
+}
+
+.e-card-h {
+  text-align: center;
 }
 
 .e-content .e-card {
