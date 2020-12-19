@@ -473,7 +473,7 @@ body {
 }
 
 .l-words-box {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font: "Underdog", cursive;
   text-align: left;
   float: right;
@@ -550,7 +550,7 @@ body {
     display: initial;
   }
   .l-title-mobile {
-    font-size: 5vw;
+    font-size: 4vw;
   }
 }
 
