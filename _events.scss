@@ -1,0 +1,198 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+#eventsbox {
+  width: 100vw;
+  // height: 85vh;
+  background-color: #cce2ff;
+}
+.e-header {
+  font-size: 5rem;
+  color: color(bluee);
+  font-family: $mainfont;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  padding-top: 3rem;
+}
+.e-blurb {
+  @include text-stuff;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  text-align: left;
+  padding-bottom: 2.5vw;
+}
+.e-content {
+  list-style: none;
+  text-align: center;
+  // position: absolute;
+  /*   transform: translate(-50%,-50%); */
+  // left: 50%;
+  // top: 50%;
+  // margin-left: -125px;
+  // margin-top: -180px;
+}
+.e-card-h,
+.e-card-content {
+  z-index: 1;
+  position: relative;
+}
+.e-content .e-card {
+  display: block;
+  position: absolute;
+  width: 250px;
+  height: 320px;
+  top: 0;
+  left: 0;
+  transform: rotate(10deg) skew(-60deg);
+  transform-origin: bottom center;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+  transition: 0.4s;
+  z-index: -1;
+  overflow: hidden;
+}
+.e-text {
+  opacity: 0;
+}
+.e-content .e-card:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: rgb(40, 255, 247);
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(40, 255, 247, 1) 0%,
+    rgba(129, 40, 255, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(40, 255, 247, 1) 0%,
+    rgba(129, 40, 255, 1) 100%
+  );
+  background: linear-gradient(
+    45deg,
+    rgba(40, 255, 247, 1) 0%,
+    rgba(129, 40, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#28fff7', endColorstr='#8128ff',GradientType=1 );
+  transition: 0.6s;
+}
+.e-content .e-card:hover .e-text {
+  opacity: 100%;
+  transition-delay: 0.3s;
+}
+//CONTENT STUFF STARTS
+.e-content .e-card .e-card-h {
+  font-size: 3rem;
+  background: -webkit-linear-gradient(#28fff7, #8128ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 50px;
+  transition: 0.4s;
+}
+.e-card-1 {
+  background-image: url(/Images/EL2.jpeg);
+  background-size: cover;
+}
+.e-card-2 {
+  background-image: url(/Images/Concert.jpg);
+  background-size: cover;
+}
+.e-card-3 {
+  background-image: url(/Images/ES2.jpeg);
+  background-size: cover;
+}
+.e-card-content {
+  font-size: 2rem;
+  color: #999;
+}
+// //BUTTON STUFF STARTS
+// .e-content .e-card .e-card-button {
+//   display: inline-block;
+//   padding: 10px 20px;
+//   top: 40px;
+//   border: 1px solid #fff;
+//   transition: all 0.7s cubic-bezier(0.68, 0, 0.265, 1.55);
+//   color: #fff;
+//   text-decoration: none;
+//   transform: scale(0);
+//   position: relative;
+//   overflow: hidden;
+// }
+// .e-content .e-card .e-card-button:after {
+//   position: absolute;
+//   left: 0;
+//   bottom: 0;
+//   width: 100%;
+//   height: 0%;
+//   transform-origin: center top;
+//   background-color: rgba(0, 0, 0, 0.3);
+//   border-radius: 100% 0 0 0;
+//   transition: all 0.6s linear;
+// }
+// .e-content .e-card .e-card-button:after {
+//   content: "";
+//   position: absolute;
+//   left: 0;
+//   bottom: 0;
+//   width: 100%;
+//   height: 0%;
+//   transform-origin: center top;
+//   background-color: rgba(0, 0, 0, 0.3);
+//   border-radius: 100% 0 0 0;
+//   transition: all 0.6s linear;
+// }
+// .e-content .e-card .e-card-button:hover {
+//   border-color: transparent;
+//   transform: scale(1.2) !important;
+// }
+//TRANSFORMING CARD STUFF STARTS
+.e-content .e-card:nth-child(1) {
+  transform: rotate(20deg) skew(-20deg) translate(10px, 10px);
+}
+.e-content .e-card:nth-child(2) {
+  transform: rotate(20deg) skew(-20deg) translate(0px, 0px);
+}
+.e-content .e-card:nth-child(3) {
+  transform: rotate(20deg) skew(-20deg) translate(-10px, -10px);
+}
+.e-content:hover .e-card:nth-child(1) {
+  transform: rotate(40deg) skew(0) translate(100px, 0);
+}
+.e-content:hover .e-card:nth-child(2) {
+  transform: rotate(0) skew(0);
+}
+.e-content:hover .e-card:nth-child(3) {
+  transform: rotate(-40deg) skew(0) translate(-100px, 0);
+}
+.e-content:hover .e-card:hover {
+  z-index: 9;
+  background-color: #0e1826;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.5);
+}
+.e-content:hover .e-card:hover .e-card-button {
+  top: 30px;
+  transform: scale(1);
+}
+.e-content:hover .e-card:hover:after {
+  height: 100%;
+  /*   transform:skew(30deg); */
+}
+.e-content:hover .e-card:hover * {
+  color: #fff;
+  background: -webkit-linear-gradient(#fff, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.e-whole {
+  position: absolute;
+  left: 40%;
+  margin-top: 3rem;
+
+  // margin-right: -50%;
+  // transform: translate(-50%, -50%);
+}
