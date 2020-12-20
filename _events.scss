@@ -186,7 +186,7 @@
 .e-content:hover .e-card:hover {
   z-index: 9;
   background-color: #0e1826;
-  box-shadow: 0 0 3rem 1rem rgba(129, 40, 255, .4);
+  box-shadow: 0 0 3rem 1rem rgba(129, 40, 255, 0.4);
 }
 .e-content:hover .e-card:hover .e-card-button {
   top: 30px;
@@ -209,4 +209,13 @@
   z-index: 5;
   // margin-right: -50%;
   // transform: translate(-50%, -50%);
+}
+.e-text {
+  text-align: center;
+}
+//MEDIA QUERIES
+@media only screen and (max-width: 48rem) {
+  #eventsbox {
+    display: none;
+  }
 }

@@ -32,7 +32,7 @@
   position: relative;
   margin-bottom: 1vw;
   width: 93vw;
-  height: 39vh;
+  height: 25vh;
   border-radius: 1vw;
   margin-left: auto;
   margin-right: auto;
@@ -88,7 +88,7 @@
   opacity: 0;
   transition: all 0.3s;
   width: 93vw;
-  height: 39vh;
+  height: 25vh;
   border-radius: 1vw;
   margin: 0;
   //top: 0.5vh;
@@ -177,9 +177,9 @@
       }*/
 }
 //@media only screen and (min-width: 320px) {
- // .h-info {
- //   font-size: 3rem;
- // }
+// .h-info {
+//   font-size: 3rem;
+// }
 //}
 /* Small devices (tablets/phones, up to 48rem) */
 @media only screen and (max-width: 48rem) {
@@ -217,7 +217,7 @@
     top: 30%;
   }
   .image-whole:hover .h-info,
-.image-whole:focus .h-info {
-  top: 30%;
-}
+  .image-whole:focus .h-info {
+    top: 30%;
+  }
 }
