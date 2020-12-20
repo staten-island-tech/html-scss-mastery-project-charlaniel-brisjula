@@ -385,9 +385,9 @@ body {
 .l-title {
   text-align: center;
   color: #F6F285;
-  letter-spacing: 0.1rem;
   padding-bottom: 1rem;
   font-size: 2.25rem;
+  letter-spacing: 0.1rem;
 }
 
 .l-pg {
@@ -423,6 +423,11 @@ body {
 
 .legends-whole {
   display: none;
+}
+
+.l-title-mobile {
+  font-size: 4.5vw;
+  letter-spacing: unset;
 }
 
 .l-box {
@@ -551,9 +556,6 @@ body {
   #legends-whole {
     display: block;
     display: initial;
-  }
-  .l-title-mobile {
-    font-size: 4vw;
   }
 }
 
@@ -1036,7 +1038,7 @@ body {
   background-color: #cce2ff;
   padding: 3.5vw;
   padding-top: 5.5vw;
-  height: 83vh;
+  height: 86vh;
 }
 
 .e-header {
@@ -1080,6 +1082,7 @@ body {
 .e-card {
   border-radius: 1vw;
   overflow: hidden;
+  padding: 1vw;
 }
 
 .e-card-h,
@@ -1088,15 +1091,11 @@ body {
   position: relative;
 }
 
-.e-card-h {
-  text-align: center;
-}
-
 .e-content .e-card {
   display: block;
   position: absolute;
-  width: 250px;
-  height: 320px;
+  width: 25rem;
+  height: 32rem;
   top: 0;
   left: 0;
   -webkit-transform: rotate(10deg) skew(-60deg);
@@ -1107,7 +1106,6 @@ body {
           box-shadow: 0 0 5rem 1rem rgba(35, 114, 214, 0.4);
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  z-index: -1;
   overflow: hidden;
 }
 
@@ -1136,11 +1134,8 @@ body {
 }
 
 .e-content .e-card .e-card-h {
-  font-size: 4rem;
-  background: -webkit-linear-gradient(#28fff7, #8128ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-top: 50px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -1158,11 +1153,6 @@ body {
 .e-card-3 {
   background-image: url(/Images/EP31.jpg);
   background-size: cover;
-}
-
-.e-card-content {
-  font-size: 2rem;
-  color: #999;
 }
 
 .e-content .e-card:nth-child(1) {
@@ -1224,7 +1214,276 @@ body {
   position: absolute;
   left: 60%;
   top: 6vw;
-  z-index: 5;
+}
+
+.e-card-h {
+  font-family: "Underdog", cursive;
+  text-align: center;
+  font-size: 2.25rem;
+  padding-bottom: 1vw;
+}
+
+.e-card-content {
+  font-size: 1.5rem;
+  color: #000;
+  font-family: "Underdog", cursive;
+  letter-spacing: .1rem;
+  line-height: 150%;
+  color: #fff;
+}
+
+.e-card-date,
+.e-card-time {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.e-card-date {
+  margin-top: 2vw;
+}
+
+input[type=submit] {
+  background-color: #F6F285;
+  color: #0036c9;
+  padding: .7rem 2.5rem;
+  border: none;
+  cursor: pointer;
+  border-bottom-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+input[type=submit]:hover {
+  background-color: #feffbc;
+}
+
+.textinput {
+  margin-bottom: 1rem;
+}
+
+.fheader {
+  font-family: "Underdog", cursive;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 550;
+}
+
+.fcontainer {
+  display: inline;
+  float: left;
+  padding: 1.5rem;
+  background-color: #d3bcff;
+  border-radius: 1vw;
+  border: #2372D6 0.25rem solid;
+}
+
+#fbutton {
+  font-size: 1.5rem;
+  display: block;
+  margin-top: 1.5rem;
+}
+
+.textinput {
+  padding-left: .4rem;
+  padding-top: .4rem;
+  padding-bottom: .4rem;
+  display: block;
+}
+
+.ftext,
+#events,
+.textinput {
+  font-family: "Underdog", cursive;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.ftext {
+  margin-bottom: .5rem;
+}
+
+.e-text {
+  text-align: center;
+}
+
+.e-mobile {
+  background-color: #cce2ff;
+}
+
+.e-m-h {
+  font-size: 5rem;
+  color: #2372D6;
+  font-family: "Henny Penny", cursive;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.e-m-b {
+  font-size: 1.5rem;
+  color: #000;
+  font-family: "Underdog", cursive;
+  letter-spacing: .1rem;
+  line-height: 150%;
+  padding-bottom: 2.5vw;
+}
+
+.e-pic {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.e-pic-1 {
+  background-image: url(/Images/ES3.jpg);
+  background-size: cover;
+  vertical-align: center;
+}
+
+.e-pic-2 {
+  background-image: url(/Images/Concert.jpg);
+  background-size: cover;
+}
+
+.e-pic-3 {
+  background-image: url(/Images/EP31.jpg);
+  background-size: cover;
+}
+
+.e-m-text {
+  font: "Underdog", cursive;
+  float: right;
+  color: #ffff;
+  text-align: center;
+  margin-right: 2rem;
+}
+
+.e-p {
+  font-size: 2rem;
+}
+
+.e-m-p {
+  font-size: 2rem;
+}
+
+.et3 {
+  color: red;
+}
+
+@media only screen and (min-width: 75rem) {
+  .e-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 48rem) {
+  #eventsbox {
+    display: none;
+  }
+}
+
+.e-text {
+  text-align: center;
+}
+
+.e-mobile {
+  background-color: #cce2ff;
+}
+
+.e-m-h {
+  font-size: 5rem;
+  color: #2372D6;
+  font-family: "Henny Penny", cursive;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.e-m-b {
+  font-size: 1.5rem;
+  color: #000;
+  font-family: "Underdog", cursive;
+  letter-spacing: .1rem;
+  line-height: 150%;
+  padding-bottom: 2.5vw;
+}
+
+.e-pic {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.e-pic-1 {
+  background-image: url(/Images/ES3.jpg);
+  background-size: cover;
+  vertical-align: center;
+}
+
+.e-pic-2 {
+  background-image: url(/Images/Concert.jpg);
+  background-size: cover;
+}
+
+.e-pic-3 {
+  background-image: url(/Images/EP31.jpg);
+  background-size: cover;
+}
+
+.e-m-text {
+  font: "Underdog", cursive;
+  float: right;
+  color: #ffff;
+  text-align: center;
+  margin-right: 2rem;
+}
+
+.e-p {
+  font-size: 2rem;
+}
+
+.e-m-p {
+  font-size: 2rem;
+}
+
+.et3 {
+  color: red;
+}
+
+@media only screen and (min-width: 75rem) {
+  .e-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 48rem) {
+  #eventsbox {
+    display: none;
+  }
 }
 
 .e-text {

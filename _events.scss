@@ -8,7 +8,7 @@
   background-color: #cce2ff;
   padding: 3.5vw;
   padding-top: 5.5vw;
-  height: 83vh;
+  height: 86vh;
 }
 .e-header {
   font-size: 5rem;
@@ -43,27 +43,24 @@
 .e-card {
   border-radius: 1vw;
   overflow: hidden;
+  padding: 1vw;
 }
 .e-card-h,
 .e-card-content {
   z-index: 1;
   position: relative;
 }
-.e-card-h {
-  text-align: center;
-}
 .e-content .e-card {
   display: block;
   position: absolute;
-  width: 250px;
-  height: 320px;
+  width: 25rem;
+  height: 32rem;
   top: 0;
   left: 0;
   transform: rotate(10deg) skew(-60deg);
   transform-origin: bottom center;
   box-shadow: 0 0 5rem 1rem rgba(color(bluee), 0.4);
   transition: 0.4s;
-  z-index: -1;
   overflow: hidden;
 }
 .e-text {
@@ -76,7 +73,7 @@
   left: 0;
   width: 100%;
   height: 10px;
-  background: rgb(40, 255, 247);
+  background: #28fff7;
   background: -moz-linear-gradient(
     45deg,
     rgba(40, 255, 247, 1) 0%,
@@ -101,11 +98,8 @@
 }
 //CONTENT STUFF STARTS
 .e-content .e-card .e-card-h {
-  font-size: 4rem;
-  background: -webkit-linear-gradient(#28fff7, #8128ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-top: 50px;
   transition: 0.4s;
 }
 .e-card-1 {
@@ -119,10 +113,6 @@
 .e-card-3 {
   background-image: url(/Images/EP31.jpg);
   background-size: cover;
-}
-.e-card-content {
-  font-size: 2rem;
-  color: #999;
 }
 // //BUTTON STUFF STARTS
 // .e-content .e-card .e-card-button {
@@ -206,9 +196,78 @@
   position: absolute;
   left: 60%;
   top: 6vw;
-  z-index: 5;
   // margin-right: -50%;
   // transform: translate(-50%, -50%);
+}
+.e-card-h {
+  font-family: $subfont;
+  text-align: center;
+  font-size: 2.25rem;
+  padding-bottom: 1vw;
+}
+.e-card-content {
+  @include text-stuff;
+  color: #fff;
+}
+.e-card-date,
+.e-card-time {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.e-card-date {
+  margin-top: 2vw;
+}
+input[type=submit] {
+  background-color:color(yelloww);
+  color: #0036c9;
+  padding: .7rem 2.5rem;
+  border: none;
+  cursor: pointer;
+  border-bottom-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    transition: all .3s;
+}
+input[type=submit]:hover{
+  background-color: #feffbc;
+  }
+.textinput {
+  margin-bottom: 1rem;
+}
+.fheader {
+  font-family: $subfont;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 550;
+}
+.fcontainer {
+  display: inline;
+    float: left;
+    padding: 1.5rem;
+    background-color: #d3bcff;
+    border-radius: 1vw;
+    border: color(bluee) .25rem solid;
+}
+#fbutton {
+  font-size: 1.5rem;
+  display: block;
+  margin-top: 1.5rem;
+}
+.textinput {
+  padding-left: .4rem;
+  padding-top: .4rem;
+  padding-bottom: .4rem;
+  display: block;
+}
+.ftext,
+#events,
+.textinput {
+  font-family: $subfont;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.ftext {
+  margin-bottom: .5rem;
 }
 .e-text {
   text-align: center;

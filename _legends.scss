@@ -99,9 +99,9 @@
 .l-title {
   text-align: center;
   color: color(yelloww);
-  letter-spacing: 0.1rem;
   padding-bottom: 1rem;
   font-size: 2.25rem;
+  letter-spacing: 0.1rem;
 }
 
 .l-pg {
@@ -128,6 +128,11 @@
 }
 .legends-whole {
   display: none;
+}
+
+.l-title-mobile {
+  font-size: 4.5vw;
+  letter-spacing: unset;
 }
 .l-box {
   width: 93vw;
@@ -246,8 +251,5 @@
   #legends-whole {
     display: block;
     display: initial;
-  }
-  .l-title-mobile {
-    font-size: 4vw;
   }
 }
