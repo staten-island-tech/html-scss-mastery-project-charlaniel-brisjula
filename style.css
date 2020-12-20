@@ -1231,6 +1231,87 @@ body {
   text-align: center;
 }
 
+.e-mobile {
+  background-color: #cce2ff;
+}
+
+.e-m-h {
+  font-size: 5rem;
+  color: #2372D6;
+  font-family: "Henny Penny", cursive;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.e-m-b {
+  font-size: 1.5rem;
+  color: #000;
+  font-family: "Underdog", cursive;
+  letter-spacing: .1rem;
+  line-height: 150%;
+  padding-bottom: 2.5vw;
+}
+
+.e-pic {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.e-pic-1 {
+  background-image: url(/Images/ES3.jpg);
+  background-size: cover;
+  vertical-align: center;
+}
+
+.e-pic-2 {
+  background-image: url(/Images/Concert.jpg);
+  background-size: cover;
+}
+
+.e-pic-3 {
+  background-image: url(/Images/EP31.jpg);
+  background-size: cover;
+}
+
+.e-m-text {
+  font: "Underdog", cursive;
+  float: right;
+  color: #ffff;
+  text-align: center;
+  margin-right: 2rem;
+}
+
+.e-p {
+  font-size: 2rem;
+}
+
+.e-m-p {
+  font-size: 2rem;
+}
+
+.et3 {
+  color: red;
+}
+
+@media only screen and (min-width: 75rem) {
+  .e-mobile {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 48rem) {
   #eventsbox {
     display: none;
