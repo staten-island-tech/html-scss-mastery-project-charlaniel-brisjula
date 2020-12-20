@@ -1031,10 +1031,12 @@ body {
 }
 
 #eventsbox {
+  position: relative;
   width: 100vw;
   background-color: #cce2ff;
   padding: 3.5vw;
   padding-top: 5.5vw;
+  height: 83vh;
 }
 
 .e-header {
@@ -1045,7 +1047,6 @@ body {
   text-align: center;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
-  padding-top: 3rem;
 }
 
 .e-blurb {
@@ -1073,7 +1074,6 @@ body {
 .e-content {
   list-style: none;
   float: left;
-  padding-left: 100vw;
   /*   transform: translate(-50%,-50%); */
 }
 
@@ -1103,8 +1103,8 @@ body {
           transform: rotate(10deg) skew(-60deg);
   -webkit-transform-origin: bottom center;
           transform-origin: bottom center;
-  -webkit-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
-          box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 5rem 1rem rgba(35, 114, 214, 0.4);
+          box-shadow: 0 0 5rem 1rem rgba(35, 114, 214, 0.4);
   -webkit-transition: 0.4s;
   transition: 0.4s;
   z-index: -1;
@@ -1198,8 +1198,8 @@ body {
 .e-content:hover .e-card:hover {
   z-index: 9;
   background-color: #0e1826;
-  -webkit-box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.5);
-          box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 3rem 1rem rgba(129, 40, 255, 0.4);
+          box-shadow: 0 0 3rem 1rem rgba(129, 40, 255, 0.4);
 }
 
 .e-content:hover .e-card:hover .e-card-button {
@@ -1222,8 +1222,9 @@ body {
 
 .e-whole {
   position: absolute;
-  left: 40%;
-  margin-top: 3rem;
+  left: 60%;
+  top: 6vw;
+  z-index: 5;
 }
 
 html {

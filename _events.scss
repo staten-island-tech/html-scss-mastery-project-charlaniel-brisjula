@@ -2,11 +2,13 @@
 @import "_mixins.scss";
 
 #eventsbox {
+  position: relative;
   width: 100vw;
   // height: 85vh;
   background-color: #cce2ff;
   padding: 3.5vw;
   padding-top: 5.5vw;
+  height: 83vh;
 }
 .e-header {
   font-size: 5rem;
@@ -16,7 +18,6 @@
   text-align: center;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
-  padding-top: 3rem;
 }
 .e-blurb {
   @include text-stuff;
@@ -32,7 +33,6 @@
 .e-content {
   list-style: none;
   float: left;
-  padding-left: 100vw;
   // position: absolute;
   /*   transform: translate(-50%,-50%); */
   // left: 50%;
@@ -61,7 +61,7 @@
   left: 0;
   transform: rotate(10deg) skew(-60deg);
   transform-origin: bottom center;
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5rem 1rem rgba(color(bluee), 0.4);
   transition: 0.4s;
   z-index: -1;
   overflow: hidden;
@@ -80,7 +80,7 @@
   background: -moz-linear-gradient(
     45deg,
     rgba(40, 255, 247, 1) 0%,
-    rgba(129, 40, 255, 1) 100%
+    rgb(129, 40, 255) 100%
   );
   background: -webkit-linear-gradient(
     45deg,
@@ -186,7 +186,7 @@
 .e-content:hover .e-card:hover {
   z-index: 9;
   background-color: #0e1826;
-  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 3rem 1rem rgba(129, 40, 255, .4);
 }
 .e-content:hover .e-card:hover .e-card-button {
   top: 30px;
@@ -204,9 +204,9 @@
 }
 .e-whole {
   position: absolute;
-  left: 40%;
-  margin-top: 3rem;
-
+  left: 60%;
+  top: 6vw;
+  z-index: 5;
   // margin-right: -50%;
   // transform: translate(-50%, -50%);
 }
