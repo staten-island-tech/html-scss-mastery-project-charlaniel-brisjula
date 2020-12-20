@@ -1141,17 +1141,17 @@ body {
 }
 
 .e-card-1 {
-  background-image: url(/Images/ES3.jpg);
+  background-image: url(/Images/banquet.jpg);
   background-size: cover;
 }
 
 .e-card-2 {
-  background-image: url(/Images/Concert.jpg);
+  background-image: url(/Images/concert2.jpg);
   background-size: cover;
 }
 
 .e-card-3 {
-  background-image: url(/Images/EP31.jpg);
+  background-image: url(/Images/stars.jpg);
   background-size: cover;
 }
 
@@ -1278,7 +1278,7 @@ body {
   display: inline;
   float: left;
   padding: 1.5rem;
-  background: linear-gradient(45deg, #28fff7 0%, #8128ff 100%);
+  background: #ff859f;
   border-radius: 1vw;
   border: #2372D6 0.25rem solid;
 }
@@ -1294,8 +1294,19 @@ body {
 #events,
 .textinput {
   font-family: "Underdog", cursive;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 500;
+}
+
+.ftext {
+  font-size: 1.5rem;
+}
+
+#events,
+.textinput {
+  border-radius: 1vw;
+  border: solid .05rem;
+  padding: 1rem;
 }
 
 .ftext {

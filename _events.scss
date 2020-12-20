@@ -103,15 +103,15 @@
   transition: 0.4s;
 }
 .e-card-1 {
-  background-image: url(/Images/ES3.jpg);
+  background-image: url(/Images/banquet.jpg);
   background-size: cover;
 }
 .e-card-2 {
-  background-image: url(/Images/Concert.jpg);
+  background-image: url(/Images/concert2.jpg);
   background-size: cover;
 }
 .e-card-3 {
-  background-image: url(/Images/EP31.jpg);
+  background-image: url(/Images/stars.jpg);
   background-size: cover;
 }
 // //BUTTON STUFF STARTS
@@ -248,11 +248,7 @@
   display: inline;
     float: left;
     padding: 1.5rem;
-    background: linear-gradient(
-      45deg,
-      rgba(40, 255, 247, 1) 0%,
-      rgba(129, 40, 255, 1) 100%
-    );
+    background: rgb(255, 133, 159);
     border-radius: 1vw;
     border: color(bluee) .25rem solid;
 }
@@ -266,8 +262,17 @@
 #events,
 .textinput {
   font-family: $subfont;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 500;
+}
+.ftext {
+  font-size: 1.5rem;
+}
+#events,
+.textinput {
+  border-radius: 1vw;
+  border: solid .05rem;
+  padding: 1rem;
 }
 
 .ftext {
