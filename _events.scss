@@ -238,13 +238,18 @@ input[type=submit]:hover{
   font-family: $subfont;
   font-size: 2rem;
   margin-bottom: 1.5rem;
-  font-weight: 550;
+  font-weight: 600;
+  color: #fff;
 }
 .fcontainer {
   display: inline;
     float: left;
     padding: 1.5rem;
-    background-color: #d3bcff;
+    background: linear-gradient(
+      45deg,
+      rgba(40, 255, 247, 1) 0%,
+      rgba(129, 40, 255, 1) 100%
+    );
     border-radius: 1vw;
     border: color(bluee) .25rem solid;
 }
@@ -266,6 +271,7 @@ input[type=submit]:hover{
   font-size: 1.5rem;
   font-weight: 500;
 }
+
 .ftext {
   margin-bottom: .5rem;
 }
@@ -316,7 +322,7 @@ input[type=submit]:hover{
 .e-m-text {
   font: $subfont;
   float: right;
-  color: #ffff;
+  color: #fff;
   text-align: center;
   margin-right: 2rem;
 }
