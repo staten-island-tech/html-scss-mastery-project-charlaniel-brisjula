@@ -218,7 +218,7 @@
 .e-card-date {
   margin-top: 2vw;
 }
-input[type=submit] {
+#fbutton{
   background-color:color(yelloww);
   color: #0036c9;
   padding: .7rem 2.5rem;
@@ -227,8 +227,11 @@ input[type=submit] {
   border-bottom-left-radius: 2rem;
     border-top-right-radius: 2rem;
     transition: all .3s;
+    font-size: 1.5rem;
+  display: block;
+  margin-top: 1.5rem;
 }
-input[type=submit]:hover{
+#fbutton:hover{
   background-color: #feffbc;
   }
 .textinput {
@@ -252,11 +255,6 @@ input[type=submit]:hover{
     );
     border-radius: 1vw;
     border: color(bluee) .25rem solid;
-}
-#fbutton {
-  font-size: 1.5rem;
-  display: block;
-  margin-top: 1.5rem;
 }
 .textinput {
   padding-left: .4rem;

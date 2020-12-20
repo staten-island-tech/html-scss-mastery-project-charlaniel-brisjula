@@ -1243,7 +1243,7 @@ body {
   margin-top: 2vw;
 }
 
-input[type=submit] {
+#fbutton {
   background-color: #F6F285;
   color: #0036c9;
   padding: .7rem 2.5rem;
@@ -1253,9 +1253,12 @@ input[type=submit] {
   border-top-right-radius: 2rem;
   -webkit-transition: all .3s;
   transition: all .3s;
+  font-size: 1.5rem;
+  display: block;
+  margin-top: 1.5rem;
 }
 
-input[type=submit]:hover {
+#fbutton:hover {
   background-color: #feffbc;
 }
 
@@ -1267,22 +1270,17 @@ input[type=submit]:hover {
   font-family: "Underdog", cursive;
   font-size: 2rem;
   margin-bottom: 1.5rem;
-  font-weight: 550;
+  font-weight: 600;
+  color: #fff;
 }
 
 .fcontainer {
   display: inline;
   float: left;
   padding: 1.5rem;
-  background: linear-gradient(45deg, #61fffa 0%, #a362ff 100%);
+  background: linear-gradient(45deg, #28fff7 0%, #8128ff 100%);
   border-radius: 1vw;
   border: #2372D6 0.25rem solid;
-}
-
-#fbutton {
-  font-size: 1.5rem;
-  display: block;
-  margin-top: 1.5rem;
 }
 
 .textinput {
