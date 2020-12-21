@@ -217,6 +217,14 @@
   .l-pg {
     font-size: 1.4rem;
   }
+  .l-header {
+    font-size: 3rem;
+  }
+  .l-blurb {
+    padding-left: 3.5vw;
+    padding-right: 3.5vw;
+    margin-bottom: 5vw;
+  }
   // .legends-whole {
   //   display: none;
   // }
@@ -227,9 +235,6 @@
   /*#nav-bar {
           background-color: yellow;
       }*/
-  .l-header {
-    font-size: 3rem;
-  }
   // .legends-whole {
   //   display: none;
   // }
@@ -239,17 +244,11 @@
   /*#nav-bar {
           background-color: purple;
       }*/
-
-  .l-blurb {
-    padding-left: 3.5vw;
-    padding-right: 3.5vw;
-    margin-bottom: 5vw;
-  }
-  #legendsbox {
-    display: none;
-  }
-  #legends-whole {
-    display: block;
-    display: initial;
-  }
+      #legendsbox {
+        display: none;
+      }
+      #legends-whole {
+        display: block;
+        display: initial;
+      }
 }

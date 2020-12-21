@@ -22,9 +22,9 @@
   flex-flow: row wrap;
   align-items: stretch;
   width: 62.5vw;
-  padding: 0 3.5vw;
+  padding: 3.5vw;
   float: right;
-  margin-top: 6vw;
+  padding-top: 6vw;
   margin-right: -.5vw;
 }
 
@@ -55,7 +55,6 @@
 }
 .article-content {
   position: absolute;
-  z-index: 1;
   bottom: 0;
   background-color: rgba(35, 114, 214, 0.9);
   width: 100%;

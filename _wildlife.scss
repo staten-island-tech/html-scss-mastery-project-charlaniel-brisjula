@@ -92,6 +92,11 @@
       #w-blurb {
         font-size: 1.4rem;
       }
+      #w-blurb {
+        margin-bottom: 5vw;
+        padding-left: 0;
+          padding-right: 0;
+          }
   }
   
   /* Medium devices (laptops/desktops, up to 62rem) */
@@ -117,11 +122,6 @@
     }
     #wildlifebox {
   padding-top: 10vw;
-    }
-    #w-blurb {
-  margin-bottom: 5vw;
-  padding-left: 0;
-    padding-right: 0;
     }
 }
   

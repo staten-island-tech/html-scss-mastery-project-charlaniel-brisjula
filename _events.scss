@@ -4,11 +4,10 @@
 #eventsbox {
   position: relative;
   width: 100vw;
-  // height: 85vh;
+  height: 86vh;
   background-color: #cce2ff;
   padding: 3.5vw;
   padding-top: 5.5vw;
-  height: 86vh;
 }
 .e-header {
   font-size: 5rem;
@@ -86,9 +85,14 @@
   );
   background: linear-gradient(
     45deg,
-    rgba(40, 255, 247, 1) 0%,
+    rgb(40, 255, 247) 0%,
     rgba(129, 40, 255, 1) 100%
   );
+  /*background: linear-gradient(
+    45deg,
+    rgb(251, 255, 40) 0%,
+    rgb(255, 90, 40) 100%
+  );*/
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#28fff7', endColorstr='#8128ff',GradientType=1 );
   transition: 0.6s;
 }
@@ -220,7 +224,7 @@
 }
 #fbutton{
   background-color:color(yelloww);
-  color: #0036c9;
+  color: color(bluee);
   padding: .7rem 2.5rem;
   border: none;
   cursor: pointer;
