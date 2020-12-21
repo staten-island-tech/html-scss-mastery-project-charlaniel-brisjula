@@ -107,15 +107,15 @@
   transition: 0.4s;
 }
 .e-card-1 {
-  background-image: url(/Images/banquet.jpg);
+  background-image: url(/Images/banquet-min.jpg);
   background-size: cover;
 }
 .e-card-2 {
-  background-image: url(/Images/concert2.jpg);
+  background-image: url(/Images/concert2-min.jpg);
   background-size: cover;
 }
 .e-card-3 {
-  background-image: url(/Images/stars.jpg);
+  background-image: url(/Images/stars-min.jpg);
   background-size: cover;
 }
 // //BUTTON STUFF STARTS
@@ -292,20 +292,22 @@
   background-color: #cce2ff;
 }
 .e-m-h {
-  font-size: 5rem;
+  font-size: 3rem;
   color: color(bluee);
   font-family: $mainfont;
   margin: 0;
   text-align: center;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
+  padding-top: 2rem;
 }
 .e-m-b {
   @include text-stuff;
   padding-bottom: 2.5vw;
+  padding-left: 3vw;
 }
-.e-mobile h1 {
-  font-size: 3rem;
+.e-m-card-h1 {
+  font-size: 2rem;
 }
 .e-m-card-p {
   text-align: center;
@@ -318,22 +320,23 @@
 .e-m-card {
   display: flex;
   flex-direction: column;
-  border: 0.5rem solid #ffffff;
+  border: 0.5rem solid black;
   box-shadow: 0 0 60px rgba(35, 35, 35, 0.08);
   margin: 1.5rem;
+  background-color: blue;
 }
 .e-m-card img {
   height: 20vh;
 }
 .e-m-text {
   text-align: center;
+  color: #ffff;
 }
 .e-m-text h1 {
   font-size: 1.5rem;
   margin-bottom: 0;
 }
 .e-m-text h3 {
-  color: rgba(0, 0, 0, 0.9);
   margin: 0.25rem;
   font-size: 1rem;
 }
