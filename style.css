@@ -598,7 +598,7 @@ body {
       -ms-flex-align: stretch;
           align-items: stretch;
   width: 62.5vw;
-  padding: 3.5vw;
+  padding: 0 3.5vw;
   float: right;
   padding-top: 6vw;
   margin-right: -.5vw;
@@ -1145,7 +1145,7 @@ body {
 }
 
 .e-card-1 {
-  background-image: url(/Images/banquet-min.jpg);
+  background-image: url(/Images/banquet2-min.jpg);
   background-size: cover;
 }
 
@@ -1174,40 +1174,47 @@ body {
           transform: rotate(20deg) skew(-20deg) translate(-10px, -10px);
 }
 
-.e-content:hover .e-card:nth-child(1) {
+.e-content:hover .e-card:nth-child(1),
+.e-content:focus .e-card:nth-child(1) {
   -webkit-transform: rotate(40deg) skew(0) translate(100px, 0);
           transform: rotate(40deg) skew(0) translate(100px, 0);
 }
 
-.e-content:hover .e-card:nth-child(2) {
+.e-content:hover .e-card:nth-child(2),
+.e-content:focus .e-card:nth-child(2) {
   -webkit-transform: rotate(0) skew(0);
           transform: rotate(0) skew(0);
 }
 
-.e-content:hover .e-card:nth-child(3) {
+.e-content:hover .e-card:nth-child(3),
+.e-content:focus .e-card:nth-child(3) {
   -webkit-transform: rotate(-40deg) skew(0) translate(-100px, 0);
           transform: rotate(-40deg) skew(0) translate(-100px, 0);
 }
 
-.e-content:hover .e-card:hover {
+.e-content:hover .e-card:hover,
+.e-content:focus .e-card:focus {
   z-index: 9;
   background-color: #0e1826;
   -webkit-box-shadow: 0 0 3rem 1rem rgba(129, 40, 255, 0.4);
           box-shadow: 0 0 3rem 1rem rgba(129, 40, 255, 0.4);
 }
 
-.e-content:hover .e-card:hover .e-card-button {
+.e-content:hover .e-card:hover .e-card-button,
+.e-content:focus .e-card:focus .e-card-button {
   top: 30px;
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
-.e-content:hover .e-card:hover:after {
+.e-content:hover .e-card:hover:after,
+.e-content:focus .e-card:hover:after {
   height: 100%;
   /*   transform:skew(30deg); */
 }
 
-.e-content:hover .e-card:hover * {
+.e-content:hover .e-card:hover *,
+.e-content:focus .e-card:focus * {
   color: #fff;
   background: -webkit-linear-gradient(#fff, #fff);
   -webkit-background-clip: text;
@@ -1262,7 +1269,8 @@ body {
   margin-top: 1.5rem;
 }
 
-#fbutton:hover {
+#fbutton:hover,
+#fbutton:focus {
   background-color: #feffbc;
 }
 
@@ -1321,7 +1329,7 @@ body {
   text-align: center;
 }
 
-.e-mobile {
+#eventsmobile {
   background-color: #cce2ff;
 }
 
@@ -1333,7 +1341,7 @@ body {
   text-align: center;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
-  padding-top: 2rem;
+  padding-top: 10vw;
 }
 
 .e-m-b {
@@ -1342,8 +1350,10 @@ body {
   font-family: "Underdog", cursive;
   letter-spacing: .1rem;
   line-height: 150%;
+  font-size: 1.4rem;
   padding-bottom: 2.5vw;
-  padding-left: 3vw;
+  padding-left: 3.5vw;
+  padding-right: 3.5vw;
 }
 
 .e-m-card-h1 {
@@ -1404,15 +1414,44 @@ body {
   padding: 0.5rem;
 }
 
-@media only screen and (min-width: 75rem) {
-  .e-mobile {
-    display: none;
-  }
+#eventsmobile,
+.e-mobile,
+.events-mob-btn {
+  display: none;
+}
+
+/* Large devices (laptops/desktops, up to 75rem) */
+@media only screen and (max-width: 75rem) {
+  /*#nav-bar {
+        background-color: green;
+    }*/
 }
 
 @media only screen and (max-width: 48rem) {
-  #eventsbox {
+  #eventsbox,
+  .e-desktop,
+  .events-btn {
     display: none;
+  }
+  #eventsmobile {
+    display: block;
+  }
+  .e-mobile,
+  .events-mob-btn {
+    display: inline-block;
+  }
+  .fcontainer {
+    width: 50vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 3.5vw 25vw;
   }
 }
 

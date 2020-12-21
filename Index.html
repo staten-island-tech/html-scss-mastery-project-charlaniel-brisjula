@@ -36,7 +36,7 @@
                     <li><a href="#attractionsbox">Attractions</a></li>
                     <li><a href="#wildlifebox">Wildlife</a></li>
                     <li><a class="e-desktop" href="#eventsbox">Events</a></li>
-                    <li><a class="e-mobile" href="#eventsmobile"></a>Events</li>
+                    <li><a class="e-mobile" href="#eventsmobile">Events</a></li>
                 </ul>
         </nav>
     </div>
@@ -48,7 +48,9 @@
             <p class="text" id="blurb">Explore the wonders and adventures that await you in the Kingdom of Galgudd! </p>
         <div id="btnbox">  
                 <div class="button"><a href="#attractionsbox" class="btn" id="attractionsbtn">See attractions</a></div>
-                <div class="button"><a href="#eventsbox" class="btn" id="eventsbtn">Explore events</a></div>
+                <div class="button events-btn"><a href="#eventsbox" class="btn" id="eventsbtn">Explore events</a></div>
+                <div class="button events-mob-btn"><a href="#eventsmobile" class="btn" id="eventsbtn">Explore events</a></div>
+                
         </div>
     </div>
     <a class="arrow bounce" href="#historybox">
@@ -327,10 +329,10 @@
 </div>
 
 <!-- EVENTS FOR MOBILE -->
-<id class="eventsmobile">
+<div id="eventsmobile">
   <div class="e-mobile">
 <h1 class="e-m-h">EVENTS</h1>
-<P class="e-m-b">Rotten teeth. Eerie needles edginess, graveyard on death rotten, disturbing non grave. Demons in fallen angel non terror decomposed rotten teeth.</P>
+<p class="e-m-b">The citizens of Galgudd celebrate many special, cultural events. Your trip is incomplete without experiencing one! Sign up for events below!</p>
 <div class="e-m-container">
   <div class="e-m-card">
     <img src="/Images/banquet2-min.jpg" alt="">
@@ -356,7 +358,24 @@
         <p class="e-m-card-p">This festival includes singing and crafts for young children!</p>
       </div>
     </div>
-  </div>  
-</id>
+<span class="fcontainer">
+  <form action="#">
+      <h2 class="fheader">Sign up for events!</h2>
+          <h3 class="ftext">Full name</h3>
+          <input class="textinput" type="text" id="fname" placeholder="Full name">
+          <h3 class="ftext">Email address</h3>
+          <input class="textinput" type="text" id="femail" placeholder="Email address">
+          <h3 class="ftext">Choose an event</h3>
+<select id="events" name="events">
+  <option value="festival">Starlit Festival</option>    
+  <option value="concert">Midnight Concert</option>
+  <option value="feast">Sunset Banquet</option>
+</select>
+<button type="button" id="fbutton" onclick="alert('Signed up successfully 👍')">Submit</button>
+  </form>
+</span>
+</div>  
+</div>
+
 </body>
 </html>

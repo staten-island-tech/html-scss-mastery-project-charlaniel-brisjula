@@ -107,7 +107,7 @@
   transition: 0.4s;
 }
 .e-card-1 {
-  background-image: url(/Images/banquet-min.jpg);
+  background-image: url(/Images/banquet2-min.jpg);
   background-size: cover;
 }
 .e-card-2 {
@@ -168,29 +168,36 @@
 .e-content .e-card:nth-child(3) {
   transform: rotate(20deg) skew(-20deg) translate(-10px, -10px);
 }
-.e-content:hover .e-card:nth-child(1) {
+.e-content:hover .e-card:nth-child(1),
+.e-content:focus .e-card:nth-child(1) {
   transform: rotate(40deg) skew(0) translate(100px, 0);
 }
-.e-content:hover .e-card:nth-child(2) {
+.e-content:hover .e-card:nth-child(2),
+.e-content:focus .e-card:nth-child(2) {
   transform: rotate(0) skew(0);
 }
-.e-content:hover .e-card:nth-child(3) {
+.e-content:hover .e-card:nth-child(3),
+.e-content:focus .e-card:nth-child(3) {
   transform: rotate(-40deg) skew(0) translate(-100px, 0);
 }
-.e-content:hover .e-card:hover {
+.e-content:hover .e-card:hover,
+.e-content:focus .e-card:focus {
   z-index: 9;
   background-color: #0e1826;
   box-shadow: 0 0 3rem 1rem rgba(129, 40, 255, 0.4);
 }
-.e-content:hover .e-card:hover .e-card-button {
+.e-content:hover .e-card:hover .e-card-button,
+.e-content:focus .e-card:focus .e-card-button {
   top: 30px;
   transform: scale(1);
 }
-.e-content:hover .e-card:hover:after {
+.e-content:hover .e-card:hover:after,
+.e-content:focus .e-card:hover:after {
   height: 100%;
   /*   transform:skew(30deg); */
 }
-.e-content:hover .e-card:hover * {
+.e-content:hover .e-card:hover *,
+.e-content:focus .e-card:focus *{
   color: #fff;
   background: -webkit-linear-gradient(#fff, #fff);
   -webkit-background-clip: text;
@@ -235,7 +242,8 @@
   display: block;
   margin-top: 1.5rem;
 }
-#fbutton:hover {
+#fbutton:hover,
+#fbutton:focus {
   background-color: #feffbc;
 }
 .textinput {
@@ -288,7 +296,7 @@
 
 //FOR MOBILE
 
-.e-mobile {
+#eventsmobile {
   background-color: #cce2ff;
 }
 .e-m-h {
@@ -299,12 +307,14 @@
   text-align: center;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
-  padding-top: 2rem;
+  padding-top: 10vw;
 }
 .e-m-b {
   @include text-stuff;
+  font-size: 1.4rem;
   padding-bottom: 2.5vw;
-  padding-left: 3vw;
+  padding-left: 3.5vw;
+  padding-right: 3.5vw;
 }
 .e-m-card-h1 {
   font-size: 2rem;
@@ -344,14 +354,38 @@
   font-size: 1rem;
   padding: 0.5rem;
 }
+#eventsmobile,
+.e-mobile,
+.events-mob-btn {
+  display: none;
+}
 //MEDIA QUERIES
 @media only screen and (min-width: 75rem) {
-  .e-mobile {
-    display: none;
-  }
+}
+/* Large devices (laptops/desktops, up to 75rem) */
+@media only screen and (max-width: 75rem) {
+  /*#nav-bar {
+        background-color: green;
+    }*/
 }
 @media only screen and (max-width: 48rem) {
-  #eventsbox {
+  #eventsbox,
+  .e-desktop,
+  .events-btn {
     display: none;
+  }
+  #eventsmobile {
+    display: block;
+  }
+  .e-mobile,
+  .events-mob-btn {
+    display: inline-block;
+  }
+  .fcontainer {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3.5vw 25vw;
   }
 }
