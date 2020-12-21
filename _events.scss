@@ -222,22 +222,22 @@
 .e-card-date {
   margin-top: 2vw;
 }
-#fbutton{
-  background-color:color(yelloww);
+#fbutton {
+  background-color: color(yelloww);
   color: color(bluee);
-  padding: .7rem 2.5rem;
+  padding: 0.7rem 2.5rem;
   border: none;
   cursor: pointer;
   border-bottom-left-radius: 2rem;
-    border-top-right-radius: 2rem;
-    transition: all .3s;
-    font-size: 1.5rem;
+  border-top-right-radius: 2rem;
+  transition: all 0.3s;
+  font-size: 1.5rem;
   display: block;
   margin-top: 1.5rem;
 }
-#fbutton:hover{
+#fbutton:hover {
   background-color: #feffbc;
-  }
+}
 .textinput {
   margin-bottom: 1rem;
 }
@@ -250,16 +250,16 @@
 }
 .fcontainer {
   display: inline;
-    float: left;
-    padding: 1.5rem;
-    background: rgb(255, 133, 159);
-    border-radius: 1vw;
-    border: color(bluee) .25rem solid;
+  float: left;
+  padding: 1.5rem;
+  background: rgb(255, 133, 159);
+  border-radius: 1vw;
+  border: color(bluee) 0.25rem solid;
 }
 .textinput {
-  padding-left: .4rem;
-  padding-top: .4rem;
-  padding-bottom: .4rem;
+  padding-left: 0.4rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
   display: block;
 }
 .ftext,
@@ -275,12 +275,12 @@
 #events,
 .textinput {
   border-radius: 1vw;
-  border: solid .05rem;
+  border: solid 0.05rem;
   padding: 1rem;
 }
 
 .ftext {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 .e-text {
   text-align: center;
@@ -304,43 +304,42 @@
   @include text-stuff;
   padding-bottom: 2.5vw;
 }
-.e-pic {
-  width: 15rem;
-  height: 15rem;
-  border-radius: 50%;
-  margin-bottom: 1rem;
+.e-mobile h1 {
+  font-size: 3rem;
+}
+.e-m-card-p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.e-m-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
 }
-.e-pic-1 {
-  background-image: url(/Images/ES3.jpg);
-  background-size: cover;
-  vertical-align: center;
+.e-m-card {
+  display: flex;
+  flex-direction: column;
+  border: 0.5rem solid #ffffff;
+  box-shadow: 0 0 60px rgba(35, 35, 35, 0.08);
+  margin: 1.5rem;
 }
-.e-pic-2 {
-  background-image: url(/Images/Concert.jpg);
-  background-size: cover;
-}
-.e-pic-3 {
-  background-image: url(/Images/EP31.jpg);
-  background-size: cover;
+.e-m-card img {
+  height: 20vh;
 }
 .e-m-text {
-  font: $subfont;
-  float: right;
-  color: #fff;
   text-align: center;
-  margin-right: 2rem;
 }
-.e-p {
-  font-size: 2rem;
+.e-m-text h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
 }
-.e-m-p {
-  font-size: 2rem;
+.e-m-text h3 {
+  color: rgba(0, 0, 0, 0.9);
+  margin: 0.25rem;
+  font-size: 1rem;
 }
-.et3 {
-  color: red;
+.e-m-text p {
+  font-size: 1rem;
+  padding: 0.5rem;
 }
 //MEDIA QUERIES
 @media only screen and (min-width: 75rem) {
