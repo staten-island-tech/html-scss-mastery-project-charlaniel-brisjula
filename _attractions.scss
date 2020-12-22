@@ -132,6 +132,33 @@
   .a-name {
     font-size: 1.4rem;
   }
+  .a-text {
+    float: none;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+  #a-header {
+    justify-content: center;
+    text-align: center;
+  }
+  #a-blurb {
+    text-align: center;
+    padding-left: 16.5rem;
+    padding-right: 20rem;
+    width: 100vw;
+  }
+  #attractionsbox {
+    display: flex;
+    flex-direction: column;
+  }
+  .highlights {
+    margin: 2vw 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+  }
 }
 
 /* Medium devices (tablets/laptops, up to 62rem) */
@@ -139,33 +166,8 @@
   /*#nav-bar {
           background-color: yellow;
       }*/
-      .a-text {
-        float: none;
-        display: flex;
-        justify-content: center;
-        width: 100vw;
-      }
-      #a-header {
-        justify-content: center;
-        text-align: center;
-      }
-      #a-blurb {
-        text-align: left;
-        padding-left: 16.5rem;
-        padding-right: 20rem;
-        width: 100vw;
-      }
       #attractionsbox {
         height: 67vh;
-        display: flex;
-        flex-direction: column;
-      }
-      .highlights {
-        margin: 2vw 15vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 70vw;
       }
 }
 

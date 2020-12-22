@@ -252,13 +252,15 @@ label #sign-two {
     padding: 1.25rem 1.5rem;
   }
   #eventsbtn {
-    padding: 1rem 0;
+    @include sleek-border;
+  border: #feffbc solid 0.25rem;
+  padding: 1rem 1.25rem;
     margin-left: 17rem;
   }
   #eventsbtn:hover,
-  #eventsbtn:focus {
-    padding: 1rem 1.25rem;
-  }
+#eventsbtn:focus {
+  padding: 1rem 1.25rem;
+}
   #btnbox {
     margin-top: 2rem;
   }
