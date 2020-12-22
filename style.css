@@ -1034,7 +1034,7 @@ body {
 #eventsbox {
   position: relative;
   width: 100vw;
-  height: 86vh;
+  height: 90vh;
   background-color: #cce2ff;
   padding: 3.5vw;
   padding-top: 5.5vw;
@@ -1118,7 +1118,7 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 10px;
+  height: 1rem;
   background: #28fff7;
   background: linear-gradient(45deg, #28fff7 0%, #8128ff 100%);
   /*background: linear-gradient(
@@ -1243,14 +1243,10 @@ body {
   color: #fff;
 }
 
-.e-card-date,
-.e-card-time {
-  display: block;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
 .e-card-date {
+  display: block;
+  font-size: 1.7rem;
+  font-weight: bold;
   margin-top: 2vw;
 }
 
@@ -1357,12 +1353,18 @@ body {
 }
 
 .e-m-card-h1 {
-  font-size: 1.4vw;
+  font-size: 2.25rem;
+}
+
+.e-m-card-h2 {
+  font-size: 1.6rem;
+  margin-top: .3rem;
 }
 
 .e-m-card-p {
   text-align: center;
   font-size: 1.4rem;
+  margin-top: 1rem;
 }
 
 .e-m-container {
@@ -1373,6 +1375,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 3.5vw;
 }
 
 .e-m-card {
@@ -1383,10 +1386,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 0.5rem solid black;
-  -webkit-box-shadow: 0 0 60px rgba(35, 35, 35, 0.08);
-          box-shadow: 0 0 60px rgba(35, 35, 35, 0.08);
-  margin: 1.5rem;
+  margin-bottom: .5rem;
   background-color: blue;
   border-radius: 1vw;
 }
@@ -1394,34 +1394,22 @@ body {
 .e-m-card img {
   height: 20vh;
   border-top-right-radius: 1vw;
-  border-bottom-right-radius: 1vw;
+  border-top-left-radius: 1vw;
 }
 
 .e-m-text {
   text-align: center;
   color: #ffff;
-  font-style: "Underdog", cursive;
+  font-family: "Underdog", cursive;
+  padding: 2vw;
 }
 
-.e-m-text h1 {
-  font-size: 4.5vw;
-  margin-bottom: 0;
-}
-
-.e-m-text h3 {
-  margin: 0.25rem;
-  font-size: 1.4rem;
-}
-
-.e-m-text p {
-  font-size: 1.4rem;
-  padding: 0.5rem;
-}
-
-#eventsmobile,
-.e-mobile,
-.events-mob-btn {
-  display: none;
+@media only screen and (min-width: 75rem) {
+  #eventsmobile,
+  .e-mobile,
+  .events-mob-btn {
+    display: none;
+  }
 }
 
 /* Large devices (laptops/desktops, up to 75rem) */
@@ -1429,9 +1417,6 @@ body {
   /*#nav-bar {
         background-color: green;
     }*/
-}
-
-@media only screen and (max-width: 48rem) {
   #eventsbox,
   .e-desktop,
   .events-btn {
@@ -1444,6 +1429,15 @@ body {
   .events-mob-btn {
     display: inline-block;
   }
+  .e-m-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 48rem) {
   .fcontainer {
     width: 50vw;
     display: -webkit-box;
@@ -1455,7 +1449,13 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 3.5vw 25vw;
+    margin-top: 3.5vw;
+  }
+  .e-m-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
