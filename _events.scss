@@ -304,6 +304,7 @@
   margin-bottom: 1.5rem;
   font-weight: 600;
   color: #fff;
+  letter-spacing: .05rem;
 }
 .fcontainer {
   display: inline;
@@ -367,10 +368,12 @@
 }
 .e-m-card-h1 {
   font-size: 2.25rem;
+  letter-spacing: .1rem;
 }
 .e-m-card-h2 {
   font-size: 1.6rem;
   margin-top: 0.3rem;
+  letter-spacing: .1rem;
 }
 .e-m-card-p {
   @include text-stuff;
