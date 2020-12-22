@@ -1357,12 +1357,12 @@ body {
 }
 
 .e-m-card-h1 {
-  font-size: 2rem;
+  font-size: 1.4vw;
 }
 
 .e-m-card-p {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .e-m-container {
@@ -1388,29 +1388,33 @@ body {
           box-shadow: 0 0 60px rgba(35, 35, 35, 0.08);
   margin: 1.5rem;
   background-color: blue;
+  border-radius: 1vw;
 }
 
 .e-m-card img {
   height: 20vh;
+  border-top-right-radius: 1vw;
+  border-bottom-right-radius: 1vw;
 }
 
 .e-m-text {
   text-align: center;
   color: #ffff;
+  font-style: "Underdog", cursive;
 }
 
 .e-m-text h1 {
-  font-size: 1.5rem;
+  font-size: 4.5vw;
   margin-bottom: 0;
 }
 
 .e-m-text h3 {
   margin: 0.25rem;
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 
 .e-m-text p {
-  font-size: 1rem;
+  font-size: 1.4rem;
   padding: 0.5rem;
 }
 
