@@ -370,7 +370,7 @@
 }
 .e-m-card-h2 {
   font-size: 1.6rem;
-  margin-top: .3rem;
+  margin-top: 0.3rem;
 }
 .e-m-card-p {
   @include text-stuff;
@@ -413,11 +413,11 @@
 }
 //MEDIA QUERIES
 @media only screen and (min-width: 75rem) {
-#eventsmobile,
-.e-mobile,
-.events-mob-btn {
-  display: none;
-}
+  #eventsmobile,
+  .e-mobile,
+  .events-mob-btn {
+    display: none;
+  }
 }
 /* Large devices (laptops/desktops, up to 75rem) */
 @media only screen and (max-width: 75rem) {
@@ -440,7 +440,6 @@
   }
 }
 @media only screen and (max-width: 48rem) {
-
   .fcontainer {
     width: 50vw;
     display: flex;
