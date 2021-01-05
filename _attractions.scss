@@ -110,15 +110,15 @@
 
 /* MEDIA QUERIES */
 
-/* Extra large devices (large laptops and desktops, 75rem and up) */
-@media only screen and (min-width: 75rem) {
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
   /*#nav-bar {
           background-color: blue;
       }*/
 }
 
-/* Large devices (laptops/desktops, up to 75rem) */
-@media only screen and (max-width: 75rem) {
+/* Large devices (laptops/desktops, up to 1200px) */
+@media only screen and (max-width: 1200px) {
   /*#nav-bar {
           background-color: green;
       }*/
@@ -161,8 +161,8 @@
   }
 }
 
-/* Medium devices (tablets/laptops, up to 62rem) */
-@media only screen and (max-width: 62rem) {
+/* Medium devices (tablets/laptops, up to 992px) */
+@media only screen and (max-width: 992px) {
   /*#nav-bar {
           background-color: yellow;
       }*/
@@ -171,8 +171,8 @@
       }
 }
 
-/* Small devices (tablets/phones, up to 48rem) */
-@media only screen and (max-width: 48rem) {
+/* Small devices (tablets/phones, up to 768px) */
+@media only screen and (max-width: 768px) {
   /*#nav-bar {
           background-color: purple;
       }*/

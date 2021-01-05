@@ -420,15 +420,15 @@
   align-items: center;
 }
 //MEDIA QUERIES
-@media only screen and (min-width: 75rem) {
+@media only screen and (min-width: 1200px) {
   #eventsmobile,
   .e-mobile,
   .events-mob-btn {
     display: none;
   }
 }
-/* Large devices (laptops/desktops, up to 75rem) */
-@media only screen and (max-width: 75rem) {
+/* Large devices (laptops/desktops, up to 1200px) */
+@media only screen and (max-width: 1200px) {
   /*#nav-bar {
         background-color: green;
     }*/
@@ -438,7 +438,7 @@
   // }
   .e-whole {
     position: absolute;
-    left: 55%;
+    left: 50%;
     top: 6vw;
     .e-header {
       font-size: 3rem;
@@ -447,7 +447,7 @@
     // transform: translate(-50%, -50%);
   }
 }
-@media only screen and (max-width: 48rem) {
+@media only screen and (max-width: 768px) {
   .fcontainer {
     width: 50vw;
     display: flex;
