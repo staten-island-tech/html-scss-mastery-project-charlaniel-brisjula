@@ -571,9 +571,11 @@ body {
 /* ATTRACTIONS */
 #attractionsbox {
   width: 100%;
-  height: 80.5vh;
   background-color: #cce2ff;
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 3vw;
 }
 
 *,
@@ -588,8 +590,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
@@ -598,10 +598,8 @@ body {
       -ms-flex-align: stretch;
           align-items: stretch;
   width: 62.5%;
-  padding: 0 3.5vw;
-  float: right;
   margin-top: 6vw;
-  margin-right: -.5vw;
+  margin-left: 4vw;
 }
 
 .views-row {
@@ -691,7 +689,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  float: left;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 30vw;
   padding-left: 3.5vw;
   margin-top: 5.5vw;
@@ -796,7 +796,29 @@ body {
           background-color: yellow;
       }*/
   #attractionsbox {
-    height: 67vh;
+    padding: 0 3vw;
+  }
+  .views-content {
+    height: 40vh;
+    width: 33%;
+  }
+  .highlights {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 2vw 0;
+    width: 100%;
+  }
+  .views-content-small {
+    display: none;
+  }
+  .views-content:hover {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
   }
 }
 
@@ -816,10 +838,6 @@ body {
     padding-left: 0;
     padding-right: 3.5vw;
   }
-  .views-content {
-    height: 40vh;
-    width: 100vw;
-  }
   .views-row-flex,
   .views-row-flex-25,
   .views-row-flex-50 {
@@ -829,7 +847,7 @@ body {
     max-width: 100%;
   }
   .highlights {
-    width: 100vw;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -837,26 +855,17 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 2vw 0;
-  }
-  .views-content-small {
-    display: none;
-  }
-  #attractionsbox {
-    height: 150vh;
+    margin-bottom: 0;
   }
   #attractionsbox {
     padding-top: 12vw;
+    padding-bottom: 0;
   }
   .a-text {
     margin-top: 0;
   }
   .article-image {
     width: 100%;
-  }
-  .views-content:hover {
-    -webkit-transform: scale(1.03);
-            transform: scale(1.03);
   }
 }
 
