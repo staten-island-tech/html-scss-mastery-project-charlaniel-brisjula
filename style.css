@@ -820,6 +820,9 @@ body {
     -webkit-transform: scale(1.03);
             transform: scale(1.03);
   }
+  .a-text {
+    padding: 0 .5vw;
+  }
 }
 
 /* Small devices (tablets/phones, up to 768px) */
