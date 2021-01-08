@@ -19,6 +19,9 @@
         "_mixins.scss",
         "_events.scss",
         "_variables.scss",
+        "_mixins.scss",
+        "_footer.scss",
+        "_variables.scss",
         "_mixins.scss"
     ],
     "names": [],

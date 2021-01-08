@@ -5,6 +5,7 @@
 @import "_attractions.scss";
 @import "_wildlife.scss";
 @import "_events.scss";
+@import "_footer.scss";
 
 html {
   scroll-behavior: smooth;
@@ -59,7 +60,7 @@ body * {
   display: inline;
   height: 5rem;
 }
-#nav-bar {
+.nav-bar {
   width: 70%;
   float: right;
   text-align: right;
@@ -67,14 +68,14 @@ body * {
   background-color: rgba(color(whitee), 0.95);
   height: 5rem;
 }
-#nav-bar ul {
+.nav-bar ul {
   list-style: none;
 }
-#nav-bar li {
+.nav-bar li {
   display: inline-block;
   font-family: $subfont;
 }
-#nav-bar a {
+.nav-bar a {
   color: #000;
   text-decoration: none;
   font-size: 1.65rem;
@@ -85,8 +86,8 @@ body * {
   transition: all 0.1s;
   //text-transform: uppercase;
 }
-#nav-bar a:hover,
-#nav-bar a:focus {
+.nav-bar a:hover,
+.nav-bar a:focus {
   color: color(bluee);
   border-bottom: color(yelloww) inset 0.25rem;
 }
@@ -284,7 +285,7 @@ label #sign-two {
     font-size: 2rem;
   }
   .logobox,
-  #nav-bar {
+  .nav-bar {
     height: 4rem;
   }
   #header {
@@ -330,10 +331,10 @@ label #sign-two {
     line-height: 2.5rem;
     padding-left: 1rem;
   }
-  #nav-bar a {
+  .nav-bar a {
     color: #fff;
   }
-  #nav-bar a:hover {
+  .nav-bar a:hover {
     border: none;
     letter-spacing: 0.3rem;
     letter-spacing: 0.3rem;
