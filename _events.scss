@@ -278,7 +278,8 @@
   font-weight: bold;
   margin-top: 2vw;
 }
-#fbutton {
+#fbutton,
+#footer-button {
   background-color: color(yelloww);
   color: color(bluee);
   padding: 0.7rem 2.5rem;
@@ -290,9 +291,12 @@
   font-size: 1.5rem;
   display: block;
   margin-top: 1.5rem;
+  font-family: $subfont;
 }
 #fbutton:hover,
-#fbutton:focus {
+#fbutton:focus,
+#footer-button:hover,
+#footer-button:focus {
   background-color: #feffbc;
 }
 .textinput {
@@ -320,6 +324,7 @@
   padding-bottom: 0.4rem;
   display: block;
 }
+
 .ftext,
 #events,
 .textinput {
@@ -335,7 +340,7 @@
   border-radius: 1vw;
   border: solid 0.05rem;
   padding: 1rem;
-  width:100%;
+  width: 100%;
 }
 
 .ftext {
