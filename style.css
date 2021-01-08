@@ -188,15 +188,15 @@ body {
 }
 
 /* MEDIA QUERIES */
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* Extra large devices (large laptops and desktops, 75rem and up) */
+@media only screen and (min-width: 75rem) {
   /*#nav-bar {
           background-color: blue;
       }*/
 }
 
-/* Large devices (laptops/desktops, up to 1200px) */
-@media only screen and (max-width: 1200px) {
+/* Large devices (laptops/desktops, up to 75rem) */
+@media only screen and (max-width: 75rem) {
   /*#nav-bar {
           background-color: green;
       }*/
@@ -244,15 +244,15 @@ body {
   }
 }
 
-/* Medium devices (laptops/desktops, up to 992px) */
-@media only screen and (max-width: 992px) {
+/* Medium devices (laptops/desktops, up to 62rem) */
+@media only screen and (max-width: 62rem) {
   /*#nav-bar {
           background-color: yellow;
       }*/
 }
 
-/* Small devices (tablets/phones, up to 768px) */
-@media only screen and (max-width: 768px) {
+/* Small devices (tablets/phones, up to 48rem) */
+@media only screen and (max-width: 48rem) {
   /*#nav-bar {
           background-color: purple;
       }*/
@@ -512,15 +512,15 @@ body {
 }
 
 /* MEDIA QUERIES */
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* Extra large devices (large laptops and desktops, 75rem and up) */
+@media only screen and (min-width: 75rem) {
   /*#nav-bar {
           background-color: blue;
       }*/
 }
 
-/* Large devices (laptops/desktops, up to 1200px) */
-@media only screen and (max-width: 1200px) {
+/* Large devices (laptops/desktops, up to 75rem) */
+@media only screen and (max-width: 75rem) {
   /*#nav-bar {
           background-color: green;
       }*/
@@ -538,15 +538,15 @@ body {
   }
 }
 
-/* Medium devices (laptops/desktops, up to 992px) */
-@media only screen and (max-width: 992px) {
+/* Medium devices (laptops/desktops, up to 62rem) */
+@media only screen and (max-width: 62rem) {
   /*#nav-bar {
           background-color: yellow;
       }*/
 }
 
-/* Small devices (tablets/phones, up to 768px) */
-@media only screen and (max-width: 768px) {
+/* Small devices (tablets/phones, up to 48rem) */
+@media only screen and (max-width: 48rem) {
   /*#nav-bar {
           background-color: purple;
       }*/
@@ -722,15 +722,15 @@ body {
 }
 
 /* MEDIA QUERIES */
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* Extra large devices (large laptops and desktops, 75rem and up) */
+@media only screen and (min-width: 75rem) {
   /*#nav-bar {
           background-color: blue;
       }*/
 }
 
-/* Large devices (laptops/desktops, up to 1200px) */
-@media only screen and (max-width: 1200px) {
+/* Large devices (laptops/desktops, up to 75rem) */
+@media only screen and (max-width: 75rem) {
   /*#nav-bar {
           background-color: green;
       }*/
@@ -790,8 +790,8 @@ body {
   }
 }
 
-/* Medium devices (tablets/laptops, up to 992px) */
-@media only screen and (max-width: 992px) {
+/* Medium devices (tablets/laptops, up to 62rem) */
+@media only screen and (max-width: 62rem) {
   /*#nav-bar {
           background-color: yellow;
       }*/
@@ -800,8 +800,8 @@ body {
   }
 }
 
-/* Small devices (tablets/phones, up to 768px) */
-@media only screen and (max-width: 768px) {
+/* Small devices (tablets/phones, up to 48rem) */
+@media only screen and (max-width: 48rem) {
   /*#nav-bar {
           background-color: purple;
       }*/
@@ -971,15 +971,15 @@ body {
   display: flex;
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* Extra large devices (large laptops and desktops, 75rem and up) */
+@media only screen and (min-width: 75rem) {
   /*#nav-bar {
           background-color: blue;
       }*/
 }
 
-/* Large devices (laptops/desktops, up to 1200px) */
-@media only screen and (max-width: 1200px) {
+/* Large devices (laptops/desktops, up to 75rem) */
+@media only screen and (max-width: 75rem) {
   /*#nav-bar {
           background-color: green;
       }*/
@@ -997,15 +997,15 @@ body {
   }
 }
 
-/* Medium devices (laptops/desktops, up to 992px) */
-@media only screen and (max-width: 992px) {
+/* Medium devices (laptops/desktops, up to 62rem) */
+@media only screen and (max-width: 62rem) {
   /*#nav-bar {
           background-color: yellow;
       }*/
 }
 
-/* Small devices (tablets/phones, up to 768px) */
-@media only screen and (max-width: 768px) {
+/* Small devices (tablets/phones, up to 48rem) */
+@media only screen and (max-width: 48rem) {
   /*#nav-bar {
           background-color: purple;
       }*/
@@ -1462,7 +1462,7 @@ body {
           align-items: center;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 75rem) {
   #eventsmobile,
   .e-mobile,
   .events-mob-btn {
@@ -1470,14 +1470,14 @@ body {
   }
 }
 
-/* Large devices (laptops/desktops, up to 1200px) */
-@media only screen and (max-width: 1200px) {
+/* Large devices (laptops/desktops, up to 75rem) */
+@media only screen and (max-width: 75rem) {
   /*#nav-bar {
         background-color: green;
     }*/
   .e-whole {
     position: absolute;
-    left: 50%;
+    left: 55%;
     top: 6vw;
   }
   .e-whole .e-header {
@@ -1485,7 +1485,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 48rem) {
   .fcontainer {
     width: 50vw;
     display: -webkit-box;
@@ -1787,15 +1787,15 @@ label #sign-two {
   display: none;
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* Extra large devices (large laptops and desktops, 75rem and up) */
+@media only screen and (min-width: 75rem) {
   /*#nav-bar {
         background-color: blue;
     }*/
 }
 
-/* Large devices (laptops/desktops, up to 1200px) */
-@media only screen and (max-width: 1200px) {
+/* Large devices (laptops/desktops, up to 75rem) */
+@media only screen and (max-width: 75rem) {
   /*#nav-bar {
         background-color: green;
     }*/
@@ -1834,15 +1834,15 @@ label #sign-two {
   }
 }
 
-/* Medium devices (laptops/desktops, up to 992px) */
-@media only screen and (max-width: 992px) {
+/* Medium devices (laptops/desktops, up to 62rem) */
+@media only screen and (max-width: 62rem) {
   /*#nav-bar {
         background-color: yellow;
     }*/
 }
 
-/* Small devices (tablets/phones, up to 768px) */
-@media only screen and (max-width: 768px) {
+/* Small devices (tablets/phones, up to 48rem) */
+@media only screen and (max-width: 48rem) {
   /*#nav-bar {
         background-color: purple;
     }*/
