@@ -564,3 +564,21 @@
     display: inline-block;
   }
 }
+/* 1792x828px at 326ppi */
+@media only screen and (device-width: 414px) and (device-height: 896px) {
+  .e-m-container {
+    flex-direction: column;
+  }
+  #eventsbox,
+  .e-desktop,
+  #eventsbtn {
+    display: none;
+  }
+  #eventsmobile {
+    display: block;
+  }
+  .e-mobile,
+  .events-mob-btn {
+    display: inline-block;
+  }
+}

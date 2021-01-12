@@ -1625,6 +1625,28 @@ body {
   }
 }
 
+/* 1792x828px at 326ppi */
+@media only screen and (device-width: 414px) and (device-height: 896px) {
+  .e-m-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #eventsbox,
+  .e-desktop,
+  #eventsbtn {
+    display: none;
+  }
+  #eventsmobile {
+    display: block;
+  }
+  .e-mobile,
+  .events-mob-btn {
+    display: inline-block;
+  }
+}
+
 html,
 body {
   font-size: 62.5%;
