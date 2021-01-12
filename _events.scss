@@ -429,7 +429,8 @@
 @media only screen and (min-width: 1200px) {
   #eventsmobile,
   .e-mobile,
-  .events-mob-btn {
+  .events-mob-btn,
+  .mobile-btn {
     display: none;
   }
 }
@@ -473,6 +474,7 @@
     display: block;
   }
   .e-mobile,
+  .mobile-btn,
   .events-mob-btn {
     display: inline-block;
   }

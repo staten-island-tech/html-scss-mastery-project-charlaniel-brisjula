@@ -1482,7 +1482,8 @@ body {
 @media only screen and (min-width: 1200px) {
   #eventsmobile,
   .e-mobile,
-  .events-mob-btn {
+  .events-mob-btn,
+  .mobile-btn {
     display: none;
   }
 }
@@ -1531,6 +1532,7 @@ body {
     display: block;
   }
   .e-mobile,
+  .mobile-btn,
   .events-mob-btn {
     display: inline-block;
   }
@@ -1719,6 +1721,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 
 html,
@@ -2056,6 +2059,7 @@ label #sign-two {
   }
   #header {
     line-height: 4rem;
+    text-align: center;
   }
   #btnbox {
     margin-top: 5rem;
@@ -2074,7 +2078,7 @@ label #sign-two {
   }
   #container {
     margin-top: 5.5vw;
-    width: 65vw;
+    width: 93%;
   }
   /* the following code is for the responsive nav bar */
   label #sign-one {
@@ -2083,7 +2087,7 @@ label #sign-two {
   nav ul {
     text-align: left;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     background: #2372D6;
     top: 0;
     left: -100%;
