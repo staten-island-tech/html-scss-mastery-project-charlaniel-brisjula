@@ -1322,7 +1322,7 @@ body {
   margin-bottom: 1.5rem;
   font-weight: 600;
   color: #fff;
-  letter-spacing: .05rem;
+  letter-spacing: 0.05rem;
 }
 
 .fcontainer {
@@ -1398,13 +1398,13 @@ body {
 
 .e-m-card-h1 {
   font-size: 2.25rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 .e-m-card-h2 {
   font-size: 1.6rem;
   margin-top: 0.3rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 .e-m-card-p {
@@ -1438,7 +1438,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   border-radius: 1vw;
 }
 
@@ -1490,9 +1490,6 @@ body {
 
 /* Large devices (laptops/desktops, up to 1200px) */
 @media only screen and (max-width: 1200px) {
-  /*#nav-bar {
-        background-color: green;
-    }*/
   .e-whole {
     position: absolute;
     left: 50%;
@@ -1503,20 +1500,112 @@ body {
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .fcontainer {
-    width: 70%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 3.5vw;
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  .e-m-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
+  #eventsbox,
+  .e-desktop,
+  #eventsbtn {
+    display: none;
+  }
+  #eventsmobile {
+    display: block;
+  }
+  .e-mobile,
+  .events-mob-btn {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .e-m-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #eventsbox,
+  .e-desktop,
+  #eventsbtn {
+    display: none;
+  }
+  #eventsmobile {
+    display: block;
+  }
+  .e-mobile,
+  .events-mob-btn {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .e-m-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #eventsbox,
+  .e-desktop,
+  #eventsbtn {
+    display: none;
+  }
+  #eventsmobile {
+    display: block;
+  }
+  .e-mobile,
+  .events-mob-btn {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .e-m-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #eventsbox,
+  .e-desktop,
+  #eventsbtn {
+    display: none;
+  }
+  #eventsmobile {
+    display: block;
+  }
+  .e-mobile,
+  .events-mob-btn {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .e-m-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #eventsbox,
+  .e-desktop,
+  #eventsbtn {
+    display: none;
+  }
+  #eventsmobile {
+    display: block;
+  }
+  .e-mobile,
+  .events-mob-btn {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
   .e-m-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
