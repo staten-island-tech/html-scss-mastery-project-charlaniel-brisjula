@@ -565,7 +565,7 @@
   }
 }
 /* 1792x828px at 326ppi */
-@media only screen and (device-width: 414px) and (device-height: 896px) {
+@media only screen and (device-width: 414px) and (device-height: 896px) and (orientation: landscape) {
   .e-m-container {
     flex-direction: column;
   }
