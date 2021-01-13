@@ -1481,7 +1481,8 @@ body {
 
 @media only screen and (min-width: 1200px) {
   #eventsmobile,
-  .e-mobile {
+  .e-mobile,
+  .events-mob-btn {
     display: none;
   }
 }
@@ -1498,14 +1499,44 @@ body {
   }
 }
 
-/*@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .fcontainer {
     width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 3.5vw;
   }
+  .e-m-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #eventsbox,
+  .e-desktop,
+  #eventsbtn {
+    display: none;
+  }
+  #eventsmobile,
+  .events-mob-btn {
+    display: block;
+  }
+  .e-mobile,
+  .events-mob-btn {
+    display: inline-block;
+  }
+}
+
+/*
+//CHARLEY'S FIDDLING WITH SHIT
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
   .e-m-container {
     flex-direction: column;
   }
@@ -1521,34 +1552,10 @@ body {
   .events-mob-btn {
     display: inline-block;
   }
-}*/
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-  .e-m-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #eventsbox,
-  .e-desktop,
-  #eventsbtn {
-    display: none;
-  }
-  #eventsmobile {
-    display: block;
-  }
-  .e-mobile,
-  .events-mob-btn {
-    display: inline-block;
-  }
 }
-
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
   .e-m-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   #eventsbox,
   .e-desktop,
@@ -1563,13 +1570,9 @@ body {
     display: inline-block;
   }
 }
-
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
   .e-m-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   #eventsbox,
   .e-desktop,
@@ -1584,13 +1587,9 @@ body {
     display: inline-block;
   }
 }
-
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
   .e-m-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   #eventsbox,
   .e-desktop,
@@ -1605,13 +1604,26 @@ body {
     display: inline-block;
   }
 }
-
+// @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) {
+//   .e-m-container {
+//     flex-direction: column;
+//   }
+//   #eventsbox,
+//   .e-desktop,
+//   #eventsbtn {
+//     display: none;
+//   }
+//   #eventsmobile {
+//     display: block;
+//   }
+//   .e-mobile,
+//   .events-mob-btn {
+//     display: inline-block;
+//   }
+// }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .e-m-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   #eventsbox,
   .e-desktop,
@@ -1626,16 +1638,12 @@ body {
     display: inline-block;
   }
 }
-
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
   .e-m-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
+*/
 html,
 body {
   font-size: 62.5%;

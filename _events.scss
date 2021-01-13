@@ -428,7 +428,8 @@
 //MEDIA QUERIES
 @media only screen and (min-width: 1200px) {
   #eventsmobile,
-  .e-mobile{
+  .e-mobile,
+  .events-mob-btn{
     display: none;
   }
 }
@@ -445,7 +446,7 @@
     // transform: translate(-50%, -50%);
   }
 }
-/*@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .fcontainer {
     width: 70%;
     display: flex;
@@ -461,14 +462,16 @@
   #eventsbtn {
     display: none;
   }
-  #eventsmobile {
+  #eventsmobile,
+  .events-mob-btn {
     display: block;
   }
   .e-mobile,
   .events-mob-btn {
     display: inline-block;
   }
-}*/
+}
+/*
 //CHARLEY'S FIDDLING WITH SHIT
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
   .e-m-container {
@@ -577,3 +580,4 @@
     flex-direction: column;
   }
 }
+*/
