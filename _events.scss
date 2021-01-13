@@ -541,24 +541,7 @@
     display: inline-block;
   }
 }
-// @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) {
-//   .e-m-container {
-//     flex-direction: column;
-//   }
-//   #eventsbox,
-//   .e-desktop,
-//   #eventsbtn {
-//     display: none;
-//   }
-//   #eventsmobile {
-//     display: block;
-//   }
-//   .e-mobile,
-//   .events-mob-btn {
-//     display: inline-block;
-//   }
-// }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-device-width: 760px) and (max-device-width: 1030px) {
   .e-m-container {
     flex-direction: column;
   }
