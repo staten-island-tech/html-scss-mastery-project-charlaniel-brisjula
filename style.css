@@ -1606,7 +1606,7 @@ body {
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-device-width: 760px) and (max-device-width: 1030px) {
   .e-m-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1624,15 +1624,6 @@ body {
   .e-mobile,
   .events-mob-btn {
     display: inline-block;
-  }
-}
-
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
-  .e-m-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 }
 
