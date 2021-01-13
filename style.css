@@ -1291,7 +1291,7 @@ body {
 #fbutton,
 #footer-button {
   background-color: #F6F285;
-  color: #2372D6;
+  color: #2b2b2b;
   padding: 0.7rem 2.5rem;
   border: none;
   cursor: pointer;
@@ -1312,6 +1312,10 @@ body {
   background-color: #feffbc;
 }
 
+#fbutton {
+  padding: .7rem 5rem;
+}
+
 .textinput {
   margin-bottom: 1rem;
 }
@@ -1322,7 +1326,7 @@ body {
   margin-bottom: 1.5rem;
   font-weight: 600;
   color: #fff;
-  letter-spacing: 0.05rem;
+  text-align: center;
 }
 
 .fcontainer {
@@ -1332,6 +1336,7 @@ body {
   background: #ff859f;
   border-radius: 1vw;
   border: #2372D6 0.25rem solid;
+  width: 25vw;
 }
 
 .textinput {
@@ -1829,8 +1834,8 @@ body * {
   background-position: top;
   position: relative;
   background-attachment: fixed;
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(40, 94, 165, 0)), color-stop(0%, rgba(35, 113, 214, 0.527))), url("/Images/butterflyhome.jpg");
-  background-image: linear-gradient(to left, rgba(40, 94, 165, 0) 0%, rgba(35, 113, 214, 0.527) 0%), url("/Images/butterflyhome.jpg");
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(40, 94, 165, 0)), color-stop(0%, rgba(19, 61, 139, 0.527))), url("/Images/butterflyhome.jpg");
+  background-image: linear-gradient(to left, rgba(40, 94, 165, 0) 0%, rgba(19, 61, 139, 0.527) 0%), url("/Images/butterflyhome.jpg");
 }
 
 /*.gradient {
@@ -1954,7 +1959,7 @@ body * {
   border-bottom-left-radius: 2.5rem;
   border-top-right-radius: 2.5rem;
   background-color: #F6F285;
-  color: #0036c9;
+  color: #2b2b2b;
 }
 
 #attractionsbtn:hover,

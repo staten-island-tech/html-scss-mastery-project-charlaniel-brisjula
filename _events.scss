@@ -281,7 +281,7 @@
 #fbutton,
 #footer-button {
   background-color: color(yelloww);
-  color: color(bluee);
+  color: #2b2b2b;
   padding: 0.7rem 2.5rem;
   border: none;
   cursor: pointer;
@@ -299,6 +299,9 @@
 #footer-button:focus {
   background-color: #feffbc;
 }
+#fbutton {
+ padding: .7rem 5rem;
+}
 .textinput {
   margin-bottom: 1rem;
 }
@@ -308,7 +311,7 @@
   margin-bottom: 1.5rem;
   font-weight: 600;
   color: #fff;
-  letter-spacing: 0.05rem;
+  text-align: center;
 }
 .fcontainer {
   display: inline;
@@ -317,6 +320,7 @@
   background: rgb(255, 133, 159);
   border-radius: 1vw;
   border: color(bluee) 0.25rem solid;
+  width: 25vw;
 }
 .textinput {
   padding-left: 0.4rem;

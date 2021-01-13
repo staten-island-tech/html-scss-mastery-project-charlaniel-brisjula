@@ -29,7 +29,7 @@ body * {
   background-image: linear-gradient(
       to left,
       rgba(40, 94, 165, 0) 0%,
-      rgba(35, 113, 214, 0.527) 0%
+      rgba(19, 61, 139, 0.527) 0%
     ),
     url("/Images/butterflyhome.jpg");
 }
@@ -138,7 +138,7 @@ body * {
 #attractionsbtn {
   @include sleek-border;
   background-color: color(yelloww);
-  color: #0036c9;
+  color: #2b2b2b;
 }
 #attractionsbtn:hover,
 #attractionsbtn:focus {
