@@ -159,7 +159,7 @@
   transition: 0.4s;
 }
 .e-card-1 {
-  background-image: url(/Images/banquet2-min.jpg);
+  background-image: url(/Images/banquet-min.jpg);
   background-size: cover;
 }
 .e-card-2 {
@@ -300,7 +300,7 @@
   background-color: #feffbc;
 }
 #fbutton {
- padding: .7rem 5rem;
+  padding: 0.7rem 5rem;
 }
 .textinput {
   margin-bottom: 1rem;
@@ -432,7 +432,7 @@
 @media only screen and (min-width: 1200px) {
   #eventsmobile,
   .e-mobile,
-  .events-mob-btn{
+  .events-mob-btn {
     display: none;
   }
 }

@@ -1183,7 +1183,7 @@ body {
 }
 
 .e-card-1 {
-  background-image: url(/Images/banquet2-min.jpg);
+  background-image: url(/Images/banquet-min.jpg);
   background-size: cover;
 }
 
@@ -1313,7 +1313,7 @@ body {
 }
 
 #fbutton {
-  padding: .7rem 5rem;
+  padding: 0.7rem 5rem;
 }
 
 .textinput {
