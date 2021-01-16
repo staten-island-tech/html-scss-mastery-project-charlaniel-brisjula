@@ -31,7 +31,7 @@ body * {
       rgba(40, 94, 165, 0) 0%,
       rgba(0, 57, 136, 0.527) 0%
     ),
-    url("/Images/butterflyhome.jpg");
+    url("Images/butterflyhome-opt.jpg");
 }
 /*.gradient {
   position: absolute;
@@ -251,14 +251,14 @@ label #sign-two {
   }
   #eventsbtn {
     @include sleek-border;
-  border: #feffbc solid 0.25rem;
-  padding: 1rem 1.25rem;
+    border: #feffbc solid 0.25rem;
+    padding: 1rem 1.25rem;
     margin-left: 17rem;
   }
   #eventsbtn:hover,
-#eventsbtn:focus {
-  padding: 1rem 1.25rem;
-}
+  #eventsbtn:focus {
+    padding: 1rem 1.25rem;
+  }
   #btnbox {
     margin-top: 2rem;
   }
