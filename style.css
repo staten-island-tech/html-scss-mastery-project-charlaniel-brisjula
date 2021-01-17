@@ -1291,7 +1291,7 @@ body {
 #fbutton,
 #footer-button {
   background-color: #F6F285;
-  color: #3700ff;
+  color: #1100ff;
   padding: 0.7rem 2.5rem;
   border: none;
   cursor: pointer;
@@ -1815,6 +1815,7 @@ body {
 html {
   scroll-behavior: smooth;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 html,
@@ -1958,7 +1959,7 @@ body * {
   border-bottom-left-radius: 2.5rem;
   border-top-right-radius: 2.5rem;
   background-color: #F6F285;
-  color: #3700ff;
+  color: #1100ff;
 }
 
 #attractionsbtn:hover,
