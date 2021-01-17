@@ -2234,9 +2234,6 @@ label #sign-two {
   }
   #homeimg {
     background-size: cover;
-    background-position: top;
-    position: relative;
-    background-attachment: fixed;
     background-image: -webkit-gradient(linear, right top, left top, from(rgba(40, 94, 165, 0)), color-stop(0%, rgba(0, 57, 136, 0.527))), url("Images/home-mobile.jpg");
     background-image: linear-gradient(to left, rgba(40, 94, 165, 0) 0%, rgba(0, 57, 136, 0.527) 0%), url("Images/home-mobile.jpg");
   }
