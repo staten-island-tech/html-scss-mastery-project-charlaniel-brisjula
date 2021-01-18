@@ -239,15 +239,15 @@
   // }
 }
 /* Small devices (tablets/phones, up to 768px) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   /*#nav-bar {
           background-color: purple;
       }*/
-      #legendsbox {
-        display: none;
-      }
-      #legends-whole {
-        display: block;
-        display: initial;
-      }
+  #legendsbox {
+    display: none;
+  }
+  #legends-whole {
+    display: block;
+    display: initial;
+  }
 }

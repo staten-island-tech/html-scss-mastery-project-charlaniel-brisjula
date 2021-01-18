@@ -372,7 +372,7 @@
   background-color: #3c68f8;
 }
 .e-m-card img {
-  height: 35vh;
+  height: 20vh;
   border-top-right-radius: 1vw;
   border-top-left-radius: 1vw;
 }
@@ -396,19 +396,19 @@
   }
 }
 /* Large devices (laptops/desktops, up to 1200px) */
-@media only screen and (max-width: 1200px) {
-  .e-whole {
-    position: absolute;
-    left: 50%;
-    top: 6vw;
-    .e-header {
-      font-size: 3rem;
-    }
-    // margin-right: -50%;
-    // transform: translate(-50%, -50%);
-  }
-}
-@media only screen and (max-width: 768px) {
+// @media only screen and (max-width: 1200px) {
+//   .e-whole {
+//     position: absolute;
+//     left: 50%;
+//     top: 6vw;
+//     .e-header {
+//       font-size: 3rem;
+//     }
+//     // margin-right: -50%;
+//     // transform: translate(-50%, -50%);
+//   }
+// }
+@media only screen and (max-width: 1024px) {
   .fcontainer {
     width: 70%;
     display: flex;
@@ -433,96 +433,8 @@
     display: inline-block;
   }
 }
-/*
-//CHARLEY'S FIDDLING WITH SHIT
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-  .e-m-container {
-    flex-direction: column;
-  }
-  #eventsbox,
-  .e-desktop,
-  #eventsbtn {
-    display: none;
-  }
-  #eventsmobile {
-    display: block;
-  }
-  .e-mobile,
-  .events-mob-btn {
-    display: inline-block;
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .e-m-card img {
+    height: 40vh;
   }
 }
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
-  .e-m-container {
-    flex-direction: column;
-  }
-  #eventsbox,
-  .e-desktop,
-  #eventsbtn {
-    display: none;
-  }
-  #eventsmobile {
-    display: block;
-  }
-  .e-mobile,
-  .events-mob-btn {
-    display: inline-block;
-  }
-}
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
-  .e-m-container {
-    flex-direction: column;
-  }
-  #eventsbox,
-  .e-desktop,
-  #eventsbtn {
-    display: none;
-  }
-  #eventsmobile {
-    display: block;
-  }
-  .e-mobile,
-  .events-mob-btn {
-    display: inline-block;
-  }
-}
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
-  .e-m-container {
-    flex-direction: column;
-  }
-  #eventsbox,
-  .e-desktop,
-  #eventsbtn {
-    display: none;
-  }
-  #eventsmobile {
-    display: block;
-  }
-  .e-mobile,
-  .events-mob-btn {
-    display: inline-block;
-  }
-}
-@media only screen and (min-device-width: 760px) and (max-device-width: 1030px) {
-  .e-m-container {
-    flex-direction: column;
-  }
-  #eventsbox,
-  .e-desktop,
-  #eventsbtn {
-    display: none;
-  }
-  #eventsmobile {
-    display: block;
-  }
-  .e-mobile,
-  .events-mob-btn {
-    display: inline-block;
-  }
-}
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
-  .e-m-container {
-    flex-direction: column;
-  }
-}
-*/
