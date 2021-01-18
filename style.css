@@ -799,7 +799,7 @@ body {
     padding: 0 3vw;
   }
   .views-content {
-    height: 40vh;
+    height: 30vh;
     width: 33%;
   }
   .highlights {
@@ -869,6 +869,9 @@ body {
   }
   .article-image {
     width: 100%;
+  }
+  .views-content {
+    height: 40vh;
   }
 }
 
