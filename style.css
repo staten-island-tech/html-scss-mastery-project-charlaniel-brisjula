@@ -77,7 +77,7 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   font-family: "Underdog", cursive;
-  color: #feffbc;
+  color: #F6F285;
   padding: 1vw 2vw;
   border-radius: 1vw;
   position: absolute;
@@ -1335,9 +1335,8 @@ body {
   display: inline;
   float: left;
   padding: 1.5rem;
-  background: #ff859f;
+  background: #2372D6;
   border-radius: 1vw;
-  border: #2372D6 0.25rem solid;
   width: 25vw;
 }
 
@@ -1358,6 +1357,7 @@ body {
 
 .ftext {
   font-size: 1.5rem;
+  color: #fff;
 }
 
 #events,

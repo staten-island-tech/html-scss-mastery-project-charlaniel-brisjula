@@ -310,15 +310,14 @@
   font-size: 2rem;
   margin-bottom: 1.5rem;
   font-weight: 600;
-  color: color(bluee);
+  color: #fff;
 }
 .fcontainer {
   display: inline;
   float: left;
   padding: 1.5rem;
-  background: rgb(255, 133, 159);
+  background: color(bluee);
   border-radius: 1vw;
-  border: color(bluee) 0.25rem solid;
   width: 25vw;
 }
 .textinput {
@@ -327,7 +326,6 @@
   padding-bottom: 0.4rem;
   display: block;
 }
-
 .ftext,
 #events,
 .textinput {
@@ -337,6 +335,7 @@
 }
 .ftext {
   font-size: 1.5rem;
+  color: #fff;
 }
 #events,
 .textinput {
