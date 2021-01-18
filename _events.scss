@@ -170,46 +170,6 @@
   background-image: url(/Images/starsssss.jpg);
   background-size: cover;
 }
-// //BUTTON STUFF STARTS
-// .e-content .e-card .e-card-button {
-//   display: inline-block;
-//   padding: 10px 20px;
-//   top: 40px;
-//   border: 1px solid #fff;
-//   transition: all 0.7s cubic-bezier(0.68, 0, 0.265, 1.55);
-//   color: #fff;
-//   text-decoration: none;
-//   transform: scale(0);
-//   position: relative;
-//   overflow: hidden;
-// }
-// .e-content .e-card .e-card-button:after {
-//   position: absolute;
-//   left: 0;
-//   bottom: 0;
-//   width: 100%;
-//   height: 0%;
-//   transform-origin: center top;
-//   background-color: rgba(0, 0, 0, 0.3);
-//   border-radius: 100% 0 0 0;
-//   transition: all 0.6s linear;
-// }
-// .e-content .e-card .e-card-button:after {
-//   content: "";
-//   position: absolute;
-//   left: 0;
-//   bottom: 0;
-//   width: 100%;
-//   height: 0%;
-//   transform-origin: center top;
-//   background-color: rgba(0, 0, 0, 0.3);
-//   border-radius: 100% 0 0 0;
-//   transition: all 0.6s linear;
-// }
-// .e-content .e-card .e-card-button:hover {
-//   border-color: transparent;
-//   transform: scale(1.2) !important;
-// }
 //TRANSFORMING CARD STUFF STARTS
 .e-content .e-card:nth-child(1) {
   transform: rotate(20deg) skew(-20deg) translate(10px, 10px);
@@ -403,16 +363,16 @@
   // height: 40vh;
 }
 .e-m-card-1 {
-  background-color: #DE3000;
+  background-color: #de3000;
 }
 .e-m-card-2 {
-  background-color: #CC0072;
+  background-color: #cc0072;
 }
 .e-m-card-3 {
   background-color: #3c68f8;
 }
 .e-m-card img {
-  height: 20vh;
+  height: 35vh;
   border-top-right-radius: 1vw;
   border-top-left-radius: 1vw;
 }
