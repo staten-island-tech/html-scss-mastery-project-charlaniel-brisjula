@@ -10,7 +10,6 @@
 html {
   scroll-behavior: smooth;
   overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
 }
 html,
 body * {
@@ -139,7 +138,7 @@ body * {
 #attractionsbtn {
   @include sleek-border;
   background-color: color(yelloww);
-  color: #1100ff;
+  color: #0026ff;
 }
 #attractionsbtn:hover,
 #attractionsbtn:focus {
