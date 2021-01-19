@@ -228,17 +228,7 @@
   //   display: none;
   // }
 }
-
-/* Medium devices (laptops/desktops, up to 992px) */
-@media only screen and (max-width: 992px) {
-  /*#nav-bar {
-          background-color: yellow;
-      }*/
-  // .legends-whole {
-  //   display: none;
-  // }
-}
-/* Small devices (tablets/phones, up to 768px) */
+/* Small devices (tablets/phones, up to 1024px) */
 @media only screen and (max-width: 1024px) {
   /*#nav-bar {
           background-color: purple;
@@ -249,5 +239,14 @@
   #legends-whole {
     display: block;
     display: initial;
+  }
+  .l-title {
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .l-title {
+    font-size: 5vw;
   }
 }
