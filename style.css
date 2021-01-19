@@ -2099,6 +2099,51 @@ label #sign-two {
   .eventsbtn:focus {
     padding: 1rem 1.25rem;
   }
+}
+
+/* Small devices (tablets/phones, up to 768px) */
+@media only screen and (max-width: 768px) {
+  /*#nav-bar {
+        background-color: purple;
+    }*/
+  #blurb {
+    margin-top: 2vw;
+  }
+  .logo {
+    font-size: 2rem;
+  }
+  .logobox,
+  .nav-bar {
+    height: 4rem;
+  }
+  #header {
+    line-height: 4rem;
+    text-align: center;
+  }
+  #btnbox {
+    margin-top: 5rem;
+  }
+  .eventsbtn {
+    margin-left: 0;
+    margin-top: 6rem;
+    border-bottom-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
+    border: #F6F285 solid 0.25rem;
+  }
+  #attractionsbtn,
+  .eventsbtn {
+    width: 93vw;
+    text-align: center;
+  }
+  #container {
+    margin-top: 5.5vw;
+    width: 93%;
+  }
+  #homeimg {
+    background-size: cover;
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(40, 94, 165, 0)), color-stop(0%, rgba(0, 57, 136, 0.527))), url("Images/home-mobile.jpg");
+    background-image: linear-gradient(to left, rgba(40, 94, 165, 0) 0%, rgba(0, 57, 136, 0.527) 0%), url("Images/home-mobile.jpg");
+  }
   /* the following code is for the responsive nav bar */
   label #sign-one {
     display: block;
@@ -2144,51 +2189,6 @@ label #sign-two {
   }
   #res-menu:checked ~ label #sign-two {
     display: block;
-  }
-}
-
-/* Small devices (tablets/phones, up to 768px) */
-@media only screen and (max-width: 768px) {
-  /*#nav-bar {
-        background-color: purple;
-    }*/
-  #blurb {
-    margin-top: 2vw;
-  }
-  .logo {
-    font-size: 2rem;
-  }
-  .logobox,
-  .nav-bar {
-    height: 4rem;
-  }
-  #header {
-    line-height: 4rem;
-    text-align: center;
-  }
-  #btnbox {
-    margin-top: 5rem;
-  }
-  .eventsbtn {
-    margin-left: 0;
-    margin-top: 6rem;
-    border-bottom-left-radius: 2.5rem;
-    border-top-right-radius: 2.5rem;
-    border: #F6F285 solid 0.25rem;
-  }
-  #attractionsbtn,
-  .eventsbtn {
-    width: 93vw;
-    text-align: center;
-  }
-  #container {
-    margin-top: 5.5vw;
-    width: 93%;
-  }
-  #homeimg {
-    background-size: cover;
-    background-image: -webkit-gradient(linear, right top, left top, from(rgba(40, 94, 165, 0)), color-stop(0%, rgba(0, 57, 136, 0.527))), url("Images/home-mobile.jpg");
-    background-image: linear-gradient(to left, rgba(40, 94, 165, 0) 0%, rgba(0, 57, 136, 0.527) 0%), url("Images/home-mobile.jpg");
   }
 }
 /*# sourceMappingURL=style.css.map */

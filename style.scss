@@ -280,46 +280,6 @@ label #sign-two {
     .eventsbtn:focus {
       padding: 1rem 1.25rem;
     }
-    /* the following code is for the responsive nav bar */
-  label #sign-one {
-    display: block;
-  }
-  nav ul {
-    text-align: left;
-    position: fixed;
-    width: 100%;
-    background: color(bluee);
-    top: 0;
-    left: -100%;
-    transition: 0.4s;
-    z-index: -1;
-    padding-left: 1rem;
-    padding-top: 3.5rem;
-    display: flex;
-    flex-direction: column;
-  }
-  nav ul li {
-    line-height: 2.5rem;
-    padding-left: 1rem;
-  }
-  .nav-bar a {
-    color: #fff;
-  }
-  .nav-bar a:hover {
-    border: none;
-    letter-spacing: 0.3rem;
-    letter-spacing: 0.3rem;
-    color: color(yelloww);
-  }
-  #res-menu:checked ~ ul {
-    left: 0;
-  }
-  #res-menu:checked ~ label #sign-one {
-    display: none;
-  }
-  #res-menu:checked ~ label #sign-two {
-    display: block;
-  }
 }
 
 /* Small devices (tablets/phones, up to 768px) */
@@ -367,5 +327,45 @@ label #sign-two {
         rgba(0, 57, 136, 0.527) 0%
       ),
       url("Images/home-mobile.jpg");
+  }
+  /* the following code is for the responsive nav bar */
+  label #sign-one {
+    display: block;
+  }
+  nav ul {
+    text-align: left;
+    position: fixed;
+    width: 100%;
+    background: color(bluee);
+    top: 0;
+    left: -100%;
+    transition: 0.4s;
+    z-index: -1;
+    padding-left: 1rem;
+    padding-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul li {
+    line-height: 2.5rem;
+    padding-left: 1rem;
+  }
+  .nav-bar a {
+    color: #fff;
+  }
+  .nav-bar a:hover {
+    border: none;
+    letter-spacing: 0.3rem;
+    letter-spacing: 0.3rem;
+    color: color(yelloww);
+  }
+  #res-menu:checked ~ ul {
+    left: 0;
+  }
+  #res-menu:checked ~ label #sign-one {
+    display: none;
+  }
+  #res-menu:checked ~ label #sign-two {
+    display: block;
   }
 }
