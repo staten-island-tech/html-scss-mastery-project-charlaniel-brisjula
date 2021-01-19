@@ -246,14 +246,14 @@ label #sign-two {
     font-size: 1.4rem;
     padding: 1.25rem 1.5rem;
   }
-  .eventsbtn {
+  #events-btn {
     @include sleek-border;
     border: #feffbc solid 0.25rem;
     padding: 1rem 1.25rem;
     margin-left: 17rem;
   }
-  .eventsbtn:hover,
-  .eventsbtn:focus {
+  #events-btn:hover,
+  #events-btn:focus {
     padding: 1rem 1.25rem;
   }
   #btnbox {
@@ -265,50 +265,22 @@ label #sign-two {
 }
 
 /* Medium devices (laptops/desktops, up to 992px) */
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1024px) {
   /*#nav-bar {
         background-color: yellow;
     }*/
-}
 
-/* Small devices (tablets/phones, up to 768px) */
-@media only screen and (max-width: 768px) {
-  /*#nav-bar {
-        background-color: purple;
-    }*/
-  #blurb {
-    margin-top: 2vw;
-  }
-  .logo {
-    font-size: 2rem;
-  }
-  .logobox,
-  .nav-bar {
-    height: 4rem;
-  }
-  #header {
-    line-height: 4rem;
-    text-align: center;
-  }
-  #btnbox {
-    margin-top: 5rem;
-  }
-  .eventsbtn {
-    margin-left: 0;
-    margin-top: 6rem;
-    @include sleek-border;
-    border: color(yelloww) solid 0.25rem;
-  }
-  #attractionsbtn,
-  .eventsbtn {
-    width: 93vw;
-    text-align: center;
-  }
-  #container {
-    margin-top: 5.5vw;
-    width: 93%;
-  }
-  /* the following code is for the responsive nav bar */
+    .eventsbtn {
+      @include sleek-border;
+      border: #feffbc solid 0.25rem;
+      padding: 1rem 1.25rem;
+      margin-left: 17rem;
+    }
+    .eventsbtn:hover,
+    .eventsbtn:focus {
+      padding: 1rem 1.25rem;
+    }
+    /* the following code is for the responsive nav bar */
   label #sign-one {
     display: block;
   }
@@ -348,17 +320,44 @@ label #sign-two {
   #res-menu:checked ~ label #sign-two {
     display: block;
   }
-  .l-mobile {
-    display: block;
+}
+
+/* Small devices (tablets/phones, up to 768px) */
+@media only screen and (max-width: 768px) {
+  /*#nav-bar {
+        background-color: purple;
+    }*/
+  #blurb {
+    margin-top: 2vw;
   }
-  .l-desktop {
-    display: none;
+  .logo {
+    font-size: 2rem;
   }
-  .e-mobile {
-    display: block;
+  .logobox,
+  .nav-bar {
+    height: 4rem;
   }
-  .e-desktop {
-    display: none;
+  #header {
+    line-height: 4rem;
+    text-align: center;
+  }
+  #btnbox {
+    margin-top: 5rem;
+  }
+  .eventsbtn {
+    margin-left: 0;
+    margin-top: 6rem;
+    @include sleek-border;
+    border: color(yelloww) solid 0.25rem;
+  }
+  #attractionsbtn,
+  .eventsbtn {
+    width: 93vw;
+    text-align: center;
+  }
+  #container {
+    margin-top: 5.5vw;
+    width: 93%;
   }
   #homeimg {
     background-size: cover;

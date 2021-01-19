@@ -402,8 +402,8 @@
   .events-mob-btn {
     display: none;
   }
-}
-Large devices (laptops/desktops, up to 1200px) 
+}*/
+//Large devices (laptops/desktops, up to 1200px) 
  @media only screen and (max-width: 1200px) {
    .e-whole {
     position: absolute;
@@ -413,8 +413,8 @@ Large devices (laptops/desktops, up to 1200px)
    .e-header {
     font-size: 3rem;
     }
- }
- @media only screen and (max-width: 1024px) {
+  }
+ /*@media only screen and (max-width: 1024px) {
   .fcontainer {
     width: 70%;
     display: flex;
