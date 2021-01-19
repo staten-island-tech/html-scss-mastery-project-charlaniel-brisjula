@@ -391,7 +391,7 @@
 @media only screen and (min-width: 1200px) {
   #eventsmobile,
   .e-mobile,
-  .events-mob-btn {
+  #mobile-btn {
     display: none;
   }
 }
@@ -452,15 +452,14 @@ Large devices (laptops/desktops, up to 1200px)
   }
   #eventsbox,
   .e-desktop,
-  #eventsbtn {
+  #events-btn {
     display: none;
   }
   #eventsmobile,
-  .events-mob-btn {
+  .e-mobile {
     display: block;
   }
-  .e-mobile,
-  .events-mob-btn {
+  #mobile-btn {
     display: inline-block;
   }
 }
@@ -469,3 +468,4 @@ Large devices (laptops/desktops, up to 1200px)
     height: 40vh;
   }
 }
+

@@ -146,7 +146,7 @@ body * {
   background-color: #feffbc;
   transform: translateY(-0.25rem);
 }
-#eventsbtn {
+.eventsbtn {
   border-radius: 0;
   color: #fff;
   border-bottom: color(yelloww) solid 0.25rem;
@@ -154,8 +154,11 @@ body * {
   padding: 1.25rem 0;
   margin-left: 20rem;
 }
-#eventsbtn:hover,
-#eventsbtn:focus {
+#events-btn {
+  padding: 1.25rem 0;
+}
+#events-btn:hover,
+#events-btn:focus {
   @include sleek-border;
   border: #feffbc solid 0.25rem;
   padding: 1.25rem 2.25rem;
@@ -215,12 +218,6 @@ label #sign-two {
   display: none;
 }
 
-.l-mobile {
-  display: none;
-}
-.e-mobile {
-  display: none;
-}
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   /*#nav-bar {
@@ -249,14 +246,14 @@ label #sign-two {
     font-size: 1.4rem;
     padding: 1.25rem 1.5rem;
   }
-  #eventsbtn {
+  .eventsbtn {
     @include sleek-border;
     border: #feffbc solid 0.25rem;
     padding: 1rem 1.25rem;
     margin-left: 17rem;
   }
-  #eventsbtn:hover,
-  #eventsbtn:focus {
+  .eventsbtn:hover,
+  .eventsbtn:focus {
     padding: 1rem 1.25rem;
   }
   #btnbox {
@@ -296,14 +293,14 @@ label #sign-two {
   #btnbox {
     margin-top: 5rem;
   }
-  #eventsbtn {
+  .eventsbtn {
     margin-left: 0;
     margin-top: 6rem;
     @include sleek-border;
     border: color(yelloww) solid 0.25rem;
   }
   #attractionsbtn,
-  #eventsbtn {
+  .eventsbtn {
     width: 93vw;
     text-align: center;
   }
