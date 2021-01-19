@@ -1494,7 +1494,50 @@ body {
   }
 }
 
-/* Large devices (laptops/desktops, up to 1200px) */
+/* 
+@media only screen and (min-width: 1200px) {
+  #eventsmobile,
+  .e-mobile,
+  .events-mob-btn {
+    display: none;
+  }
+}
+Large devices (laptops/desktops, up to 1200px) 
+ @media only screen and (max-width: 1200px) {
+   .e-whole {
+    position: absolute;
+    left: 50%;
+    top: 6vw;
+   }
+   .e-header {
+    font-size: 3rem;
+    }
+ }
+ @media only screen and (max-width: 1024px) {
+  .fcontainer {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.5vw;
+  }
+  .e-m-container {
+    flex-direction: column;
+  }
+  #eventsbox,
+  .e-desktop,
+  #eventsbtn {
+    display: none;
+  }
+  #eventsmobile,
+  .events-mob-btn {
+    display: block;
+  }
+  .e-mobile,
+  .events-mob-btn {
+    display: inline-block;
+  }
+}*/
 @media only screen and (max-width: 1024px) {
   .fcontainer {
     width: 70%;
