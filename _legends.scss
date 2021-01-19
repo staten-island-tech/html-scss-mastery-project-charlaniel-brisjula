@@ -249,6 +249,9 @@
   .l-mobile {
     display: block;
   }
+  .l-desktop {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
