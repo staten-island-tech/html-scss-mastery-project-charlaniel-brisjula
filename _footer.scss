@@ -31,13 +31,15 @@
 #footer-nav {
     background-color: unset;
     float: unset;
+    position: relative;
 }
-#footer-nav ul {
+.footer-ul {
     top: 0;
     left: 0;
     display: flex;
     flex-direction: column;
     margin-right: 100%;
+    position: absolute;
 }
 #footer-nav a{
     color: color(yelloww);

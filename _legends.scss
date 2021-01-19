@@ -198,6 +198,9 @@
   border-top-left-radius: 1vw;
   border-bottom-left-radius: 1vw;
 }
+.l-mobile {
+  display: none;
+}
 /* MEDIA QUERIES */
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -242,6 +245,9 @@
   }
   .l-title {
     font-size: 3vw;
+  }
+  .l-mobile {
+    display: block;
   }
 }
 
