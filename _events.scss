@@ -29,13 +29,9 @@
   text-align: left;
   width: 30vw;
 }
-.e-whole {
-  position: relative;
-}
 .e-content {
   list-style: none;
-  position: absolute;
-  left: 3.5vw;
+  float: left;
 }
 .e-card {
   border-radius: 1vw;
@@ -224,7 +220,7 @@
   font-family: $subfont;
   text-align: center;
   font-size: 2.25rem;
-  padding-bottom: 1vw;
+  padding-bottom: .5vw;
 }
 .e-card-content {
   @include text-stuff;
@@ -234,7 +230,7 @@
   display: block;
   font-size: 1.7rem;
   font-weight: bold;
-  margin-top: 2vw;
+  margin-bottom: 1.5vw;
 }
 #fbutton,
 #footer-button {
@@ -270,17 +266,13 @@
   font-weight: 600;
   color: #fff;
 }
-.formbox {
-  position: relative;
-}
 .fcontainer {
   display: inline;
   padding: 1.5rem;
   background: color(bluee);
   border-radius: 1vw;
   width: 25vw;
-  position: absolute;
-  left: 3.5vw;
+  float: left;
 }
 .textinput {
   padding-left: 0.4rem;
