@@ -29,15 +29,13 @@
   text-align: left;
   width: 30vw;
 }
+.e-whole {
+  position: relative;
+}
 .e-content {
   list-style: none;
-  float: left;
-  // position: absolute;
-  /*   transform: translate(-50%,-50%); */
-  // left: 50%;
-  // top: 50%;
-  // margin-left: -125px;
-  // margin-top: -180px;
+  position: absolute;
+  left: 3.5vw;
 }
 .e-card {
   border-radius: 1vw;
@@ -272,13 +270,17 @@
   font-weight: 600;
   color: #fff;
 }
+.formbox {
+  position: relative;
+}
 .fcontainer {
   display: inline;
-  float: left;
   padding: 1.5rem;
   background: color(bluee);
   border-radius: 1vw;
   width: 25vw;
+  position: absolute;
+  left: 3.5vw;
 }
 .textinput {
   padding-left: 0.4rem;
@@ -442,10 +444,10 @@
 @media only screen and (max-width: 1024px) {
   .fcontainer {
     width: 70%;
+    margin-top: 3.5vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 3.5vw;
   }
   .e-m-container {
     flex-direction: column;
@@ -455,12 +457,14 @@
   #events-btn {
     display: none;
   }
-  #eventsmobile,
-  .e-mobile {
+  #eventsmobile {
     display: block;
   }
   #mobile-btn {
     display: inline-block;
+  }
+  .e-mobile {
+    display: inline;
   }
 }
 @media only screen and (max-width: 1024px) and (orientation: landscape) {
