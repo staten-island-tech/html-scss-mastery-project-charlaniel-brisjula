@@ -444,10 +444,14 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 1vw;
-  margin-bottom: 0.5rem;
   margin-left: auto;
   margin-right: auto;
   position: relative;
+}
+
+.l-box-1,
+.l-box-2 {
+  margin-bottom: 1vw;
 }
 
 .l-pic-box {
@@ -1456,16 +1460,17 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 0.5rem;
   border-radius: 1vw;
 }
 
 .e-m-card-1 {
   background-color: rgba(222, 48, 0, 0.822);
+  margin-bottom: 1vw;
 }
 
 .e-m-card-2 {
   background-color: rgba(204, 0, 114, 0.822);
+  margin-bottom: 1vw;
 }
 
 .e-m-card-3 {
