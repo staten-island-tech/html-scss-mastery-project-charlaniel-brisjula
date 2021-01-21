@@ -1648,6 +1648,7 @@ body {
 
 .footer-text {
   color: #fff;
+  display: block;
 }
 
 #footer-nav {
@@ -1914,6 +1915,11 @@ body * {
   display: inline-block;
   position: absolute;
   letter-spacing: 0.1rem;
+}
+
+#fbutton,
+#footer-button {
+  font-weight: 600;
 }
 
 #attractionsbtn {

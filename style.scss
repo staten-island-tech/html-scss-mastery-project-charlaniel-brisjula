@@ -135,6 +135,10 @@ body * {
   position: absolute;
   letter-spacing: 0.1rem;
 }
+#fbutton,
+#footer-button {
+  font-weight: 600;
+}
 #attractionsbtn {
   @include sleek-border;
   background-color: color(yelloww);
