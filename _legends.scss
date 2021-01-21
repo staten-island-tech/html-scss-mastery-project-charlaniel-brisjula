@@ -252,3 +252,33 @@
     font-size: 5vw;
   }
 }
+@media only screen and (min-width: 1024px) and (max-width: 1400px) and (orientation: landscape) {
+  .l-blurb,
+  .l-pg {
+    font-size: 1.4rem;
+  }
+  .l-header {
+    font-size: 3rem;
+  }
+  .l-blurb {
+    padding-left: 3.5vw;
+    padding-right: 3.5vw;
+    margin-bottom: 5vw;
+  }
+  #legendsbox {
+    display: none;
+  }
+  #legends-whole {
+    display: block;
+    display: initial;
+  }
+  .l-title {
+    font-size: 3vw;
+  }
+  .l-mobile {
+    display: inline;
+  }
+  .l-desktop {
+    display: none;
+  }
+}

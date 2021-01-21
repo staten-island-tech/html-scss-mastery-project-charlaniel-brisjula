@@ -222,3 +222,45 @@
       background-color: rgba(8, 24, 97, 0.75);
     }*/
 }
+@media only screen and (min-width: 1024px) and (max-width: 1400px) and (orientation: landscape) {
+  .header-history {
+    font-size: 3rem;
+  }
+  #h-blurb,
+  .h-info {
+    font-size: 1.4rem;
+  }
+  .img-title {
+    z-index: 1;
+    top: 15%;
+    background-color: rgba(0, 0, 0, 0);
+    padding: none;
+  }
+  .image-whole:hover .img-title,
+  .image-whole:focus .img-title {
+    top: 15%;
+  }
+  .img-info {
+    opacity: 85%;
+    transform: translate(0);
+    justify-content: center;
+  }
+  .image-whole {
+    opacity: 100%;
+    transform: translateY(0vh);
+    // display: flex;
+    // justify-content: center;
+  }
+  .h-info {
+    top: 30%;
+  }
+  .image-whole:hover .h-info,
+  .image-whole:focus .h-info {
+    top: 30%;
+  }
+  #h-blurb {
+    padding-left: 3.5vw;
+    padding-right: 3.5vw;
+    margin-bottom: 5vw;
+  }
+}
