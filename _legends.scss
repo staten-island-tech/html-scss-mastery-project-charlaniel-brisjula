@@ -230,15 +230,6 @@
     padding-right: 3.5vw;
     margin-bottom: 5vw;
   }
-  // .legends-whole {
-  //   display: none;
-  // }
-}
-/* Small devices (tablets/phones, up to 1024px) */
-@media only screen and (max-width: 1024px) {
-  /*#nav-bar {
-          background-color: purple;
-      }*/
   #legendsbox {
     display: none;
   }
@@ -256,7 +247,6 @@
     display: none;
   }
 }
-
 @media only screen and (max-width: 768px) {
   .l-title {
     font-size: 5vw;

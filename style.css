@@ -544,13 +544,6 @@ body {
     padding-right: 3.5vw;
     margin-bottom: 5vw;
   }
-}
-
-/* Small devices (tablets/phones, up to 1024px) */
-@media only screen and (max-width: 1024px) {
-  /*#nav-bar {
-          background-color: purple;
-      }*/
   #legendsbox {
     display: none;
   }
@@ -1287,7 +1280,7 @@ body {
   font-family: "Underdog", cursive;
   text-align: center;
   font-size: 2.25rem;
-  padding-bottom: .5vw;
+  padding-bottom: 0.5vw;
 }
 
 .e-card-content {
@@ -1525,34 +1518,6 @@ body {
   .e-header {
     font-size: 3rem;
   }
-}
-
-/*@media only screen and (max-width: 1024px) {
-  .fcontainer {
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3.5vw;
-  }
-  .e-m-container {
-    flex-direction: column;
-  }
-  #eventsbox,
-  .e-desktop,
-  #eventsbtn {
-    display: none;
-  }
-  #eventsmobile,
-  .events-mob-btn {
-    display: block;
-  }
-  .e-mobile,
-  .events-mob-btn {
-    display: inline-block;
-  }
-}*/
-@media only screen and (max-width: 1024px) {
   .fcontainer {
     width: 70%;
     margin-top: 3.5vw;
@@ -1591,6 +1556,23 @@ body {
 @media only screen and (max-width: 1024px) and (orientation: landscape) {
   .e-m-card img {
     height: 40vh;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1400px) and (orientation: landscape) {
+  #eventsbox,
+  .e-desktop,
+  #events-btn {
+    display: none;
+  }
+  #eventsmobile {
+    display: block;
+  }
+  #mobile-btn {
+    display: inline-block;
+  }
+  .e-mobile {
+    display: inline;
   }
 }
 
