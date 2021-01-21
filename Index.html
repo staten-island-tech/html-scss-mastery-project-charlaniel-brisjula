@@ -302,7 +302,6 @@
       <span class="e-card-content">
         This festival includes singing and crafts for young children!</span>
     </div>
-      <!-- <a href="#" class="e-card-button">Click Here</a> -->
     </li>
     <li class="e-card e-card-2">
       <div class="eventsimg2">
@@ -313,7 +312,6 @@
       <span class="e-card-content e-card-date">January 1st, 12am</span>
       <span class="e-card-content">An annual celebration of life, joy, and vivaciousness, this concert is sure to make your year!</span>
     </div>
-      <!-- <a href="#" class="e-card-button">Click Here</a> -->
     </li>
     <li class="e-card e-card-1">
       <div class="eventsimg1">
@@ -324,23 +322,23 @@
       <span class="e-card-content e-card-date">December 24th, 6pm</span>
       <span class="e-card-content">When the sun sets, we will gather to partake in a feast of the finest foods!</span>
     </div>
-      <!-- <a href="#" class="e-card-button">Click Here</a> -->
     </li>
   </ul>
 </div>
 <span class="fcontainer">
   <form action="#">
       <h2 class="fheader">Sign up for events!</h2>
-          <label class="ftext" for="fname">Full name</label>
-          <input class="textinput" type="text" id="fname" placeholder="Full name">
-          <label class="ftext" for="femail">Email address</label>
-          <input class="textinput" type="text" id="femail" placeholder="Email address">
-          <label class="ftext" for="events">Choose an event</label>
+          <label class="ftext" for="fname">
+            <input class="textinput" type="text" id="fname" placeholder="Full name">Full name</label>
+          <label class="ftext" for="femail">
+            <input class="textinput" type="text" id="femail" placeholder="Email address">Email address</label>
+          <label class="ftext" for="events">
 <select id="events" name="events">
   <option value="feast">Sunset Banquet</option>
     <option value="concert">Midnight Concert</option>
     <option value="festival">Starlit Festival</option>  
 </select>
+Choose an event</label>
 <button type="button" id="fbutton" onclick="alert('Signed up successfully 👍')">Submit</button>
   </form>
 </span>
@@ -380,16 +378,17 @@
   <span class="fcontainer">
     <form action="#">
         <h2 class="fheader">Sign up for events!</h2>
-            <label class="ftext" for="fname">Full name</label>
-            <input class="textinput" type="text" id="fname" placeholder="Full name">
-            <label class="ftext" for="femail">Email address</label>
-            <input class="textinput" type="text" id="femail" placeholder="Email address">
-            <label class="ftext" for="events">Choose an event</label>
+            <label class="ftext" for="fname">
+              <input class="textinput" type="text" id="fname" placeholder="Full name">Full name</label>
+            <label class="ftext" for="femail">
+              <input class="textinput" type="text" id="femail" placeholder="Email address">Email address</label>
+            <label class="ftext" for="events">
   <select id="events" name="events">
     <option value="feast">Sunset Banquet</option>
       <option value="concert">Midnight Concert</option>
       <option value="festival">Starlit Festival</option>  
   </select>
+  Choose an event</label>
   <button type="button" id="fbutton" onclick="alert('Signed up successfully 👍')">Submit</button>
     </form>
   </span>
@@ -404,8 +403,8 @@
   <div class="form-column">
     <form action="#">
       <h2 class="fheader footer-h">Join our newsletter!</h2>
-      <label class="ftext footer-text" for="footer-button">Email address</label>
-      <input class="textinput text-input-f" type="text" placeholder="Email address">
+      <label class="ftext footer-text" for="footer-email">Email address</label>
+      <input class="textinput text-input-f" type="text" placeholder="Email address" id="footer-email">
     <button type="button" id="footer-button" onclick="alert('Joined newsletter successfully 👍')">Join</button>
   </form>
   </div>
