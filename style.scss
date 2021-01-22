@@ -222,15 +222,9 @@ label #sign-two {
   display: none;
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  /*#nav-bar {
-        background-color: blue;
-    }*/
-}
 
 /* Large devices (laptops/desktops, up to 1200px) */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1370px) {
   /*#nav-bar {
         background-color: green;
     }*/
@@ -250,15 +244,17 @@ label #sign-two {
     font-size: 1.4rem;
     padding: 1.25rem 1.5rem;
   }
-  #events-btn {
+  #mobile-btn {
     @include sleek-border;
     border: #feffbc solid 0.25rem;
     padding: 1rem 1.25rem;
     margin-left: 17rem;
   }
-  #events-btn:hover,
-  #events-btn:focus {
+  #mobile-btn:hover,
+  #mobile-btn:focus {
     padding: 1rem 1.25rem;
+    background-color: #feffbc;
+    color: #0026ff;
   }
   #btnbox {
     margin-top: 2rem;
@@ -266,24 +262,6 @@ label #sign-two {
   #homeimg {
     background-attachment: unset;
   }
-}
-
-/* Medium devices (laptops/desktops, up to 992px) */
-@media only screen and (max-width: 1024px) {
-  /*#nav-bar {
-        background-color: yellow;
-    }*/
-
-    .eventsbtn {
-      @include sleek-border;
-      border: #feffbc solid 0.25rem;
-      padding: 1rem 1.25rem;
-      margin-left: 17rem;
-    }
-    .eventsbtn:hover,
-    .eventsbtn:focus {
-      padding: 1rem 1.25rem;
-    }
 }
 
 /* Small devices (tablets/phones, up to 768px) */
@@ -308,7 +286,7 @@ label #sign-two {
   #btnbox {
     margin-top: 5rem;
   }
-  .eventsbtn {
+  #mobile-btn {
     margin-left: 0;
     margin-top: 6rem;
     @include sleek-border;
