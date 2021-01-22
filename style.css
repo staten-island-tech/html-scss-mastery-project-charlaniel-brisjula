@@ -549,7 +549,7 @@ body {
 
 .l-words-2 {
   right: 0;
-  background-color: #0050b8;
+  background-color: #0052BD;
   border-top-right-radius: 1vw;
   border-bottom-right-radius: 1vw;
 }
@@ -1234,7 +1234,7 @@ body {
   width: 100%;
   height: 1rem;
   background: #28fff7;
-  background: linear-gradient(45deg, #ff283a 0%, #d428ff 100%);
+  background: linear-gradient(45deg, #ff28a5 0%, #6128ff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff283a', endColorstr='#d428ff',GradientType=1 );
   -webkit-transition: 0.6s;
   transition: 0.6s;
