@@ -1,0 +1,284 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+//LEGENDS
+#legendsbox,
+.l-another-container {
+  background-color: #bddaff;
+  // height: 90vh;
+  width: 100%;
+  font-family: $subfont;
+  position: relative;
+  padding-top: 5.5vw;
+  padding-bottom: 6vw;
+}
+#legends-whole {
+  display: none;
+}
+.l-blurb {
+  @include text-stuff;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  text-align: left;
+}
+.l-header {
+  font-family: $mainfont;
+  color: color(bluee);
+  font-size: 5rem;
+  text-align: center;
+}
+.l-wrapper {
+  // position: relative;
+  // top: 0;
+  // width: 25rem;
+  // height: 40rem;
+  perspective: 90rem;
+  // margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.l-container {
+  // position: absolute;
+  top: 0;
+  width: 25rem;
+  height: 40rem;
+  transition: 0.5s all ease;
+  transform: rotateX(40deg) scale(0.7);
+  box-shadow: 0 0 3rem 2rem rgba(color(bluee), 0.4);
+  animation: entry 1s linear 1;
+  border-radius: 1vw;
+  overflow: hidden;
+}
+// #c1 {
+//   left: 100%;
+//   z-index: 0;
+// }
+
+// #c2 {
+//   left: -100%;
+//   z-index: 0;
+// }
+
+.l-container:hover,
+.l-container:focus {
+  cursor: pointer;
+  transform: rotate(0deg) scale(1) translateY(3rem);
+  transition: 0.5s all ease;
+  // z-index: 400;
+}
+
+.image {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+
+.story {
+  position: absolute;
+  top: 45%;
+  // left: 0%;
+  height: 55%;
+  width: 100%;
+  background: color(bluee);
+  // z-index: 30;
+  font-size: 4rem;
+  border-radius: 1vw;
+}
+
+.info {
+  position: absolute;
+  top: 10%;
+}
+
+.l-title {
+  text-align: center;
+  color: color(yelloww);
+  padding-bottom: 1rem;
+  font-size: 2.25rem;
+  letter-spacing: 0.1rem;
+}
+
+.l-pg {
+  @include text-stuff;
+  color: #fff;
+  padding: 0 1vw;
+}
+
+//lEGENDS FOR MOBILE
+.l-header {
+  font-family: $mainfont;
+  color: color(bluee);
+  font-size: 5rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  padding-top: 2rem;
+}
+.l-blurb {
+  @include text-stuff;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  text-align: left;
+  padding-bottom: 1vw;
+}
+.legends-whole {
+  display: none;
+}
+
+.l-title-mobile {
+  font-size: 4.5vw;
+  letter-spacing: unset;
+}
+.l-box {
+  width: 93vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 1vw;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.l-box-1,
+.l-box-2 {
+  margin-bottom: 1vw;
+}
+.l-pic-box {
+  height: 30vh;
+  width: 36vw;
+  position: absolute;
+}
+.l-pic-1 {
+  background-image: url(/Images/Lantern3-min.jpg);
+  background-size: cover;
+  right: 0;
+  border-top-right-radius: 1vw;
+  border-bottom-right-radius: 1vw;
+}
+.l-pic-2 {
+  background-image: url(/Images/D3-min.jpg);
+  background-size: cover;
+  left: 0;
+  border-top-left-radius: 1vw;
+  border-bottom-left-radius: 1vw;
+}
+.l-pic-3 {
+  background-image: url(/Images/Space1-min.jpeg);
+  background-size: cover;
+  right: 0;
+  border-top-right-radius: 1vw;
+  border-bottom-right-radius: 1vw;
+}
+.l-words-box {
+  font-size: 1.5rem;
+  font: $subfont;
+  text-align: left;
+  float: right;
+  width: 60vw;
+  height: 30vh;
+  position: absolute;
+  padding: 2vw;
+  color: #ffff;
+}
+.l-words-1 {
+  background-color: color(hred);
+  border-top-left-radius: 1vw;
+  border-bottom-left-radius: 1vw;
+}
+.l-words-2 {
+  right: 0;
+  background-color: #0052BD;
+  border-top-right-radius: 1vw;
+  border-bottom-right-radius: 1vw;
+}
+.l-words-3 {
+  background-color: color(hblue);
+  border-top-left-radius: 1vw;
+  border-bottom-left-radius: 1vw;
+}
+.l-mobile {
+  display: none;
+}
+/* MEDIA QUERIES */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /*#nav-bar {
+          background-color: blue;
+      }*/
+}
+
+/* Large devices (laptops/desktops, up to 1200px) */
+@media only screen and (max-width: 1200px) {
+  /*#nav-bar {
+          background-color: green;
+      }*/
+  .l-blurb,
+  .l-pg {
+    font-size: 1.4rem;
+  }
+  .l-header {
+    font-size: 3rem;
+  }
+  .l-blurb {
+    padding-left: 3.5vw;
+    padding-right: 3.5vw;
+    margin-bottom: 5vw;
+  }
+  #legendsbox {
+    display: none;
+  }
+  #legends-whole {
+    display: block;
+    display: initial;
+  }
+  .l-title {
+    font-size: 3vw;
+  }
+  .l-mobile {
+    display: inline;
+  }
+  .l-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .l-title {
+    font-size: 5vw;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1370px) and (orientation: landscape) {
+  .l-blurb,
+  .l-pg {
+    font-size: 1.4rem;
+  }
+  .l-header {
+    font-size: 3rem;
+  }
+  .l-blurb {
+    padding-left: 3.5vw;
+    padding-right: 3.5vw;
+    margin-bottom: 5vw;
+  }
+  #legendsbox {
+    display: none;
+  }
+  #legends-whole {
+    display: block;
+    display: initial;
+  }
+  .l-title {
+    font-size: 3vw;
+  }
+  .l-mobile {
+    display: inline;
+  }
+  .l-desktop {
+    display: none;
+  }
+}

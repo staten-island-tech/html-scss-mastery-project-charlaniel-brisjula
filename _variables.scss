@@ -1,0 +1,23 @@
+html,
+body {
+    font-size: 62.5%;
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+$colors: (
+    whitee: #FFFFF3,
+    yelloww: #F6F285,
+    bluee: #2372D6,
+    hgreen: #376e04,
+    hred: #b24f17,
+    hblue: #5d2bd1
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
+
+$mainfont: 'Henny Penny', cursive;
+$subfont: 'Underdog', cursive;

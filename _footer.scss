@@ -1,0 +1,121 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+.footerbox {
+    background-color: #002961;
+    padding: 3.5vw;
+}
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+.form-column, 
+.media-column,
+.nav-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    width: 33%;
+}
+.footer-h {
+    font-weight: 400;
+    display: inline-block;
+}
+.text-input-f {
+    width: 50%;
+}
+.footer-text {
+    color: #fff;
+    display: block;
+}
+#footer-nav {
+    background-color: unset;
+    float: unset;
+    position: relative;
+}
+.footer-ul {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100%;
+}
+#footer-nav a{
+    color: color(yelloww);
+    margin: unset;
+    margin: 0;
+    line-height: 3rem;
+}
+#footer-p {
+    bottom: 0;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mediabox {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+}
+.fab {
+    font-size: 4rem;
+    margin-right: 1rem;
+    color: #fff;
+    line-height: 2.5rem;
+    transition: all .15s;
+    border-radius: 2.5rem;
+    line-height: 2.5rem;
+    transform: scale(1.01);
+}
+.fab:hover {
+    transform: scale(1.1);
+}
+.fa-instagram-square {
+    color: #d6249f;
+  }
+.fa-facebook-square {
+    color: #3a70db;
+}
+.fa-snapchat-square {
+    color: #FFFC00;
+}
+//MEDIA QUERIES
+@media only screen and (min-width: 1200px) {
+  }
+  /* Large devices (laptops/desktops, up to 1200px) */
+  @media only screen and (max-width: 1200px) {
+    /*#nav-bar {
+          background-color: green;
+      }*/
+    // .e-m-container {
+    //   display: flex;
+    //   flex-direction: row;
+    // }
+      // margin-right: -50%;
+      // transform: translate(-50%, -50%);
+  }
+  @media only screen and (max-width: 768px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .form-column, 
+    .media-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .text-input-f {
+      width: 100%;
+  }
+  .footer-h {
+      margin-top: 3rem;
+      font-size: 1.7rem;
+  }
+  .nav-column {
+      display: none;
+  }
+  }

@@ -1,0 +1,125 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+#wildlifebox {
+    position: relative;
+    background-color: #bddaff;
+    padding-bottom: 3.5vw;
+    padding-top: 5.5vw;
+    padding-left: 3.5vw;
+    padding-right: 3.5vw;
+    width: 100%;
+}
+#w-header {
+    font-size: 5rem;
+    color: color(bluee);
+    font-family: $mainfont;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+  }
+  #w-blurb {
+    @include text-stuff;
+    padding-left: 16.5vw;
+    padding-right: 16.5vw;
+    text-align: left;
+  }
+.w-row{
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 93vw;
+    height: 20vw;
+    margin-top: 3vw;
+  }
+  .w-card {
+    /*float: left;*/
+    position: relative;
+    height: 20vw;
+    width: 20vw;
+    flex-basis: 20vw;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border-radius: 1vw;
+    background-color: #e4f0ff;
+    margin-right: 1vw;
+  }
+  
+  .w-card-text {
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: 600;
+    bottom: 0;
+    background-color: rgba(235, 88, 119, 0.9);
+    width: 100%;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    @include text-stuff;
+    color: #fff;
+    display: flex; 
+    justify-content: center;
+  }
+
+  .w-img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      display: flex;
+  }
+
+  @media only screen and (max-width: 1370px) {
+    /*#nav-bar {
+            background-color: green;
+        }*/
+        #w-header {
+          font-size: 3rem;
+      }
+      .w-card-text,
+      #w-blurb {
+        font-size: 1.4rem;
+      }
+  }
+  /* Large devices (laptops/desktops, up to 1200px) */
+  @media only screen and (max-width: 1200px) {
+    /*#nav-bar {
+          background-color: green;
+      }*/
+      #w-blurb {
+        margin-bottom: 5vw;
+        padding-left: 0;
+          padding-right: 0;
+          }
+  }
+  
+  /* Medium devices (laptops/desktops, up to 992px) */
+  @media only screen and (max-width: 992px) {
+    /*#nav-bar {
+          background-color: yellow;
+      }*/
+  }
+  
+  /* Small devices (tablets/phones, up to 768px) */
+  @media only screen and (max-width: 768px) {
+    /*#nav-bar {
+          background-color: purple;
+      }*/
+    .w-card {
+        height: 55vw;
+        width: 55vw;
+        flex-basis: 55vw;
+    }
+    .w-row {
+        height: 55vw;
+        margin-top: 1vw;
+    }
+    #wildlifebox {
+  padding-top: 10vw;
+    }
+}
+  

@@ -1,0 +1,353 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "_history.scss";
+@import "_legends.scss";
+@import "_attractions.scss";
+@import "_wildlife.scss";
+@import "_events.scss";
+@import "_footer.scss";
+
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+html,
+body * {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#homeimg {
+  width: 100%;
+  height: 100vh;
+  //background-image: url(/Images/butterflyhome.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  background-attachment: fixed;
+  background-image: linear-gradient(
+      to left,
+      rgba(40, 94, 165, 0) 0%,
+      rgba(0, 57, 136, 0.527) 0%
+    ),
+    url("Images/butterflyhome-opt.jpg");
+}
+/*.gradient {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+  z-index: 10;
+}*/
+.navwhole {
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  box-shadow: 0 0.5rem 0.5rem -0.3rem rgba(0, 0, 0, 0.2);
+}
+.logobox {
+  background-color: rgba(color(whitee), 0.95);
+  width: 30%;
+  text-align: left;
+  float: left;
+  height: 5rem;
+}
+.logo {
+  color: color(bluee);
+  font-size: 3rem;
+  font-family: $mainfont;
+  padding-left: 3.5vw;
+  display: inline;
+  height: 5rem;
+}
+.nav-bar {
+  width: 70%;
+  float: right;
+  text-align: right;
+  display: inline;
+  background-color: rgba(color(whitee), 0.95);
+  height: 5rem;
+}
+.nav-bar ul {
+  list-style: none;
+}
+.nav-bar li {
+  display: inline-block;
+  font-family: $subfont;
+}
+.nav-bar a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.65rem;
+  margin-right: 3rem;
+  line-height: 5rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  transition: all 0.1s;
+  //text-transform: uppercase;
+}
+.nav-bar a:hover,
+.nav-bar a:focus {
+  color: color(bluee);
+  border-bottom: color(yelloww) inset 0.25rem;
+}
+#container {
+  position: absolute;
+  width: 70vw;
+  height: 50vh;
+  left: 3.5vw;
+  top: 9vw;
+  z-index: 2;
+  margin-top: 5.5vw;
+}
+#header {
+  color: color(yelloww);
+  font-family: $mainfont;
+  font-size: 7rem;
+  top: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-shadow: 0 0.5rem 0.5rem rgba(color(yelloww), 0.4);
+}
+#blurb {
+  color: #fff;
+  font-family: $subfont;
+  font-size: 1.65rem;
+  line-height: 150%;
+  letter-spacing: 0.1rem;
+}
+#btnbox {
+  position: relative;
+  height: 5rem;
+  margin-top: 5rem;
+}
+.btn,
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  padding: 1.5rem 2.5rem;
+  font-size: 1.5rem;
+  font-family: $subfont;
+  font-weight: 600;
+  transition: all 0.2s;
+  display: inline-block;
+  position: absolute;
+  letter-spacing: 0.1rem;
+}
+#fbutton,
+#footer-button {
+  font-weight: 600;
+}
+#attractionsbtn {
+  @include sleek-border;
+  background-color: color(yelloww);
+  color: #0026ff;
+}
+#attractionsbtn:hover,
+#attractionsbtn:focus {
+  box-shadow: 0 1.5rem 3rem rgba(color(yelloww), 0.6);
+  background-color: #feffbc;
+  transform: translateY(-0.25rem);
+}
+.eventsbtn {
+  border-radius: 0;
+  color: #fff;
+  border-bottom: color(yelloww) solid 0.25rem;
+  border-top: color(yelloww) solid 0.25rem;
+  padding: 1.25rem 0;
+  margin-left: 20rem;
+}
+#events-btn {
+  padding: 1.25rem 0;
+}
+#events-btn:hover,
+#events-btn:focus {
+  @include sleek-border;
+  border: #feffbc solid 0.25rem;
+  padding: 1.25rem 2.25rem;
+}
+a {
+  text-decoration: none;
+}
+.arrow {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  //padding: 20vh 46vw;
+  font-size: 3rem;
+  color: color(yelloww);
+  text-shadow: 0 1.5rem 3rem rgba(color(yelloww), 1);
+  top: 80%;
+  left: 45%;
+  right: 45%;
+  transition: all 0.2s;
+}
+.bounce {
+  animation: bounce 2.5s infinite;
+}
+.arrow:hover,
+.arrow:focus {
+  color: #feffbc;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+label #sign-one,
+label #sign-two {
+  font-size: 2.5rem;
+  color: color(bluee);
+  float: right;
+  line-height: 3.5rem;
+  margin-right: 3.5vw;
+  cursor: pointer;
+  display: none;
+}
+
+#res-menu {
+  display: none;
+}
+
+
+/* Large devices (laptops/desktops, up to 1200px) */
+@media only screen and (max-width: 1370px) {
+  /*#nav-bar {
+        background-color: green;
+    }*/
+  #nav-bar a {
+    font-size: 1.5rem;
+  }
+  #header {
+    font-size: 3rem;
+  }
+  #blurb {
+    line-height: 2rem;
+    font-size: 1.4rem;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    font-size: 1.4rem;
+    padding: 1.25rem 1.5rem;
+  }
+  #mobile-btn {
+    @include sleek-border;
+    border: #feffbc solid 0.25rem;
+    padding: 1rem 1.25rem;
+    margin-left: 17rem;
+  }
+  #mobile-btn:hover,
+  #mobile-btn:focus {
+    padding: 1rem 1.25rem;
+    background-color: #feffbc;
+    color: #0026ff;
+  }
+  #btnbox {
+    margin-top: 2rem;
+  }
+  #homeimg {
+    background-attachment: unset;
+  }
+}
+
+/* Small devices (tablets/phones, up to 768px) */
+@media only screen and (max-width: 768px) {
+  /*#nav-bar {
+        background-color: purple;
+    }*/
+  #blurb {
+    margin-top: 2vw;
+  }
+  .logo {
+    font-size: 2rem;
+  }
+  .logobox,
+  .nav-bar {
+    height: 4rem;
+  }
+  #header {
+    line-height: 4rem;
+    text-align: center;
+  }
+  #btnbox {
+    margin-top: 5rem;
+  }
+  #mobile-btn {
+    margin-left: 0;
+    margin-top: 6rem;
+    @include sleek-border;
+    border: color(yelloww) solid 0.25rem;
+  }
+  #attractionsbtn,
+  .eventsbtn {
+    width: 93vw;
+    text-align: center;
+  }
+  #container {
+    margin-top: 5.5vw;
+    width: 93%;
+  }
+  #homeimg {
+    background-size: cover;
+    background-image: linear-gradient(
+        to left,
+        rgba(40, 94, 165, 0) 0%,
+        rgba(0, 57, 136, 0.527) 0%
+      ),
+      url("Images/home-mobile.jpg");
+  }
+  /* the following code is for the responsive nav bar */
+  label #sign-one {
+    display: block;
+  }
+  nav ul {
+    text-align: left;
+    position: fixed;
+    width: 100%;
+    background: color(bluee);
+    top: 0;
+    left: -100%;
+    transition: 0.4s;
+    z-index: -1;
+    padding-left: 1rem;
+    padding-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul li {
+    line-height: 2.5rem;
+    padding-left: 1rem;
+  }
+  .nav-bar a {
+    color: #fff;
+  }
+  .nav-bar a:hover {
+    border: none;
+    letter-spacing: 0.3rem;
+    letter-spacing: 0.3rem;
+    color: color(yelloww);
+  }
+  #res-menu:checked ~ ul {
+    left: 0;
+  }
+  #res-menu:checked ~ label #sign-one {
+    display: none;
+  }
+  #res-menu:checked ~ label #sign-two {
+    display: block;
+  }
+}
